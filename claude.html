@@ -1,0 +1,934 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Claude من Anthropic — تحليل شامل 2026 | ذكاء</title>
+  <meta name="description" content="تحليل معمّق لنموذج Claude من Anthropic: نقاط القوة والضعف، دعم العربية، مقارنة بالنماذج الأخرى، وتاريخ التطور. المرجع العربي الأول.">
+  <meta name="keywords" content="Claude AI, كلود, Anthropic, مقارنة Claude, Claude بالعربية, أفضل نموذج AI, Claude 3, Claude Sonnet, Claude Opus">
+  <link rel="canonical" href="https://zakae.com/ar/models/claude.html">
+  <meta property="og:title" content="Claude من Anthropic — تحليل شامل 2026 | ذكاء">
+  <meta property="og:description" content="تحليل معمّق لنموذج Claude: نقاط القوة، الضعف، دعم العربية، ومقارنة بالنماذج الأخرى.">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://zakae.com/ar/models/claude.html">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Claude AI — تحليل شامل بالعربية | ذكاء">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Claude من Anthropic — تحليل شامل 2026",
+    "description": "تحليل معمّق لنموذج Claude من Anthropic بالعربية",
+    "dateModified": "2026-03-10",
+    "publisher": {"@type": "Organization", "name": "ذكاء", "url": "https://zakae.com"},
+    "about": {"@type": "SoftwareApplication", "name": "Claude", "applicationCategory": "Artificial Intelligence"}
+  }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --white:#FAFAF8; --off-white:#F2F0EB; --light-gray:#E8E5DE;
+      --text-secondary:#7A7570; --text-primary:#1A1916;
+      --accent:#2A5C8F; --accent-light:#EBF2FA; --accent-hover:#1E4470;
+      --gold:#B8860B; --gold-light:#FDF8EC;
+      --success:#2D7A4F; --success-light:#E8F5EE;
+      --warning:#C05C00; --warning-light:#FFF3E0;
+      --error:#C0392B; --error-light:#FDECEA;
+      --claude:#CC785C; --claude-light:#FDF2EE; --claude-dark:#8B4513;
+      --border:#E0DDD6;
+      --shadow-sm:0 1px 3px rgba(26,25,22,.06);
+      --shadow-md:0 4px 16px rgba(26,25,22,.08);
+      --shadow-lg:0 12px 40px rgba(26,25,22,.12);
+      --radius:12px; --radius-sm:8px;
+      --transition:all .25s cubic-bezier(.4,0,.2,1);
+    }
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{font-family:'Tajawal',sans-serif;background:var(--white);color:var(--text-primary);line-height:1.8;direction:rtl;overflow-x:hidden}
+
+    .skip-link{position:absolute;top:-100px;right:0;background:var(--accent);color:white;padding:.75rem 1.5rem;font-weight:700;text-decoration:none;z-index:999;transition:top .2s}
+    .skip-link:focus{top:0}
+
+    /* READING PROGRESS */
+    .reading-progress{position:fixed;top:0;right:0;left:0;height:3px;background:var(--light-gray);z-index:200}
+    .reading-progress-bar{height:100%;background:linear-gradient(to left,var(--claude),var(--claude-dark));width:0%;transition:width .1s}
+
+    /* NAV */
+    nav{position:sticky;top:0;z-index:100;background:rgba(250,250,248,.95);backdrop-filter:blur(16px);border-bottom:1px solid var(--border);padding:0 2rem}
+    .nav-inner{max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:64px;position:relative}
+    .nav-logo{font-size:1.5rem;font-weight:800;color:var(--text-primary);text-decoration:none;letter-spacing:-.5px;display:flex;align-items:center;gap:.25rem}
+    .nav-logo .ac{color:var(--accent)}
+    .nav-logo .dot{width:6px;height:6px;background:var(--gold);border-radius:50%;display:inline-block;margin-bottom:2px}
+    .nav-links{display:flex;align-items:center;gap:.25rem;list-style:none}
+    .nav-links a{text-decoration:none;color:var(--text-secondary);font-size:.9rem;font-weight:500;padding:.5rem .875rem;border-radius:var(--radius-sm);transition:var(--transition)}
+    .nav-links a:hover{color:var(--text-primary);background:var(--off-white)}
+    .nav-links a.active{color:var(--accent);font-weight:700}
+    .nav-cta{background:var(--accent)!important;color:white!important;border-radius:20px!important;font-weight:600!important}
+    .nav-right{display:flex;align-items:center;gap:.75rem}
+    .lang-switcher{display:flex;align-items:center;gap:.25rem;background:var(--off-white);border-radius:20px;padding:3px}
+    .lang-btn{font-size:.78rem;font-weight:700;padding:.3rem .7rem;border-radius:16px;text-decoration:none;transition:var(--transition);font-family:'IBM Plex Mono',monospace;color:var(--text-secondary)}
+    .lang-btn.active{background:white;color:var(--text-primary);box-shadow:var(--shadow-sm)}
+    .hamburger{display:none;background:none;border:1px solid var(--border);border-radius:var(--radius-sm);cursor:pointer;padding:.5rem;flex-direction:column;gap:5px;align-items:center;justify-content:center}
+    .hamburger span{display:block;width:20px;height:2px;background:var(--text-primary);border-radius:2px;transition:var(--transition)}
+    .nav-links.nav-open{display:flex!important;flex-direction:column;position:absolute;top:64px;right:-2rem;left:-2rem;background:white;padding:1rem 1.5rem 1.5rem;border-bottom:1px solid var(--border);box-shadow:var(--shadow-md);gap:.25rem;z-index:99}
+    .nav-links.nav-open a{padding:.75rem 1rem;display:block}
+    .hamburger.is-open span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+    .hamburger.is-open span:nth-child(2){opacity:0}
+    .hamburger.is-open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+
+    /* MODEL HERO */
+    .model-hero{
+      background: var(--text-primary);
+      color: white;
+      padding: 4rem 2rem 0;
+      position: relative;
+      overflow: hidden;
+    }
+    .model-hero::before{
+      content:'';position:absolute;inset:0;
+      background:radial-gradient(ellipse at 30% 50%, rgba(204,120,92,.25) 0%, transparent 60%);
+      pointer-events:none;
+    }
+    .model-hero-inner{max-width:1200px;margin:0 auto}
+
+    .breadcrumb{font-size:.82rem;color:rgba(255,255,255,.5);margin-bottom:2rem;display:flex;align-items:center;gap:.5rem;flex-wrap:wrap}
+    .breadcrumb a{color:rgba(255,255,255,.7);text-decoration:none;font-weight:600;transition:var(--transition)}
+    .breadcrumb a:hover{color:white}
+    .breadcrumb span{color:rgba(255,255,255,.3)}
+
+    .model-hero-grid{display:grid;grid-template-columns:1fr auto;gap:3rem;align-items:end;padding-bottom:0}
+
+    .model-identity{padding-bottom:3rem}
+    .model-badge{display:inline-flex;align-items:center;gap:.5rem;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.12);color:rgba(255,255,255,.8);font-size:.78rem;font-weight:700;padding:.375rem 1rem;border-radius:20px;margin-bottom:1.25rem;font-family:'IBM Plex Mono',monospace}
+    .model-badge-dot{width:6px;height:6px;background:var(--claude);border-radius:50%;display:inline-block}
+
+    .model-hero h1{font-size:clamp(2.5rem,6vw,4.5rem);font-weight:800;line-height:1.1;letter-spacing:-2px;margin-bottom:.5rem}
+    .model-hero h1 .model-name-main{color:var(--claude)}
+    .model-by{font-size:1.1rem;color:rgba(255,255,255,.5);font-weight:400;margin-bottom:1.5rem;font-family:'IBM Plex Mono',monospace}
+    .model-tagline{font-size:1.15rem;color:rgba(255,255,255,.75);max-width:580px;line-height:1.7;margin-bottom:2rem}
+
+    .model-quick-verdict{display:flex;gap:1.5rem;flex-wrap:wrap}
+    .verdict-pill{display:flex;align-items:center;gap:.5rem;font-size:.85rem;font-weight:700;padding:.5rem 1rem;border-radius:50px;border:1px solid rgba(255,255,255,.1)}
+    .verdict-pill.green{background:rgba(45,122,79,.2);border-color:rgba(45,122,79,.3);color:#7fffb0}
+    .verdict-pill.orange{background:rgba(192,92,0,.2);border-color:rgba(192,92,0,.3);color:#FFB347}
+    .verdict-pill.blue{background:rgba(42,92,143,.2);border-color:rgba(42,92,143,.3);color:#90C8FF}
+
+    /* SCORE CARD */
+    .model-scorecard{
+      background:rgba(255,255,255,.05);
+      border:1px solid rgba(255,255,255,.1);
+      border-radius:var(--radius);
+      padding:2rem;
+      min-width:240px;
+      text-align:center;
+      backdrop-filter:blur(10px);
+      margin-bottom:3rem;
+      flex-shrink:0;
+    }
+    .score-main{font-size:4rem;font-weight:800;color:var(--claude);font-family:'IBM Plex Mono',monospace;line-height:1;display:block}
+    .score-label{font-size:.78rem;color:rgba(255,255,255,.5);text-transform:uppercase;letter-spacing:1px;margin-top:.25rem;margin-bottom:1.5rem;font-family:'IBM Plex Mono',monospace}
+    .score-bars{display:flex;flex-direction:column;gap:.75rem;text-align:right}
+    .score-bar-item{display:flex;flex-direction:column;gap:.3rem}
+    .score-bar-label{font-size:.75rem;color:rgba(255,255,255,.6);display:flex;justify-content:space-between}
+    .score-bar-track{height:4px;background:rgba(255,255,255,.1);border-radius:2px;overflow:hidden}
+    .score-bar-fill{height:100%;border-radius:2px;transition:width 1.2s cubic-bezier(.4,0,.2,1)}
+
+    /* TABS NAV */
+    .tabs-nav{background:var(--text-primary);border-top:1px solid rgba(255,255,255,.08);position:sticky;top:64px;z-index:90}
+    .tabs-nav-inner{max-width:1200px;margin:0 auto;display:flex;overflow-x:auto;scrollbar-width:none;padding:0 2rem}
+    .tabs-nav-inner::-webkit-scrollbar{display:none}
+    .tab-btn{flex-shrink:0;padding:1rem 1.25rem;font-size:.875rem;font-weight:600;color:rgba(255,255,255,.5);background:none;border:none;cursor:pointer;font-family:'Tajawal',sans-serif;border-bottom:2px solid transparent;transition:var(--transition);white-space:nowrap}
+    .tab-btn:hover{color:rgba(255,255,255,.85)}
+    .tab-btn.active{color:var(--claude);border-bottom-color:var(--claude)}
+    .tab-btn:focus-visible{outline:2px solid var(--claude);outline-offset:-2px}
+
+    /* MAIN LAYOUT */
+    .model-layout{max-width:1200px;margin:0 auto;padding:3rem 2rem;display:grid;grid-template-columns:1fr 300px;gap:3rem;align-items:start}
+
+    /* CONTENT SECTIONS */
+    .model-content{}
+    .content-section{margin-bottom:4rem;opacity:0;transform:translateY(16px);transition:opacity .6s ease,transform .6s ease}
+    .content-section.visible{opacity:1;transform:translateY(0)}
+
+    .section-label{font-family:'IBM Plex Mono',monospace;font-size:.75rem;font-weight:700;color:var(--claude);letter-spacing:2px;text-transform:uppercase;margin-bottom:.75rem;display:block}
+    .content-section h2{font-size:clamp(1.4rem,2.5vw,1.9rem);font-weight:800;letter-spacing:-.5px;margin-bottom:1.25rem;color:var(--text-primary)}
+    .content-section p{font-size:1rem;color:#3A3835;line-height:1.9;margin-bottom:1.1rem}
+
+    /* STRENGTHS / WEAKNESSES */
+    .sw-grid{display:grid;grid-template-columns:1fr 1fr;gap:1.5rem;margin-top:1.5rem}
+    .sw-card{border-radius:var(--radius);padding:1.75rem;border:1px solid var(--border)}
+    .sw-card.strengths{background:var(--success-light);border-color:rgba(45,122,79,.2)}
+    .sw-card.weaknesses{background:var(--warning-light);border-color:rgba(192,92,0,.2)}
+    .sw-card h3{font-size:.9rem;font-weight:800;margin-bottom:1rem;display:flex;align-items:center;gap:.5rem;text-transform:uppercase;letter-spacing:.5px;font-family:'IBM Plex Mono',monospace}
+    .sw-card.strengths h3{color:var(--success)}
+    .sw-card.weaknesses h3{color:var(--warning)}
+    .sw-list{list-style:none;display:flex;flex-direction:column;gap:.75rem}
+    .sw-list li{font-size:.9rem;color:#3A3835;line-height:1.6;display:flex;gap:.625rem;align-items:flex-start}
+    .sw-list li::before{flex-shrink:0;margin-top:.2rem;font-size:.9rem}
+    .strengths .sw-list li::before{content:'✓';color:var(--success);font-weight:700}
+    .weaknesses .sw-list li::before{content:'○';color:var(--warning);font-weight:700}
+
+    /* RATINGS GRID */
+    .ratings-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1rem;margin-top:1.5rem}
+    .rating-card{background:white;border:1px solid var(--border);border-radius:var(--radius-sm);padding:1.25rem;transition:var(--transition)}
+    .rating-card:hover{border-color:var(--claude);box-shadow:var(--shadow-sm)}
+    .rating-label{font-size:.8rem;font-weight:700;color:var(--text-secondary);margin-bottom:.625rem;display:flex;align-items:center;gap:.375rem}
+    .rating-stars{display:flex;gap:.2rem;margin-bottom:.375rem}
+    .star{font-size:1rem}
+    .star.filled{color:var(--gold)}
+    .star.empty{color:var(--light-gray)}
+    .rating-desc{font-size:.78rem;color:var(--text-secondary);line-height:1.5}
+
+    /* VERSIONS TABLE */
+    .versions-table{width:100%;border-collapse:collapse;margin-top:1.5rem;font-size:.875rem}
+    .versions-table th{background:var(--text-primary);color:white;padding:.875rem 1rem;text-align:right;font-weight:700}
+    .versions-table td{padding:.875rem 1rem;border-bottom:1px solid var(--border);vertical-align:top}
+    .versions-table tr:hover td{background:var(--claude-light)}
+    .versions-table tr:last-child td{border-bottom:none}
+    .version-name{font-weight:700;color:var(--claude);font-family:'IBM Plex Mono',monospace;font-size:.9rem}
+    .version-tag{display:inline-block;padding:.2rem .6rem;border-radius:20px;font-size:.72rem;font-weight:700;margin-right:.375rem}
+    .tag-latest{background:var(--success-light);color:var(--success)}
+    .tag-flagship{background:var(--claude-light);color:var(--claude-dark)}
+    .tag-fast{background:var(--accent-light);color:var(--accent)}
+
+    /* COMPARISON MINI */
+    .compare-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:1rem;margin-top:1.5rem}
+    .compare-card{background:white;border:1px solid var(--border);border-radius:var(--radius-sm);padding:1.25rem;text-align:center;transition:var(--transition)}
+    .compare-card:hover{border-color:var(--accent);box-shadow:var(--shadow-sm)}
+    .compare-card.is-claude{border-color:var(--claude);background:var(--claude-light)}
+    .compare-model-icon{width:40px;height:40px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1rem;font-weight:800;margin:0 auto .75rem}
+    .compare-model-name{font-size:.875rem;font-weight:700;margin-bottom:.875rem}
+    .compare-row{display:flex;justify-content:space-between;align-items:center;font-size:.78rem;padding:.3rem 0;border-bottom:1px solid var(--border)}
+    .compare-row:last-child{border:none}
+    .compare-row-label{color:var(--text-secondary)}
+    .compare-row-val{font-weight:700;font-size:.8rem}
+    .val-excellent{color:var(--success)}
+    .val-good{color:var(--accent)}
+    .val-medium{color:var(--warning)}
+    .val-low{color:var(--error)}
+
+    /* USE CASES */
+    .usecases-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem;margin-top:1.5rem}
+    .usecase-card{background:white;border:1px solid var(--border);border-radius:var(--radius-sm);padding:1.5rem;transition:var(--transition)}
+    .usecase-card:hover{border-color:var(--claude);transform:translateY(-2px);box-shadow:var(--shadow-md)}
+    .usecase-icon{font-size:1.75rem;margin-bottom:.75rem;display:block}
+    .usecase-title{font-size:.9rem;font-weight:700;margin-bottom:.375rem}
+    .usecase-desc{font-size:.8rem;color:var(--text-secondary);line-height:1.55}
+    .usecase-rating{margin-top:.75rem;display:flex;align-items:center;gap:.375rem;font-size:.78rem;font-weight:700}
+    .usecase-rating.excellent{color:var(--success)}
+    .usecase-rating.good{color:var(--accent)}
+
+    /* ARABIC SECTION */
+    .arabic-test{background:var(--off-white);border-radius:var(--radius);padding:2rem;margin-top:1.5rem;border:1px solid var(--border)}
+    .arabic-test h3{font-size:1rem;font-weight:700;margin-bottom:1rem;color:var(--text-primary)}
+    .test-example{background:white;border-radius:var(--radius-sm);padding:1.25rem;margin-bottom:1rem;border:1px solid var(--border)}
+    .test-prompt{font-size:.82rem;font-family:'IBM Plex Mono',monospace;color:var(--text-secondary);margin-bottom:.625rem;padding:.5rem .75rem;background:var(--off-white);border-radius:var(--radius-sm)}
+    .test-result{font-size:.875rem;color:#3A3835;line-height:1.7}
+    .test-verdict{display:inline-flex;align-items:center;gap:.375rem;font-size:.78rem;font-weight:700;margin-top:.5rem;padding:.3rem .75rem;border-radius:20px}
+    .test-verdict.pass{background:var(--success-light);color:var(--success)}
+    .test-verdict.partial{background:var(--warning-light);color:var(--warning)}
+
+    /* PRICING */
+    .pricing-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1rem;margin-top:1.5rem}
+    .pricing-card{border:1px solid var(--border);border-radius:var(--radius-sm);padding:1.5rem;background:white;transition:var(--transition)}
+    .pricing-card.featured{border-color:var(--claude);background:var(--claude-light)}
+    .pricing-card:hover{box-shadow:var(--shadow-md)}
+    .pricing-tier{font-size:.78rem;font-weight:700;text-transform:uppercase;letter-spacing:1px;color:var(--text-secondary);margin-bottom:.5rem;font-family:'IBM Plex Mono',monospace}
+    .pricing-card.featured .pricing-tier{color:var(--claude-dark)}
+    .pricing-price{font-size:1.75rem;font-weight:800;color:var(--text-primary);margin-bottom:.25rem;font-family:'IBM Plex Mono',monospace;line-height:1}
+    .pricing-period{font-size:.8rem;color:var(--text-secondary)}
+    .pricing-features{list-style:none;margin-top:1rem;display:flex;flex-direction:column;gap:.5rem}
+    .pricing-features li{font-size:.82rem;color:#3A3835;display:flex;gap:.5rem}
+    .pricing-features li::before{content:'✓';color:var(--success);font-weight:700;flex-shrink:0}
+
+    /* VERDICT BOX */
+    .verdict-box{background:var(--text-primary);color:white;border-radius:var(--radius);padding:2.5rem;margin-top:1.5rem}
+    .verdict-box h3{font-size:1.25rem;font-weight:800;margin-bottom:1rem;color:var(--claude)}
+    .verdict-box p{font-size:.95rem;color:rgba(255,255,255,.75);line-height:1.8;margin-bottom:1rem}
+    .verdict-box p:last-child{margin:0}
+    .verdict-highlight{color:white;font-weight:700}
+
+    /* SIDEBAR */
+    .model-sidebar{position:sticky;top:130px;display:flex;flex-direction:column;gap:1.5rem}
+
+    .sidebar-card{background:white;border:1px solid var(--border);border-radius:var(--radius);padding:1.5rem}
+    .sidebar-card h3{font-size:.875rem;font-weight:800;text-transform:uppercase;letter-spacing:1px;color:var(--text-secondary);margin-bottom:1rem;font-family:'IBM Plex Mono',monospace}
+
+    .quick-facts{display:flex;flex-direction:column;gap:.75rem}
+    .fact-row{display:flex;justify-content:space-between;align-items:flex-start;gap:.5rem;font-size:.85rem;padding-bottom:.75rem;border-bottom:1px solid var(--border)}
+    .fact-row:last-child{border:none;padding:0}
+    .fact-label{color:var(--text-secondary);font-weight:600;flex-shrink:0}
+    .fact-value{font-weight:700;text-align:left;color:var(--text-primary)}
+    .fact-value.green{color:var(--success)}
+    .fact-value.blue{color:var(--accent)}
+    .fact-value.orange{color:var(--warning)}
+
+    .sidebar-toc h3{font-size:.875rem;font-weight:800;text-transform:uppercase;letter-spacing:1px;color:var(--text-secondary);margin-bottom:1rem;font-family:'IBM Plex Mono',monospace}
+    .toc-list{list-style:none}
+    .toc-list li{margin-bottom:.375rem}
+    .toc-list a{font-size:.85rem;color:var(--text-secondary);text-decoration:none;transition:var(--transition);display:block;padding:.3rem .75rem;border-right:2px solid transparent;border-radius:0 var(--radius-sm) var(--radius-sm) 0}
+    .toc-list a:hover,.toc-list a.active{color:var(--claude);border-right-color:var(--claude);background:var(--claude-light)}
+
+    .sidebar-compare a{display:flex;align-items:center;justify-content:space-between;padding:.75rem;border-radius:var(--radius-sm);font-size:.875rem;font-weight:600;text-decoration:none;color:var(--text-primary);border:1px solid var(--border);transition:var(--transition);margin-bottom:.5rem}
+    .sidebar-compare a:hover{border-color:var(--accent);background:var(--accent-light);color:var(--accent)}
+    .sidebar-compare a:last-child{margin:0}
+
+    .sidebar-cta{background:var(--text-primary);color:white;border-radius:var(--radius);padding:1.5rem;text-align:center}
+    .sidebar-cta h3{font-size:1rem;font-weight:800;margin-bottom:.5rem;color:white}
+    .sidebar-cta p{font-size:.82rem;color:rgba(255,255,255,.6);margin-bottom:1rem;line-height:1.5}
+    .sidebar-cta a{display:block;background:var(--gold);color:white;padding:.75rem;border-radius:var(--radius-sm);font-size:.875rem;font-weight:700;text-decoration:none;transition:var(--transition)}
+    .sidebar-cta a:hover{background:#9A7209}
+
+    /* RELATED MODELS */
+    .related-models{background:var(--off-white);border-top:1px solid var(--border);padding:4rem 2rem}
+    .related-inner{max-width:1200px;margin:0 auto}
+    .related-inner h2{font-size:1.25rem;font-weight:800;margin-bottom:1.5rem;letter-spacing:-.5px}
+    .related-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem}
+    .related-card{background:white;border:1px solid var(--border);border-radius:var(--radius);padding:1.5rem;text-decoration:none;color:inherit;transition:var(--transition);display:flex;align-items:center;gap:1rem}
+    .related-card:hover{border-color:var(--accent);transform:translateY(-2px);box-shadow:var(--shadow-md)}
+    .related-icon{width:44px;height:44px;border-radius:10px;display:flex;align-items:center;justify-content:center;font-size:1.1rem;font-weight:800;flex-shrink:0}
+    .related-info{}
+    .related-name{font-size:.95rem;font-weight:700;margin-bottom:.2rem}
+    .related-company{font-size:.78rem;color:var(--text-secondary)}
+
+    footer{background:var(--off-white);border-top:1px solid var(--border);padding:2rem}
+    .footer-bottom{max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem}
+    .footer-copy{font-size:.8rem;color:var(--text-secondary)}
+    .footer-links{display:flex;gap:1.5rem}
+    .footer-links a{font-size:.8rem;color:var(--text-secondary);text-decoration:none;transition:var(--transition)}
+    .footer-links a:hover{color:var(--accent)}
+
+    @media(max-width:1000px){.model-layout{grid-template-columns:1fr}.model-sidebar{position:static}}
+    @media(max-width:700px){
+      .nav-links{display:none}.hamburger{display:flex}
+      .model-hero{padding:3rem 1.25rem 0}
+      .model-hero-grid{grid-template-columns:1fr}
+      .model-scorecard{display:none}
+      .sw-grid{grid-template-columns:1fr}
+      .model-layout{padding:2.5rem 1.25rem}
+      .related-models{padding:3rem 1.25rem}
+      .footer-bottom{flex-direction:column;align-items:flex-start}
+    }
+  </style>
+</head>
+<body>
+
+<div class="reading-progress" role="progressbar" aria-label="تقدم القراءة" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+  <div class="reading-progress-bar" id="progress-bar"></div>
+</div>
+
+<a href="#main-content" class="skip-link">انتقل إلى المحتوى الرئيسي</a>
+
+<nav role="navigation" aria-label="القائمة الرئيسية">
+  <div class="nav-inner">
+    <a href="/ar/" class="nav-logo">ذكاء<span class="ac">.</span><span class="dot" aria-hidden="true"></span></a>
+    <ul class="nav-links" id="nav-links" role="list">
+      <li><a href="../index.html#comparison">المقارنة</a></li>
+      <li><a href="../index.html#articles">المقالات</a></li>
+      <li><a href="../index.html#glossary">المصطلحات</a></li>
+      <li><a href="../manifesto.html">البيان</a></li>
+      <li><a href="../about.html">عن الموقع</a></li>
+      <li><a href="../contact.html" class="nav-cta">تواصل</a></li>
+    </ul>
+    <div class="nav-right">
+      <div class="lang-switcher" role="group" aria-label="اختيار اللغة">
+        <a href="/ar/models/claude.html" class="lang-btn active" hreflang="ar">AR</a>
+        <a href="/en/models/claude.html" class="lang-btn" hreflang="en">EN</a>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="فتح القائمة" aria-expanded="false" aria-controls="nav-links">
+        <span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<main id="main-content">
+
+  <!-- HERO -->
+  <header class="model-hero" role="banner">
+    <div class="model-hero-inner">
+      <nav class="breadcrumb" aria-label="مسار التنقل">
+        <a href="../index.html">الرئيسية</a>
+        <span>←</span>
+        <a href="index.html">النماذج</a>
+        <span>←</span>
+        <span aria-current="page">Claude</span>
+      </nav>
+
+      <div class="model-hero-grid">
+        <div class="model-identity">
+          <div class="model-badge">
+            <span class="model-badge-dot" aria-hidden="true"></span>
+            محدّث مارس 2026
+          </div>
+          <h1>
+            <span class="model-name-main">Claude</span><br>
+            <span style="font-size:.55em;color:rgba(255,255,255,.6);letter-spacing:-1px">من Anthropic</span>
+          </h1>
+          <p class="model-by">claude.ai · api.anthropic.com</p>
+          <p class="model-tagline">نموذج ذكاء اصطناعي مُصمَّم بمبدأ "الأمان أولاً" — يجمع بين القدرة التحليلية العالية والكتابة الإبداعية مع التزام استثنائي بالدقة والصدق</p>
+          <div class="model-quick-verdict" role="list" aria-label="حكم سريع">
+            <div class="verdict-pill green" role="listitem">✓ الأفضل للكتابة والتحليل</div>
+            <div class="verdict-pill orange" role="listitem">○ دعم عربي جيد جداً</div>
+            <div class="verdict-pill blue" role="listitem">⊕ نافذة سياق 200K</div>
+          </div>
+        </div>
+
+        <div class="model-scorecard" aria-label="تقييم النموذج">
+          <span class="score-main">8.7</span>
+          <span class="score-label">تقييم ذكاء / 10</span>
+          <div class="score-bars">
+            <div class="score-bar-item">
+              <span class="score-bar-label"><span>الكتابة الإبداعية</span><span>9.5</span></span>
+              <div class="score-bar-track"><div class="score-bar-fill" style="width:95%;background:var(--claude)"></div></div>
+            </div>
+            <div class="score-bar-item">
+              <span class="score-bar-label"><span>التحليل والمنطق</span><span>9.2</span></span>
+              <div class="score-bar-track"><div class="score-bar-fill" style="width:92%;background:var(--claude)"></div></div>
+            </div>
+            <div class="score-bar-item">
+              <span class="score-bar-label"><span>البرمجة</span><span>9.0</span></span>
+              <div class="score-bar-track"><div class="score-bar-fill" style="width:90%;background:var(--claude)"></div></div>
+            </div>
+            <div class="score-bar-item">
+              <span class="score-bar-label"><span>دعم العربية</span><span>7.8</span></span>
+              <div class="score-bar-track"><div class="score-bar-fill" style="width:78%;background:#FFB347"></div></div>
+            </div>
+            <div class="score-bar-item">
+              <span class="score-bar-label"><span>الخصوصية</span><span>9.0</span></span>
+              <div class="score-bar-track"><div class="score-bar-fill" style="width:90%;background:#7fffb0"></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- TABS -->
+  <div class="tabs-nav" role="tablist" aria-label="أقسام الصفحة">
+    <div class="tabs-nav-inner">
+      <button class="tab-btn active" role="tab" onclick="scrollToSection('overview')">نظرة عامة</button>
+      <button class="tab-btn" role="tab" onclick="scrollToSection('strengths')">القوة والضعف</button>
+      <button class="tab-btn" role="tab" onclick="scrollToSection('arabic')">دعم العربية</button>
+      <button class="tab-btn" role="tab" onclick="scrollToSection('versions')">الإصدارات</button>
+      <button class="tab-btn" role="tab" onclick="scrollToSection('usecases')">حالات الاستخدام</button>
+      <button class="tab-btn" role="tab" onclick="scrollToSection('compare')">مقارنة</button>
+      <button class="tab-btn" role="tab" onclick="scrollToSection('pricing')">الأسعار</button>
+      <button class="tab-btn" role="tab" onclick="scrollToSection('verdict')">الحكم النهائي</button>
+    </div>
+  </div>
+
+  <div class="model-layout">
+
+    <!-- MAIN CONTENT -->
+    <div class="model-content">
+
+      <!-- OVERVIEW -->
+      <section class="content-section" id="overview" aria-labelledby="overview-title">
+        <span class="section-label">نظرة عامة</span>
+        <h2 id="overview-title">ما هو Claude؟</h2>
+        <p>Claude هو نموذج الذكاء الاصطناعي الذي طوّرته شركة Anthropic الأمريكية، المؤسسة عام 2021 من قِبَل دارا أموداي وعدد من الباحثين السابقين في OpenAI. يتميز Claude بأنه مبني على فلسفة "الذكاء الاصطناعي الدستوري" — نهج يُدرّب فيه النموذج على مجموعة من المبادئ الأخلاقية لتوجيه سلوكه.</p>
+        <p>على خلاف كثير من المنافسين الذين يركزون على القدرات التقنية البحتة، تضع Anthropic الأمان والموثوقية في صميم تطوير Claude. هذا لا يعني أنه أقل قدرةً — بل على العكس، فإن نهج التدريب المتأني ينتج نموذجاً أكثر دقة وأقل إنتاجاً للمعلومات المضللة.</p>
+        <p>في عام 2026، أصبح Claude أحد أقوى النماذج اللغوية المتاحة للعموم، مع تفوق واضح في مجالات الكتابة الأكاديمية، والتحليل القانوني والمالي، وكتابة الكود عالي الجودة.</p>
+
+        <div class="ratings-grid" aria-label="تقييمات تفصيلية">
+          <div class="rating-card">
+            <div class="rating-label">✍️ الكتابة الإبداعية</div>
+            <div class="rating-stars" aria-label="5 من 5 نجوم">
+              <span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span>
+            </div>
+            <div class="rating-desc">استثنائي في الكتابة الإبداعية والأكاديمية، يحافظ على أسلوب متسق</div>
+          </div>
+          <div class="rating-card">
+            <div class="rating-label">💻 البرمجة</div>
+            <div class="rating-stars" aria-label="4.5 من 5 نجوم">
+              <span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star" style="color:var(--gold);opacity:.5">★</span>
+            </div>
+            <div class="rating-desc">ممتاز في كتابة الكود والتوثيق، قوي في شرح الأخطاء</div>
+          </div>
+          <div class="rating-card">
+            <div class="rating-label">🌐 دعم العربية</div>
+            <div class="rating-stars" aria-label="4 من 5 نجوم">
+              <span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star empty">★</span>
+            </div>
+            <div class="rating-desc">جيد جداً في العربية الفصحى، أداء أضعف في العاميات</div>
+          </div>
+          <div class="rating-card">
+            <div class="rating-label">🔒 الخصوصية</div>
+            <div class="rating-stars" aria-label="4.5 من 5 نجوم">
+              <span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star" style="color:var(--gold);opacity:.5">★</span>
+            </div>
+            <div class="rating-desc">سياسة بيانات واضحة، لا تستخدم المحادثات للتدريب بشكل افتراضي</div>
+          </div>
+          <div class="rating-card">
+            <div class="rating-label">🧠 التحليل المنطقي</div>
+            <div class="rating-stars" aria-label="5 من 5 نجوم">
+              <span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span>
+            </div>
+            <div class="rating-desc">تحليل معمّق واستدلال متعدد الخطوات بدقة عالية</div>
+          </div>
+          <div class="rating-card">
+            <div class="rating-label">💰 القيمة مقابل السعر</div>
+            <div class="rating-stars" aria-label="4 من 5 نجوم">
+              <span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star empty">★</span>
+            </div>
+            <div class="rating-desc">النسخة المجانية قوية، الباقة المدفوعة تستحق تكلفتها</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- STRENGTHS / WEAKNESSES -->
+      <section class="content-section" id="strengths" aria-labelledby="sw-title">
+        <span class="section-label">التقييم</span>
+        <h2 id="sw-title">نقاط القوة والضعف</h2>
+        <p>تقييم موضوعي مبني على اختبارات فعلية وتجارب متعددة — لا إعلانات ولا تحيّز.</p>
+        <div class="sw-grid">
+          <div class="sw-card strengths" aria-label="نقاط القوة">
+            <h3>✓ نقاط القوة</h3>
+            <ul class="sw-list">
+              <li>الأفضل عالمياً في الكتابة الأدبية والأكاديمية بأسلوب سلس ومتسق</li>
+              <li>نافذة سياق ضخمة 200K رمز — يمكنه معالجة مستندات كاملة</li>
+              <li>صادق بشكل استثنائي — يعترف بعدم معرفته بدل اختلاق معلومات</li>
+              <li>تحليل قانوني ومالي عميق مع دقة عالية في الاستدلال</li>
+              <li>سياسة خصوصية من الأوضح في السوق</li>
+              <li>الأقل "هلوسةً" بين النماذج الكبرى وفق معظم المعايير المستقلة</li>
+              <li>واجهة مستخدم نظيفة واحترافية</li>
+            </ul>
+          </div>
+          <div class="sw-card weaknesses" aria-label="نقاط الضعف">
+            <h3>○ نقاط الضعف</h3>
+            <ul class="sw-list">
+              <li>البحث على الويب متاح فقط في بعض الخطط والمناطق</li>
+              <li>دعم العربية أقل من ChatGPT وGemini في العاميات والمحادثة اليومية</li>
+              <li>أحياناً يرفض طلبات مشروعة بسبب حساسية مفرطة في معايير الأمان</li>
+              <li>تحديث المعلومات محدود بتاريخ قطع التدريب</li>
+              <li>لا يدعم توليد الصور (مقارنةً بـ ChatGPT وGemini)</li>
+              <li>السعر المدفوع أعلى نسبياً من بعض المنافسين</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- ARABIC SUPPORT -->
+      <section class="content-section" id="arabic" aria-labelledby="arabic-title">
+        <span class="section-label">اللغة العربية</span>
+        <h2 id="arabic-title">كيف يؤدي Claude مع العربية؟</h2>
+        <p>سؤال جوهري لأي مستخدم عربي. الإجابة الصادقة: Claude <strong>جيد جداً في العربية الفصحى</strong>، لكنه ليس الأفضل مقارنةً بـ ChatGPT وGemini في بعض السياقات.</p>
+
+        <div class="arabic-test" aria-label="نتائج اختبارات العربية">
+          <h3>نتائج اختباراتنا الفعلية</h3>
+
+          <div class="test-example">
+            <div class="test-prompt">الاختبار: "اكتب مقالاً أكاديمياً عن تأثير الذكاء الاصطناعي على سوق العمل العربي"</div>
+            <div class="test-result">أنتج Claude مقالاً متماسكاً بفصحى سليمة مع بنية منطقية واضحة وحجج معمّقة. الأسلوب أكاديمي حقيقي، لا مجرد نقاط مبعثرة.</div>
+            <span class="test-verdict pass">✓ ممتاز</span>
+          </div>
+
+          <div class="test-example">
+            <div class="test-prompt">الاختبار: "اشرح لي Transformer بالمغربية الدارجة"</div>
+            <div class="test-result">أجاب بالفصحى مع إضافة بعض المفردات العامية — لم يُتقن الدارجة الحقيقية. المحتوى صحيح لكن اللهجة مصطنعة.</div>
+            <span class="test-verdict partial">◑ متوسط</span>
+          </div>
+
+          <div class="test-example">
+            <div class="test-prompt">الاختبار: "ترجم هذا العقد القانوني من الفرنسية للعربية"</div>
+            <div class="test-result">ترجمة قانونية دقيقة جداً مع الحفاظ على المصطلحات التقنية الصحيحة — أحد أفضل الأداءات في هذا المجال تحديداً.</div>
+            <span class="test-verdict pass">✓ ممتاز</span>
+          </div>
+        </div>
+
+        <p style="margin-top:1.25rem"><strong>الخلاصة:</strong> إذا كنت تعمل في الكتابة الأكاديمية أو المهنية أو الترجمة القانونية — Claude هو خيارك الأول. أما للمحادثة اليومية بالعامية، فـ ChatGPT أكثر مرونة.</p>
+      </section>
+
+      <!-- VERSIONS -->
+      <section class="content-section" id="versions" aria-labelledby="versions-title">
+        <span class="section-label">الإصدارات</span>
+        <h2 id="versions-title">تاريخ التطور وإصدارات Claude</h2>
+        <p>منذ إطلاق الإصدار الأول عام 2023، تطور Claude بشكل ملحوظ في كل جيل — مع تحسين مستمر في الجودة والسرعة وحجم نافذة السياق.</p>
+
+        <div style="overflow-x:auto;border-radius:var(--radius);box-shadow:var(--shadow-md)">
+          <table class="versions-table" aria-label="جدول إصدارات Claude">
+            <thead>
+              <tr>
+                <th scope="col">الإصدار</th>
+                <th scope="col">تاريخ الإطلاق</th>
+                <th scope="col">أبرز المميزات</th>
+                <th scope="col">نافذة السياق</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><span class="version-name">Claude 4 Opus</span><br><span class="version-tag tag-flagship">الأقوى</span></td>
+                <td>2025</td>
+                <td>أعلى ذكاء في العائلة، مناسب للمهام المعقدة</td>
+                <td>200K</td>
+              </tr>
+              <tr>
+                <td><span class="version-name">Claude 4 Sonnet</span><br><span class="version-tag tag-latest">الأحدث</span><span class="version-tag tag-fast">الأسرع</span></td>
+                <td>2026</td>
+                <td>توازن مثالي بين الذكاء والسرعة — الأكثر استخداماً</td>
+                <td>200K</td>
+              </tr>
+              <tr>
+                <td><span class="version-name">Claude 4 Haiku</span></td>
+                <td>2025</td>
+                <td>الأسرع والأرخص — مثالي للتطبيقات عالية الحجم</td>
+                <td>200K</td>
+              </tr>
+              <tr>
+                <td><span class="version-name">Claude 3.5 Sonnet</span></td>
+                <td>2024</td>
+                <td>تحسن كبير في البرمجة والتحليل المرئي</td>
+                <td>200K</td>
+              </tr>
+              <tr>
+                <td><span class="version-name">Claude 3 Opus</span></td>
+                <td>2024</td>
+                <td>أول نموذج يتفوق على GPT-4 في معايير عدة</td>
+                <td>200K</td>
+              </tr>
+              <tr>
+                <td><span class="version-name">Claude 1 / 2</span></td>
+                <td>2023</td>
+                <td>الجيل التأسيسي — وضع أساس فلسفة الأمان الدستوري</td>
+                <td>100K</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- USE CASES -->
+      <section class="content-section" id="usecases" aria-labelledby="usecases-title">
+        <span class="section-label">حالات الاستخدام</span>
+        <h2 id="usecases-title">متى تختار Claude؟</h2>
+        <p>Claude ليس النموذج الأفضل في كل شيء — لكنه الأفضل في مجالات محددة جداً. إليك التقييم الصادق:</p>
+
+        <div class="usecases-grid">
+          <div class="usecase-card">
+            <span class="usecase-icon" aria-hidden="true">✍️</span>
+            <h3 class="usecase-title">الكتابة الأكاديمية</h3>
+            <p class="usecase-desc">مقالات، أبحاث، تقارير — Claude يكتب بأسلوب أكاديمي حقيقي بدون حشو أو تكرار</p>
+            <div class="usecase-rating excellent">★★★★★ استثنائي</div>
+          </div>
+          <div class="usecase-card">
+            <span class="usecase-icon" aria-hidden="true">⚖️</span>
+            <h3 class="usecase-title">التحليل القانوني</h3>
+            <p class="usecase-desc">مراجعة عقود، تحليل نصوص قانونية، استخراج البنود الرئيسية بدقة عالية</p>
+            <div class="usecase-rating excellent">★★★★★ استثنائي</div>
+          </div>
+          <div class="usecase-card">
+            <span class="usecase-icon" aria-hidden="true">💻</span>
+            <h3 class="usecase-title">البرمجة</h3>
+            <p class="usecase-desc">كتابة كود نظيف، مراجعة الكود، شرح الأخطاء — ممتاز في Python وJavaScript</p>
+            <div class="usecase-rating excellent">★★★★★ ممتاز</div>
+          </div>
+          <div class="usecase-card">
+            <span class="usecase-icon" aria-hidden="true">📊</span>
+            <h3 class="usecase-title">التحليل المالي</h3>
+            <p class="usecase-desc">تحليل التقارير المالية، فهم البيانات، استخراج الأنماط بدقة ومنطق سليم</p>
+            <div class="usecase-rating excellent">★★★★☆ ممتاز</div>
+          </div>
+          <div class="usecase-card">
+            <span class="usecase-icon" aria-hidden="true">🌐</span>
+            <h3 class="usecase-title">الترجمة المتخصصة</h3>
+            <p class="usecase-desc">ترجمة المستندات القانونية والتقنية مع الحفاظ على المصطلحات الدقيقة</p>
+            <div class="usecase-rating excellent">★★★★☆ ممتاز</div>
+          </div>
+          <div class="usecase-card">
+            <span class="usecase-icon" aria-hidden="true">💬</span>
+            <h3 class="usecase-title">المحادثة اليومية</h3>
+            <p class="usecase-desc">جيد لكن ليس الأفضل — للمحادثة العربية اليومية يُفضّل ChatGPT أو Gemini</p>
+            <div class="usecase-rating good">★★★☆☆ جيد</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- COMPARISON -->
+      <section class="content-section" id="compare" aria-labelledby="compare-title">
+        <span class="section-label">المقارنة</span>
+        <h2 id="compare-title">Claude مقابل المنافسين</h2>
+        <p>مقارنة سريعة بالمعايير الأكثر أهمية للمستخدم العربي:</p>
+
+        <div class="compare-grid">
+          <div class="compare-card is-claude" aria-label="Claude">
+            <div class="compare-model-icon" style="background:var(--claude-light);color:var(--claude-dark)">C</div>
+            <div class="compare-model-name">Claude</div>
+            <div class="compare-row"><span class="compare-row-label">الكتابة</span><span class="compare-row-val val-excellent">الأفضل</span></div>
+            <div class="compare-row"><span class="compare-row-label">العربية</span><span class="compare-row-val val-good">جيد جداً</span></div>
+            <div class="compare-row"><span class="compare-row-label">البرمجة</span><span class="compare-row-val val-excellent">ممتاز</span></div>
+            <div class="compare-row"><span class="compare-row-label">الصور</span><span class="compare-row-val val-good">تحليل فقط</span></div>
+            <div class="compare-row"><span class="compare-row-label">الخصوصية</span><span class="compare-row-val val-excellent">عالية</span></div>
+          </div>
+          <div class="compare-card" aria-label="ChatGPT">
+            <div class="compare-model-icon" style="background:#E8FFE8;color:#1A8C1A">G</div>
+            <div class="compare-model-name">ChatGPT</div>
+            <div class="compare-row"><span class="compare-row-label">الكتابة</span><span class="compare-row-val val-excellent">ممتاز</span></div>
+            <div class="compare-row"><span class="compare-row-label">العربية</span><span class="compare-row-val val-excellent">الأفضل</span></div>
+            <div class="compare-row"><span class="compare-row-label">البرمجة</span><span class="compare-row-val val-excellent">ممتاز</span></div>
+            <div class="compare-row"><span class="compare-row-label">الصور</span><span class="compare-row-val val-excellent">توليد+تحليل</span></div>
+            <div class="compare-row"><span class="compare-row-label">الخصوصية</span><span class="compare-row-val val-medium">متوسطة</span></div>
+          </div>
+          <div class="compare-card" aria-label="Gemini">
+            <div class="compare-model-icon" style="background:#FFF3E0;color:#E65C00">Ge</div>
+            <div class="compare-model-name">Gemini</div>
+            <div class="compare-row"><span class="compare-row-label">الكتابة</span><span class="compare-row-val val-good">جيد جداً</span></div>
+            <div class="compare-row"><span class="compare-row-label">العربية</span><span class="compare-row-val val-excellent">ممتاز</span></div>
+            <div class="compare-row"><span class="compare-row-label">البرمجة</span><span class="compare-row-val val-good">جيد جداً</span></div>
+            <div class="compare-row"><span class="compare-row-label">الصور</span><span class="compare-row-val val-excellent">توليد+تحليل</span></div>
+            <div class="compare-row"><span class="compare-row-label">الخصوصية</span><span class="compare-row-val val-medium">متوسطة</span></div>
+          </div>
+          <div class="compare-card" aria-label="DeepSeek">
+            <div class="compare-model-icon" style="background:#F0E8FF;color:#6600CC">D</div>
+            <div class="compare-model-name">DeepSeek</div>
+            <div class="compare-row"><span class="compare-row-label">الكتابة</span><span class="compare-row-val val-good">جيد</span></div>
+            <div class="compare-row"><span class="compare-row-label">العربية</span><span class="compare-row-val val-good">جيد</span></div>
+            <div class="compare-row"><span class="compare-row-label">البرمجة</span><span class="compare-row-val val-excellent">ممتاز</span></div>
+            <div class="compare-row"><span class="compare-row-label">الصور</span><span class="compare-row-val val-good">تحليل فقط</span></div>
+            <div class="compare-row"><span class="compare-row-label">الخصوصية</span><span class="compare-row-val val-low">محدودة</span></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PRICING -->
+      <section class="content-section" id="pricing" aria-labelledby="pricing-title">
+        <span class="section-label">الأسعار</span>
+        <h2 id="pricing-title">باقات Claude وأسعارها</h2>
+        <p>Claude متاح مجاناً بحدود يومية، مع باقات مدفوعة للاستخدام المكثف والمؤسسات.</p>
+
+        <div class="pricing-grid">
+          <div class="pricing-card">
+            <div class="pricing-tier">مجاني</div>
+            <div class="pricing-price">$0</div>
+            <div class="pricing-period">للأبد</div>
+            <ul class="pricing-features">
+              <li>Claude Sonnet مع حدود يومية</li>
+              <li>رفع الصور والملفات</li>
+              <li>المحادثات غير محدودة</li>
+              <li>حدود استخدام يومية</li>
+            </ul>
+          </div>
+          <div class="pricing-card featured">
+            <div class="pricing-tier">Pro</div>
+            <div class="pricing-price">$20</div>
+            <div class="pricing-period">شهرياً</div>
+            <ul class="pricing-features">
+              <li>وصول أولوي لـ Claude Opus وSonnet</li>
+              <li>5 ضعف حجم الاستخدام المجاني</li>
+              <li>Projects لتنظيم المحادثات</li>
+              <li>أولوية في أوقات الذروة</li>
+            </ul>
+          </div>
+          <div class="pricing-card">
+            <div class="pricing-tier">Team</div>
+            <div class="pricing-price">$25</div>
+            <div class="pricing-period">لكل مستخدم / شهر</div>
+            <ul class="pricing-features">
+              <li>كل مميزات Pro</li>
+              <li>لوحة تحكم للفريق</li>
+              <li>مشاركة المشاريع</li>
+              <li>حد أدنى 5 مستخدمين</li>
+            </ul>
+          </div>
+          <div class="pricing-card">
+            <div class="pricing-tier">API</div>
+            <div class="pricing-price">متغير</div>
+            <div class="pricing-period">حسب الاستخدام</div>
+            <ul class="pricing-features">
+              <li>Sonnet: $3 / مليون رمز مدخل</li>
+              <li>Opus: $15 / مليون رمز مدخل</li>
+              <li>Haiku: $0.25 / مليون رمز</li>
+              <li>للمطورين والتطبيقات</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- VERDICT -->
+      <section class="content-section" id="verdict" aria-labelledby="verdict-title">
+        <span class="section-label">الحكم النهائي</span>
+        <h2 id="verdict-title">هل تختار Claude؟</h2>
+
+        <div class="verdict-box">
+          <h3>حكم ذكاء: 8.7 / 10</h3>
+          <p>Claude هو <span class="verdict-highlight">الخيار الأول للكتابة الجادة والتحليل العميق</span>. إذا كنت كاتباً أو باحثاً أو محامياً أو محللاً مالياً — فإن Claude سيغير طريقة عملك.</p>
+          <p>أما إذا كنت تبحث عن نموذج يتحدث العربية العامية بطلاقة، أو يولد صوراً، أو يبحث على الويب في كل وقت — فإن ChatGPT أو Gemini ستخدمك أفضل.</p>
+          <p><span class="verdict-highlight">الحقيقة الجوهرية:</span> ليس هناك نموذج واحد "الأفضل" في كل شيء. Claude هو الأفضل في ما صُمّم من أجله — الكتابة المتأنية، التحليل العميق، والكود النظيف.</p>
+        </div>
+      </section>
+
+    </div><!-- end model-content -->
+
+    <!-- SIDEBAR -->
+    <aside class="model-sidebar" aria-label="معلومات جانبية">
+
+      <div class="sidebar-card">
+        <h3>معلومات سريعة</h3>
+        <div class="quick-facts">
+          <div class="fact-row"><span class="fact-label">الشركة</span><span class="fact-value">Anthropic</span></div>
+          <div class="fact-row"><span class="fact-label">التأسيس</span><span class="fact-value">2021</span></div>
+          <div class="fact-row"><span class="fact-label">أحدث إصدار</span><span class="fact-value blue">Claude Sonnet 4.6</span></div>
+          <div class="fact-row"><span class="fact-label">نافذة السياق</span><span class="fact-value green">200K رمز</span></div>
+          <div class="fact-row"><span class="fact-label">نسخة مجانية</span><span class="fact-value green">متاحة</span></div>
+          <div class="fact-row"><span class="fact-label">توليد الصور</span><span class="fact-value" style="color:var(--warning)">غير متاح</span></div>
+          <div class="fact-row"><span class="fact-label">البحث الويب</span><span class="fact-value blue">في بعض الخطط</span></div>
+          <div class="fact-row"><span class="fact-label">الخصوصية</span><span class="fact-value green">عالية</span></div>
+          <div class="fact-row"><span class="fact-label">تقييم ذكاء</span><span class="fact-value" style="color:var(--claude)">8.7 / 10</span></div>
+        </div>
+      </div>
+
+      <div class="sidebar-card sidebar-toc" id="toc-container">
+        <h3>محتويات الصفحة</h3>
+        <ul class="toc-list" id="toc-list" aria-label="قائمة الأقسام"></ul>
+      </div>
+
+      <div class="sidebar-card sidebar-compare">
+        <h3>قارن مع</h3>
+        <a href="chatgpt.html" aria-label="قارن Claude مع ChatGPT">
+          <span>ChatGPT</span>
+          <span style="font-size:.78rem;color:var(--text-secondary)">مقارنة ←</span>
+        </a>
+        <a href="gemini.html" aria-label="قارن Claude مع Gemini">
+          <span>Gemini</span>
+          <span style="font-size:.78rem;color:var(--text-secondary)">مقارنة ←</span>
+        </a>
+        <a href="deepseek.html" aria-label="قارن Claude مع DeepSeek">
+          <span>DeepSeek</span>
+          <span style="font-size:.78rem;color:var(--text-secondary)">مقارنة ←</span>
+        </a>
+      </div>
+
+      <div class="sidebar-cta">
+        <h3>النشرة الأسبوعية</h3>
+        <p>تحديثات Claude وكل نماذج AI مباشرة لبريدك</p>
+        <a href="../index.html#newsletter">اشترك مجاناً</a>
+      </div>
+
+    </aside>
+
+  </div><!-- end model-layout -->
+
+  <!-- RELATED MODELS -->
+  <section class="related-models" aria-labelledby="related-title">
+    <div class="related-inner">
+      <h2 id="related-title">نماذج أخرى</h2>
+      <div class="related-grid">
+        <a href="chatgpt.html" class="related-card">
+          <div class="related-icon" style="background:#E8FFE8;color:#1A8C1A">G</div>
+          <div class="related-info">
+            <div class="related-name">ChatGPT</div>
+            <div class="related-company">OpenAI</div>
+          </div>
+        </a>
+        <a href="gemini.html" class="related-card">
+          <div class="related-icon" style="background:#FFF3E0;color:#E65C00">Ge</div>
+          <div class="related-info">
+            <div class="related-name">Gemini</div>
+            <div class="related-company">Google</div>
+          </div>
+        </a>
+        <a href="deepseek.html" class="related-card">
+          <div class="related-icon" style="background:#F0E8FF;color:#6600CC">D</div>
+          <div class="related-info">
+            <div class="related-name">DeepSeek</div>
+            <div class="related-company">DeepSeek AI</div>
+          </div>
+        </a>
+        <a href="grok.html" class="related-card">
+          <div class="related-icon" style="background:#FFE8E8;color:#CC0000">Gr</div>
+          <div class="related-info">
+            <div class="related-name">Grok</div>
+            <div class="related-company">xAI</div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer role="contentinfo">
+  <div class="footer-bottom">
+    <p class="footer-copy" id="footer-copy"></p>
+    <div class="footer-links">
+      <a href="../index.html">الرئيسية</a>
+      <a href="../privacy.html">سياسة الخصوصية</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('footer-copy').textContent = `© ${new Date().getFullYear()} ذكاء — zakae.com`;
+
+  // Reading progress
+  window.addEventListener('scroll', () => {
+    const body = document.body;
+    const total = body.scrollHeight - window.innerHeight;
+    const progress = Math.min(100, (window.scrollY / total) * 100);
+    const bar = document.getElementById('progress-bar');
+    bar.style.width = progress + '%';
+    bar.parentElement.setAttribute('aria-valuenow', Math.round(progress));
+  });
+
+  // Auto TOC from sections
+  const sections = document.querySelectorAll('.content-section');
+  const tocList = document.getElementById('toc-list');
+  sections.forEach(s => {
+    const h2 = s.querySelector('h2');
+    if(!h2) return;
+    const li = document.createElement('li');
+    const a = document.createElement('a');
+    a.href = `#${s.id}`;
+    a.textContent = h2.textContent;
+    li.appendChild(a);
+    tocList.appendChild(li);
+  });
+
+  // Scroll reveal
+  const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach(el => { if(el.isIntersecting){el.target.classList.add('visible');revealObserver.unobserve(el.target)} });
+  }, {threshold:.06, rootMargin:'0px 0px -40px 0px'});
+  sections.forEach(s => revealObserver.observe(s));
+
+  // Active TOC + active tab on scroll
+  const tocObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if(entry.isIntersecting){
+        tocList.querySelectorAll('a').forEach(a => a.classList.remove('active'));
+        const active = tocList.querySelector(`a[href="#${entry.target.id}"]`);
+        if(active) active.classList.add('active');
+      }
+    });
+  }, {threshold:.3, rootMargin:'-20% 0px -60% 0px'});
+  sections.forEach(s => tocObserver.observe(s));
+
+  // Scroll to section on tab click
+  function scrollToSection(id) {
+    const el = document.getElementById(id);
+    if(el) el.scrollIntoView({behavior:'smooth', block:'start'});
+  }
+
+  // Animate score bars on load
+  window.addEventListener('load', () => {
+    setTimeout(() => {
+      document.querySelectorAll('.score-bar-fill').forEach(bar => {
+        const width = bar.style.width;
+        bar.style.width = '0%';
+        setTimeout(() => bar.style.width = width, 100);
+      });
+    }, 300);
+  });
+
+  // Mobile nav
+  const hamburger = document.getElementById('hamburger');
+  const navLinks = document.getElementById('nav-links');
+  function closeNav(){navLinks.classList.remove('nav-open');hamburger.classList.remove('is-open');hamburger.setAttribute('aria-expanded','false')}
+  hamburger.addEventListener('click',()=>{const isOpen=navLinks.classList.contains('nav-open');if(isOpen){closeNav()}else{navLinks.classList.add('nav-open');hamburger.classList.add('is-open');hamburger.setAttribute('aria-expanded','true')}});
+  navLinks.querySelectorAll('a').forEach(l=>l.addEventListener('click',closeNav));
+  document.addEventListener('click',e=>{if(!hamburger.contains(e.target)&&!navLinks.contains(e.target))closeNav()});
+  window.addEventListener('resize',()=>{if(window.innerWidth>700)closeNav()});
+</script>
+</body>
+</html>

@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title><!-- ARTICLE_TITLE --> | ذكاء — zakae.com</title>
+  <meta name="description" content="<!-- ARTICLE_EXCERPT -->">
+  <link rel="canonical" href="https://zakae.com/ar/articles/<!-- ARTICLE_SLUG -->.html">
+  <meta property="og:title" content="<!-- ARTICLE_TITLE --> | ذكاء">
+  <meta property="og:description" content="<!-- ARTICLE_EXCERPT -->">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://zakae.com/ar/articles/<!-- ARTICLE_SLUG -->.html">
+  <meta property="article:published_time" content="<!-- ARTICLE_DATE_ISO -->">
+  <meta name="twitter:card" content="summary_large_image">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "<!-- ARTICLE_TITLE -->",
+    "description": "<!-- ARTICLE_EXCERPT -->",
+    "datePublished": "<!-- ARTICLE_DATE_ISO -->",
+    "dateModified": "<!-- ARTICLE_DATE_ISO -->",
+    "publisher": {"@type": "Organization", "name": "ذكاء", "url": "https://zakae.com"},
+    "inLanguage": "ar"
+  }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    :root{--white:#FAFAF8;--off-white:#F2F0EB;--light-gray:#E8E5DE;--text-secondary:#7A7570;--text-primary:#1A1916;--accent:#2A5C8F;--accent-light:#EBF2FA;--accent-hover:#1E4470;--gold:#B8860B;--gold-light:#FDF8EC;--border:#E0DDD6;--shadow-sm:0 1px 3px rgba(26,25,22,.06);--shadow-md:0 4px 16px rgba(26,25,22,.08);--radius:12px;--radius-sm:8px;--transition:all .25s cubic-bezier(.4,0,.2,1)}
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{font-family:'Tajawal',sans-serif;background:var(--white);color:var(--text-primary);line-height:1.8;direction:rtl;overflow-x:hidden}
+    .skip-link{position:absolute;top:-100px;right:0;background:var(--accent);color:white;padding:.75rem 1.5rem;font-weight:700;text-decoration:none;z-index:999;transition:top .2s}
+    .skip-link:focus{top:0}
+    nav{position:sticky;top:0;z-index:100;background:rgba(250,250,248,.95);backdrop-filter:blur(16px);border-bottom:1px solid var(--border);padding:0 2rem}
+    .nav-inner{max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:64px;position:relative}
+    .nav-logo{font-size:1.5rem;font-weight:800;color:var(--text-primary);text-decoration:none;letter-spacing:-.5px;display:flex;align-items:center;gap:.25rem}
+    .nav-logo .ac{color:var(--accent)}
+    .nav-logo .dot{width:6px;height:6px;background:var(--gold);border-radius:50%;display:inline-block;margin-bottom:2px}
+    .nav-links{display:flex;align-items:center;gap:.25rem;list-style:none}
+    .nav-links a{text-decoration:none;color:var(--text-secondary);font-size:.9rem;font-weight:500;padding:.5rem .875rem;border-radius:var(--radius-sm);transition:var(--transition)}
+    .nav-links a:hover{color:var(--text-primary);background:var(--off-white)}
+    .nav-cta{background:var(--accent)!important;color:white!important;border-radius:20px!important;font-weight:600!important}
+    .nav-right{display:flex;align-items:center;gap:.75rem}
+    .lang-switcher{display:flex;align-items:center;gap:.25rem;background:var(--off-white);border-radius:20px;padding:3px}
+    .lang-btn{font-size:.78rem;font-weight:700;padding:.3rem .7rem;border-radius:16px;text-decoration:none;transition:var(--transition);font-family:'IBM Plex Mono',monospace;color:var(--text-secondary)}
+    .lang-btn.active{background:white;color:var(--text-primary);box-shadow:var(--shadow-sm)}
+    .hamburger{display:none;background:none;border:1px solid var(--border);border-radius:var(--radius-sm);cursor:pointer;padding:.5rem;flex-direction:column;gap:5px;align-items:center;justify-content:center}
+    .hamburger span{display:block;width:20px;height:2px;background:var(--text-primary);border-radius:2px;transition:var(--transition)}
+    .nav-links.nav-open{display:flex!important;flex-direction:column;position:absolute;top:64px;right:-2rem;left:-2rem;background:white;padding:1rem 1.5rem 1.5rem;border-bottom:1px solid var(--border);box-shadow:var(--shadow-md);gap:.25rem;z-index:99}
+    .nav-links.nav-open a{padding:.75rem 1rem;display:block}
+    .hamburger.is-open span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+    .hamburger.is-open span:nth-child(2){opacity:0}
+    .hamburger.is-open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+
+    /* ARTICLE HERO */
+    .article-hero{padding:4rem 2rem 3rem;background:var(--off-white);border-bottom:1px solid var(--border)}
+    .article-hero-inner{max-width:780px;margin:0 auto}
+    .article-breadcrumb{font-size:.82rem;color:var(--text-secondary);margin-bottom:1.5rem;display:flex;align-items:center;gap:.5rem;flex-wrap:wrap}
+    .article-breadcrumb a{color:var(--accent);text-decoration:none;font-weight:600}
+    .article-breadcrumb a:hover{text-decoration:underline}
+    .article-breadcrumb span{color:var(--mid-gray)}
+    .article-tag{display:inline-block;font-size:.75rem;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:var(--accent);margin-bottom:1rem;font-family:'IBM Plex Mono',monospace;background:var(--accent-light);padding:.25rem .75rem;border-radius:20px}
+    .article-hero h1{font-size:clamp(1.75rem,4vw,2.75rem);font-weight:800;line-height:1.25;margin-bottom:1.25rem;letter-spacing:-1px}
+    .article-hero .excerpt{font-size:1.1rem;color:var(--text-secondary);line-height:1.7;margin-bottom:1.5rem;max-width:650px}
+    .article-meta{display:flex;align-items:center;gap:1.5rem;font-size:.85rem;color:var(--text-secondary);flex-wrap:wrap}
+    .meta-item{display:flex;align-items:center;gap:.375rem}
+    .meta-icon{font-size:1rem}
+
+    /* ARTICLE LAYOUT */
+    .article-layout{max-width:1100px;margin:0 auto;padding:4rem 2rem;display:grid;grid-template-columns:1fr 260px;gap:4rem;align-items:start}
+
+    /* ARTICLE CONTENT */
+    .article-content{}
+    .article-content h2{font-size:clamp(1.35rem,2.5vw,1.75rem);font-weight:800;margin:2.5rem 0 1rem;letter-spacing:-.5px;color:var(--text-primary)}
+    .article-content h3{font-size:1.15rem;font-weight:700;margin:2rem 0 .75rem;color:var(--text-primary)}
+    .article-content p{font-size:1.02rem;color:#3A3835;line-height:1.9;margin-bottom:1.25rem}
+    .article-content ul,.article-content ol{padding-right:1.5rem;margin-bottom:1.25rem}
+    .article-content li{font-size:1.02rem;color:#3A3835;line-height:1.8;margin-bottom:.5rem}
+    .article-content strong{font-weight:700;color:var(--text-primary)}
+    .article-content em{font-style:italic;color:var(--text-secondary)}
+    .article-content a{color:var(--accent);text-decoration:underline;text-underline-offset:3px}
+    .article-content a:hover{color:var(--accent-hover)}
+    .article-content blockquote{border-right:4px solid var(--gold);padding:1.25rem 1.75rem;margin:2rem 0;background:var(--gold-light);border-radius:0 var(--radius-sm) var(--radius-sm) 0}
+    .article-content blockquote p{font-size:1.05rem;font-weight:600;color:var(--text-primary);margin:0;font-style:italic}
+    .article-content code{background:var(--light-gray);padding:.15rem .4rem;border-radius:4px;font-family:'IBM Plex Mono',monospace;font-size:.875em;color:var(--accent)}
+    .article-content pre{background:var(--text-primary);color:#E8E5DE;padding:1.5rem;border-radius:var(--radius-sm);overflow-x:auto;margin:1.5rem 0;font-family:'IBM Plex Mono',monospace;font-size:.875rem;line-height:1.7}
+    .article-content pre code{background:none;padding:0;color:inherit;font-size:inherit}
+    .article-content .info-box{background:var(--accent-light);border:1px solid rgba(42,92,143,.15);border-radius:var(--radius-sm);padding:1.25rem 1.5rem;margin:1.5rem 0}
+    .article-content .info-box p{color:var(--accent);margin:0;font-size:.95rem}
+    .article-content hr{border:none;border-top:1px solid var(--border);margin:2.5rem 0}
+
+    /* TABLE IN ARTICLE */
+    .article-content table{width:100%;border-collapse:collapse;margin:1.5rem 0;font-size:.9rem}
+    .article-content th{background:var(--text-primary);color:white;padding:.75rem 1rem;text-align:right;font-weight:700}
+    .article-content td{padding:.75rem 1rem;border-bottom:1px solid var(--border)}
+    .article-content tr:hover td{background:var(--accent-light)}
+
+    /* ARTICLE FOOTER */
+    .article-footer-section{margin-top:3rem;padding-top:2rem;border-top:1px solid var(--border)}
+    .article-tags{display:flex;gap:.5rem;flex-wrap:wrap;margin-bottom:2rem}
+    .article-tag-item{font-size:.8rem;padding:.3rem .75rem;background:var(--off-white);border:1px solid var(--border);border-radius:20px;color:var(--text-secondary);text-decoration:none;transition:var(--transition);font-weight:600}
+    .article-tag-item:hover{border-color:var(--accent);color:var(--accent)}
+    .article-share{display:flex;align-items:center;gap:1rem;flex-wrap:wrap}
+    .share-label-text{font-size:.875rem;font-weight:700;color:var(--text-secondary)}
+    .share-btn{display:inline-flex;align-items:center;gap:.375rem;padding:.5rem 1rem;border-radius:50px;font-size:.8rem;font-weight:700;text-decoration:none;transition:var(--transition);cursor:pointer;border:none;font-family:'Tajawal',sans-serif}
+    .share-x{background:#1a1a1a;color:white}
+    .share-x:hover{background:#333;transform:translateY(-1px)}
+    .share-copy{background:white;color:var(--text-primary);border:1.5px solid var(--border)}
+    .share-copy:hover{border-color:var(--accent);transform:translateY(-1px)}
+
+    /* SIDEBAR */
+    .article-sidebar{position:sticky;top:80px}
+    .sidebar-toc{background:white;border:1px solid var(--border);border-radius:var(--radius);padding:1.5rem;margin-bottom:1.5rem}
+    .sidebar-toc h3{font-size:.875rem;font-weight:800;text-transform:uppercase;letter-spacing:1px;color:var(--text-secondary);margin-bottom:1rem;font-family:'IBM Plex Mono',monospace}
+    .toc-list{list-style:none}
+    .toc-list li{margin-bottom:.5rem}
+    .toc-list a{font-size:.875rem;color:var(--text-secondary);text-decoration:none;transition:var(--transition);display:block;padding:.25rem 0;border-right:2px solid transparent;padding-right:.75rem}
+    .toc-list a:hover,.toc-list a.active{color:var(--accent);border-right-color:var(--accent)}
+    .sidebar-newsletter{background:var(--text-primary);color:white;border-radius:var(--radius);padding:1.5rem;text-align:center}
+    .sidebar-newsletter h3{font-size:1rem;font-weight:800;margin-bottom:.5rem}
+    .sidebar-newsletter p{font-size:.82rem;color:rgba(255,255,255,.65);margin-bottom:1rem;line-height:1.5}
+    .sidebar-newsletter a{display:block;background:var(--gold);color:white;padding:.75rem;border-radius:var(--radius-sm);font-size:.875rem;font-weight:700;text-decoration:none;transition:var(--transition)}
+    .sidebar-newsletter a:hover{background:#9A7209}
+
+    /* RELATED */
+    .related-section{max-width:1100px;margin:0 auto;padding:0 2rem 4rem}
+    .related-section h2{font-size:1.25rem;font-weight:800;margin-bottom:1.5rem;letter-spacing:-.5px}
+    .related-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:1.25rem}
+    .related-card{background:white;border:1px solid var(--border);border-radius:var(--radius);padding:1.5rem;text-decoration:none;color:inherit;transition:var(--transition);display:block}
+    .related-card:hover{border-color:var(--accent);transform:translateY(-3px);box-shadow:var(--shadow-md)}
+    .related-tag{font-size:.75rem;font-weight:700;color:var(--accent);text-transform:uppercase;letter-spacing:1px;margin-bottom:.5rem;font-family:'IBM Plex Mono',monospace}
+    .related-title{font-size:.95rem;font-weight:700;line-height:1.4;color:var(--text-primary)}
+
+    footer{background:var(--off-white);border-top:1px solid var(--border);padding:2rem}
+    .footer-bottom{max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem}
+    .footer-copy{font-size:.8rem;color:var(--text-secondary)}
+    .footer-links{display:flex;gap:1.5rem}
+    .footer-links a{font-size:.8rem;color:var(--text-secondary);text-decoration:none;transition:var(--transition)}
+    .footer-links a:hover{color:var(--accent)}
+
+    /* PROGRESS BAR */
+    .reading-progress{position:fixed;top:0;right:0;left:0;height:3px;background:var(--light-gray);z-index:200}
+    .reading-progress-bar{height:100%;background:linear-gradient(to left,var(--gold),var(--accent));width:0%;transition:width .1s}
+
+    @keyframes fadeInUp{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+
+    @media(max-width:900px){
+      .article-layout{grid-template-columns:1fr;gap:2rem}
+      .article-sidebar{position:static}
+    }
+    @media(max-width:700px){
+      .nav-links{display:none}.hamburger{display:flex}
+      .article-hero{padding:3rem 1.25rem 2rem}
+      .article-layout{padding:2.5rem 1.25rem}
+      .related-section{padding:0 1.25rem 3rem}
+      .footer-bottom{flex-direction:column;align-items:flex-start}
+    }
+  </style>
+</head>
+<body>
+
+<div class="reading-progress" role="progressbar" aria-label="تقدم القراءة" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+  <div class="reading-progress-bar" id="progress-bar"></div>
+</div>
+
+<a href="#main-content" class="skip-link">انتقل إلى المحتوى الرئيسي</a>
+
+<nav role="navigation" aria-label="القائمة الرئيسية">
+  <div class="nav-inner">
+    <a href="/ar/" class="nav-logo">ذكاء<span class="ac">.</span><span class="dot" aria-hidden="true"></span></a>
+    <ul class="nav-links" id="nav-links" role="list">
+      <li><a href="../index.html#comparison">المقارنة</a></li>
+      <li><a href="../index.html#articles" class="active">المقالات</a></li>
+      <li><a href="../index.html#glossary">المصطلحات</a></li>
+      <li><a href="../manifesto.html">البيان</a></li>
+      <li><a href="../about.html">عن الموقع</a></li>
+      <li><a href="../contact.html" class="nav-cta">تواصل</a></li>
+    </ul>
+    <div class="nav-right">
+      <div class="lang-switcher" role="group" aria-label="اختيار اللغة">
+        <a href="#" class="lang-btn active" hreflang="ar">AR</a>
+        <a href="#" class="lang-btn" hreflang="en">EN</a>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="فتح القائمة" aria-expanded="false" aria-controls="nav-links">
+        <span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<main id="main-content">
+
+  <header class="article-hero" role="banner">
+    <div class="article-hero-inner">
+      <nav class="article-breadcrumb" aria-label="مسار التنقل">
+        <a href="../index.html">الرئيسية</a>
+        <span aria-hidden="true">←</span>
+        <a href="index.html">المقالات</a>
+        <span aria-hidden="true">←</span>
+        <span aria-current="page"><!-- ARTICLE_TITLE_SHORT --></span>
+      </nav>
+
+      <span class="article-tag"><!-- ARTICLE_TAG --></span>
+      <h1><!-- ARTICLE_TITLE --></h1>
+      <p class="excerpt"><!-- ARTICLE_EXCERPT --></p>
+
+      <div class="article-meta">
+        <span class="meta-item"><span class="meta-icon" aria-hidden="true">📅</span><!-- ARTICLE_DATE_AR --></span>
+        <span class="meta-item"><span class="meta-icon" aria-hidden="true">⏱️</span><!-- READ_TIME --> قراءة</span>
+        <span class="meta-item"><span class="meta-icon" aria-hidden="true">✏️</span>فريق ذكاء</span>
+      </div>
+    </div>
+  </header>
+
+  <div class="article-layout">
+
+    <!-- MAIN CONTENT -->
+    <article class="article-content" id="article-body">
+
+      <!--
+        =============================================
+        ابدأ كتابة المقال هنا
+        استخدم العناصر التالية:
+        <h2> للعناوين الرئيسية
+        <h3> للعناوين الفرعية
+        <p> للفقرات
+        <blockquote><p>...</p></blockquote> للاقتباسات
+        <ul><li>...</li></ul> للقوائم
+        <div class="info-box"><p>...</p></div> لصناديق المعلومات
+        =============================================
+      -->
+
+      <p><!-- مقدمة المقال --></p>
+
+      <h2><!-- عنوان القسم الأول --></h2>
+      <p><!-- محتوى القسم الأول --></p>
+
+      <h2><!-- عنوان القسم الثاني --></h2>
+      <p><!-- محتوى القسم الثاني --></p>
+
+      <blockquote>
+        <p><!-- اقتباس مهم من المقال --></p>
+      </blockquote>
+
+      <h2>الخلاصة</h2>
+      <p><!-- خلاصة المقال --></p>
+
+      <!-- END OF ARTICLE CONTENT -->
+
+      <hr>
+
+      <div class="article-footer-section">
+        <div class="article-tags" aria-label="وسوم المقال">
+          <a href="#" class="article-tag-item">الذكاء الاصطناعي</a>
+          <a href="#" class="article-tag-item"><!-- TAG_2 --></a>
+          <a href="#" class="article-tag-item"><!-- TAG_3 --></a>
+        </div>
+        <div class="article-share" aria-label="مشاركة المقال">
+          <span class="share-label-text">شارك المقال:</span>
+          <a href="#" id="share-x" class="share-btn share-x" target="_blank" rel="noopener noreferrer" aria-label="مشاركة على X">✕ X</a>
+          <button class="share-btn share-copy" onclick="copyArticleLink()" aria-label="نسخ رابط المقال">🔗 نسخ الرابط</button>
+        </div>
+      </div>
+
+    </article>
+
+    <!-- SIDEBAR -->
+    <aside class="article-sidebar" aria-label="محتويات المقال والاشتراك">
+      <div class="sidebar-toc" id="toc-container">
+        <h3>محتويات المقال</h3>
+        <ul class="toc-list" id="toc-list" aria-label="قائمة المحتويات">
+          <!-- Auto-generated by JS -->
+        </ul>
+      </div>
+
+      <div class="sidebar-newsletter">
+        <h3>النشرة الأسبوعية</h3>
+        <p>تحليلات AI بالعربية مباشرة إلى بريدك</p>
+        <a href="../index.html#newsletter">اشترك مجاناً</a>
+      </div>
+    </aside>
+
+  </div>
+
+  <!-- RELATED ARTICLES -->
+  <section class="related-section" aria-labelledby="related-title">
+    <h2 id="related-title">مقالات ذات صلة</h2>
+    <div class="related-grid" id="related-grid">
+      <!-- Auto-populated from data.json -->
+    </div>
+  </section>
+
+</main>
+
+<footer role="contentinfo">
+  <div class="footer-bottom">
+    <p class="footer-copy" id="footer-copy"></p>
+    <div class="footer-links">
+      <a href="../index.html">الرئيسية</a>
+      <a href="../privacy.html">سياسة الخصوصية</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('footer-copy').textContent = `© ${new Date().getFullYear()} ذكاء — zakae.com`;
+
+  // Reading progress
+  window.addEventListener('scroll', () => {
+    const article = document.getElementById('article-body');
+    const rect = article.getBoundingClientRect();
+    const total = article.offsetHeight;
+    const scrolled = Math.max(0, -rect.top);
+    const progress = Math.min(100, (scrolled / total) * 100);
+    const bar = document.getElementById('progress-bar');
+    bar.style.width = progress + '%';
+    bar.parentElement.setAttribute('aria-valuenow', Math.round(progress));
+  });
+
+  // Auto TOC
+  window.addEventListener('DOMContentLoaded', () => {
+    const headings = document.querySelectorAll('.article-content h2');
+    const tocList = document.getElementById('toc-list');
+    if(headings.length === 0){ document.getElementById('toc-container').style.display = 'none'; return; }
+    headings.forEach((h, i) => {
+      h.id = `section-${i}`;
+      const li = document.createElement('li');
+      const a = document.createElement('a');
+      a.href = `#section-${i}`;
+      a.textContent = h.textContent;
+      li.appendChild(a);
+      tocList.appendChild(li);
+    });
+
+    // Active TOC on scroll
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if(entry.isIntersecting){
+          tocList.querySelectorAll('a').forEach(a => a.classList.remove('active'));
+          const active = tocList.querySelector(`a[href="#${entry.target.id}"]`);
+          if(active) active.classList.add('active');
+        }
+      });
+    }, {threshold:.5, rootMargin:'-20% 0px -70% 0px'});
+    headings.forEach(h => observer.observe(h));
+  });
+
+  // Share X
+  document.getElementById('share-x').href = `https://twitter.com/intent/tweet?text=${encodeURIComponent(document.title)}&url=${encodeURIComponent(window.location.href)}`;
+
+  // Copy link
+  function copyArticleLink() {
+    navigator.clipboard.writeText(window.location.href).then(() => {
+      const btn = document.querySelector('.share-copy');
+      btn.textContent = '✓ تم النسخ';
+      setTimeout(() => btn.textContent = '🔗 نسخ الرابط', 2000);
+    });
+  }
+
+  // Load related articles
+  fetch('../data.json').then(r=>r.json()).then(data=>{
+    const grid = document.getElementById('related-grid');
+    const articles = data.articles.slice(0,3);
+    grid.innerHTML = articles.map(a=>`
+      <a href="${a.url.replace('articles/','')}" class="related-card">
+        <div class="related-tag">${a.tag}</div>
+        <div class="related-title">${a.title}</div>
+      </a>`).join('');
+  }).catch(()=>{});
+
+  // Mobile nav
+  const hamburger = document.getElementById('hamburger');
+  const navLinks = document.getElementById('nav-links');
+  function closeNav(){navLinks.classList.remove('nav-open');hamburger.classList.remove('is-open');hamburger.setAttribute('aria-expanded','false')}
+  hamburger.addEventListener('click',()=>{const isOpen=navLinks.classList.contains('nav-open');if(isOpen){closeNav()}else{navLinks.classList.add('nav-open');hamburger.classList.add('is-open');hamburger.setAttribute('aria-expanded','true')}});
+  navLinks.querySelectorAll('a').forEach(l=>l.addEventListener('click',closeNav));
+  document.addEventListener('click',e=>{if(!hamburger.contains(e.target)&&!navLinks.contains(e.target))closeNav()});
+  window.addEventListener('resize',()=>{if(window.innerWidth>700)closeNav()});
+</script>
+</body>
+</html>
