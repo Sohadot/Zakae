@@ -5,31 +5,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- SEO -->
-  <title>ذكاء | المرجع العربي للذكاء الاصطناعي</title>
-  <meta name="description" content="ذكاء — المرجع العربي الأول لمقارنة نماذج الذكاء الاصطناعي. اكتشف الفرق بين Claude وChatGPT وGemini وDeepSeek وGrok بالعربية.">
+  <title>ذكاء | مرجع عربي لتحليل ومقارنة نماذج الذكاء الاصطناعي</title>
+  <meta name="description" content="ذكاء — مرجع عربي لتحليل ومقارنة نماذج الذكاء الاصطناعي. اكتشف الفروق بين Claude وChatGPT وGemini وDeepSeek وGrok بالعربية.">
   <meta name="keywords" content="ذكاء اصطناعي, مقارنة نماذج AI, كلود, تشات جي بي تي, جيميني, ديب سيك, عربي">
   <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://zakae.com/ar/">
+  <link rel="canonical" href="https://zakae.com/">
 
   <!-- Open Graph -->
-  <meta property="og:title" content="ذكاء | المرجع العربي للذكاء الاصطناعي">
+  <meta property="og:title" content="ذكاء | مرجع عربي لتحليل ومقارنة نماذج الذكاء الاصطناعي">
   <meta property="og:description" content="مقارنة نماذج الذكاء الاصطناعي، مقالات، أدوات وقاموس مصطلحات بالعربية">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://zakae.com/ar/">
+  <meta property="og:url" content="https://zakae.com/">
   <meta property="og:image" content="https://zakae.com/assets/og-image.png">
   <meta property="og:locale" content="ar_AR">
   <meta property="og:site_name" content="ذكاء">
 
   <!-- Twitter Cards -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="ذكاء | المرجع العربي للذكاء الاصطناعي">
+  <meta name="twitter:title" content="ذكاء | مرجع عربي لتحليل ومقارنة نماذج الذكاء الاصطناعي">
   <meta name="twitter:description" content="مقارنة نماذج الذكاء الاصطناعي بالعربية — Claude, ChatGPT, Gemini, DeepSeek, Grok">
   <meta name="twitter:image" content="https://zakae.com/assets/og-image.png">
 
   <!-- hreflang -->
-  <link rel="alternate" hreflang="ar" href="https://zakae.com/ar/">
-  <link rel="alternate" hreflang="en" href="https://zakae.com/en/">
-  <link rel="alternate" hreflang="x-default" href="https://zakae.com/ar/">
+  <link rel="alternate" hreflang="ar" href="https://zakae.com/">
+  <link rel="alternate" hreflang="x-default" href="https://zakae.com/">
 
   <!-- Structured Data -->
   <script type="application/ld+json">
@@ -39,8 +38,19 @@
     "name": "ذكاء",
     "alternateName": "Zakae",
     "url": "https://zakae.com",
-    "description": "المرجع العربي الأول لمقارنة نماذج الذكاء الاصطناعي",
-    "inLanguage": ["ar", "en"]
+    "description": "مرجع عربي لتحليل ومقارنة نماذج الذكاء الاصطناعي",
+    "inLanguage": "ar"
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Organization",
+    "name":"ذكاء",
+    "alternateName":"Zakae",
+    "url":"https://zakae.com",
+    "description":"منصة عربية لتحليل ومقارنة نماذج الذكاء الاصطناعي وشرح مفاهيمه بالعربية."
   }
   </script>
 
@@ -84,6 +94,7 @@
     .lang-btn{font-size:.78rem;font-weight:700;padding:.3rem .7rem;border-radius:16px;text-decoration:none;transition:var(--transition);font-family:'IBM Plex Mono',monospace;color:var(--text-secondary)}
     .lang-btn.active{background:white;color:var(--text-primary);box-shadow:var(--shadow-sm)}
     .lang-btn:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+    .lang-btn.disabled{opacity:.55;cursor:not-allowed}
     .hamburger{display:none;background:none;border:1px solid var(--border);border-radius:var(--radius-sm);cursor:pointer;padding:.5rem;flex-direction:column;gap:5px;align-items:center;justify-content:center}
     .hamburger span{display:block;width:20px;height:2px;background:var(--text-primary);border-radius:2px;transition:var(--transition)}
     .hamburger:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
@@ -112,6 +123,18 @@
     .stat-number{font-size:2rem;font-weight:800;font-family:'IBM Plex Mono',monospace;display:block}
     .stat-label{font-size:.85rem;color:var(--text-secondary)}
 
+    .site-update-note{
+      max-width:1200px;
+      margin:1rem auto 0;
+      text-align:center;
+      font-size:.92rem;
+      color:var(--text-secondary);
+    }
+    .site-update-note time{
+      font-weight:700;
+      color:var(--text-primary);
+    }
+
     section{padding:5rem 2rem}
     .container{max-width:1200px;margin:0 auto}
     .section-header{text-align:center;margin-bottom:3rem}
@@ -125,6 +148,19 @@
     .feature-emoji{font-size:2rem;margin-bottom:1rem;display:block}
     .feature-title{font-size:1rem;font-weight:700;margin-bottom:.5rem}
     .feature-desc{font-size:.875rem;color:var(--text-secondary);line-height:1.6}
+
+    .start-here{
+      padding:2rem 2rem 1rem;
+    }
+    .start-here .feature-card{
+      text-decoration:none;
+      color:inherit;
+      display:block;
+    }
+    .start-here .feature-card:focus-visible{
+      outline:3px solid var(--accent);
+      outline-offset:3px;
+    }
 
     .comparison-section{background:var(--off-white)}
     .table-wrapper{overflow-x:auto;border-radius:var(--radius);box-shadow:var(--shadow-lg);border:1px solid var(--border)}
@@ -220,6 +256,7 @@
       .hero{padding:3rem 1.25rem 2.5rem}
       .hero-stats{gap:1.5rem}
       section{padding:3.5rem 1.25rem}
+      .start-here{padding:1rem 1.25rem .5rem}
       .newsletter-form{flex-direction:column}
       .footer-top{grid-template-columns:1fr;gap:2rem}
       .footer-bottom{flex-direction:column;align-items:flex-start}
@@ -232,7 +269,7 @@
 
 <nav role="navigation" aria-label="القائمة الرئيسية">
   <div class="nav-inner">
-    <a href="/ar/" class="nav-logo" aria-label="ذكاء — الصفحة الرئيسية">
+    <a href="/" class="nav-logo" aria-label="ذكاء — الصفحة الرئيسية">
       ذكاء<span class="ac">.</span><span class="dot" aria-hidden="true"></span>
     </a>
     <ul class="nav-links" id="nav-links" role="list">
@@ -245,8 +282,8 @@
     </ul>
     <div class="nav-right">
       <div class="lang-switcher" role="group" aria-label="اختيار اللغة">
-        <a href="/ar/" class="lang-btn active" hreflang="ar" aria-current="true" aria-label="العربية">AR</a>
-        <a href="/en/" class="lang-btn" hreflang="en" aria-label="English">EN</a>
+        <a href="/" class="lang-btn active" hreflang="ar" aria-current="true" aria-label="العربية">AR</a>
+        <span class="lang-btn disabled" aria-label="English coming soon">EN</span>
       </div>
       <button class="hamburger" id="hamburger" aria-label="فتح القائمة" aria-expanded="false" aria-controls="nav-links">
         <span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span>
@@ -259,21 +296,54 @@
 
   <header class="hero" role="banner">
     <div class="container">
-      <div class="hero-badge">المرجع العربي الأول لمقارنة نماذج الذكاء الاصطناعي</div>
+      <div class="hero-badge">مرجع عربي لتحليل ومقارنة نماذج الذكاء الاصطناعي</div>
       <h1>اكتشف عالم<br><em>الذكاء الاصطناعي</em><br>بعيونٍ عربية</h1>
-      <p class="hero-desc">مقارنات شاملة، مقالات معمّقة، وأدوات تفاعلية — كل ما تحتاجه لفهم نماذج AI الكبرى بلغتك ومن منظورك</p>
+      <p class="hero-desc">مقارنات شاملة، مقالات معمّقة، وأدلة عملية — كل ما تحتاجه لفهم نماذج AI الكبرى بلغتك ومن منظورك</p>
       <div class="hero-actions">
         <a href="#comparison" class="btn-primary">ابدأ المقارنة</a>
         <a href="#articles" class="btn-secondary">اقرأ المقالات</a>
       </div>
       <div class="hero-stats" aria-label="إحصائيات الموقع">
         <div class="stat"><span class="stat-number">5+</span><span class="stat-label">نماذج مقارنة</span></div>
-        <div class="stat"><span class="stat-number">100+</span><span class="stat-label">مصطلح موضّح</span></div>
-        <div class="stat"><span class="stat-number">محدّث</span><span class="stat-label">باستمرار</span></div>
+        <div class="stat"><span class="stat-number">مرجعي</span><span class="stat-label">محتوى تحليلي</span></div>
+        <div class="stat"><span class="stat-number">محدّث</span><span class="stat-label">بشكل مستمر</span></div>
         <div class="stat"><span class="stat-number">مجاني</span><span class="stat-label">بالكامل</span></div>
+      </div>
+      <div class="site-update-note">
+        آخر تحديث للبيانات: <time datetime="2026-03-10">10 مارس 2026</time> — تتم مراجعة المقارنات والمقالات بشكل مستمر.
       </div>
     </div>
   </header>
+
+  <section class="start-here" aria-labelledby="start-here-title">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">ابدأ من هنا</span>
+        <h2 class="section-title" id="start-here-title">أفضل نقطة دخول إلى الموقع</h2>
+        <p class="section-subtitle">صفحات أساسية تساعدك على فهم أهم النماذج والمفاهيم بسرعة.</p>
+      </div>
+
+      <div class="features-grid">
+        <a class="feature-card reveal" href="/models/claude.html">
+          <span class="feature-emoji" aria-hidden="true">🧠</span>
+          <h3 class="feature-title">Claude</h3>
+          <p class="feature-desc">ابدأ بصفحة Claude المرجعية لفهم النموذج، قدراته، وأهم استخداماته.</p>
+        </a>
+
+        <a class="feature-card reveal" href="#comparison">
+          <span class="feature-emoji" aria-hidden="true">📊</span>
+          <h3 class="feature-title">المقارنة الشاملة</h3>
+          <p class="feature-desc">شاهد الفروقات الأساسية بين أبرز نماذج الذكاء الاصطناعي في جدول واحد.</p>
+        </a>
+
+        <a class="feature-card reveal" href="#glossary">
+          <span class="feature-emoji" aria-hidden="true">📘</span>
+          <h3 class="feature-title">قاموس المصطلحات</h3>
+          <p class="feature-desc">ابدأ بالمفاهيم الأساسية مثل LLM وRAG وFine-tuning بلغة عربية واضحة.</p>
+        </a>
+      </div>
+    </div>
+  </section>
 
   <section aria-labelledby="features-title">
     <div class="container">
@@ -283,10 +353,10 @@
         <p class="section-subtitle">محتوى عربي أصيل، دقيق، ومحدّث — لا ترجمة آلية</p>
       </div>
       <div class="features-grid">
-        <div class="feature-card reveal"><span class="feature-emoji" aria-hidden="true">🔬</span><h3 class="feature-title">مقارنات موضوعية</h3><p class="feature-desc">نقارن النماذج بناءً على معايير حقيقية وتجارب فعلية، بعيداً عن التحيّز</p></div>
-        <div class="feature-card reveal"><span class="feature-emoji" aria-hidden="true">📖</span><h3 class="feature-title">محتوى عربي أصيل</h3><p class="feature-desc">كل مقال ومصطلح مكتوب بالعربية أصلاً، وليس مترجماً بشكل آلي</p></div>
-        <div class="feature-card reveal"><span class="feature-emoji" aria-hidden="true">⚡</span><h3 class="feature-title">تحديث مستمر</h3><p class="feature-desc">عالم AI يتغير بسرعة — نحرص على مواكبة كل جديد وتحديث المعلومات فوراً</p></div>
-        <div class="feature-card reveal"><span class="feature-emoji" aria-hidden="true">🛡️</span><h3 class="feature-title">موثوق وآمن</h3><p class="feature-desc">موقع نظيف بدون إعلانات مزعجة، يحترم خصوصيتك ويحمي بياناتك</p></div>
+        <div class="feature-card reveal"><span class="feature-emoji" aria-hidden="true">🔬</span><h3 class="feature-title">مقارنات موضوعية</h3><p class="feature-desc">نقارن النماذج بناءً على معايير حقيقية وتجارب فعلية، بعيدًا عن التحيّز والضجيج التسويقي.</p></div>
+        <div class="feature-card reveal"><span class="feature-emoji" aria-hidden="true">📖</span><h3 class="feature-title">محتوى عربي أصيل</h3><p class="feature-desc">كل مقال ومصطلح مكتوب بالعربية أصلًا، لا معرّبًا آليًا ولا منسوخًا دون قيمة تحليلية.</p></div>
+        <div class="feature-card reveal"><span class="feature-emoji" aria-hidden="true">⚡</span><h3 class="feature-title">تحديث مستمر</h3><p class="feature-desc">عالم AI يتغير بسرعة — نحرص على مواكبة كل جديد وتحديث المعلومات والصفحات الأساسية باستمرار.</p></div>
+        <div class="feature-card reveal"><span class="feature-emoji" aria-hidden="true">🛡️</span><h3 class="feature-title">موثوق وواضح</h3><p class="feature-desc">موقع نظيف يحترم القارئ، يبتعد عن الإرباك، ويركز على المعرفة المنظمة والروابط الداخلية المفيدة.</p></div>
       </div>
     </div>
   </section>
@@ -296,7 +366,7 @@
       <div class="section-header reveal">
         <span class="section-tag">المقارنة الشاملة</span>
         <h2 class="section-title" id="comparison-title">نماذج الذكاء الاصطناعي الكبرى</h2>
-        <p class="section-subtitle">مقارنة موضوعية بين أبرز النماذج المتاحة حالياً</p>
+        <p class="section-subtitle">مقارنة موضوعية بين أبرز النماذج المتاحة حاليًا</p>
       </div>
       <div class="table-wrapper reveal" role="region" aria-label="جدول مقارنة نماذج الذكاء الاصطناعي" tabindex="0">
         <div id="table-container"><div class="skeleton" style="height:300px;margin:1rem;border-radius:8px"></div></div>
@@ -317,7 +387,7 @@
         <div class="skeleton" style="height:320px;border-radius:12px"></div>
         <div class="skeleton" style="height:320px;border-radius:12px"></div>
       </div>
-      <div style="text-align:center;margin-top:2.5rem"><a href="articles/" class="btn-secondary">عرض جميع المقالات ←</a></div>
+      <div style="text-align:center;margin-top:2.5rem"><a href="#articles" class="btn-secondary">استعرض أحدث المقالات</a></div>
     </div>
   </section>
 
@@ -326,7 +396,7 @@
       <div class="section-header reveal">
         <span class="section-tag">قاموس المصطلحات</span>
         <h2 class="section-title" id="glossary-title">مصطلحات AI بالعربية</h2>
-        <p class="section-subtitle">أكثر من 100 مصطلح موضّح بلغة بسيطة وواضحة</p>
+        <p class="section-subtitle">قاموس متنامٍ لشرح المفاهيم الأساسية بلغة واضحة ومنظمة</p>
       </div>
       <div class="glossary-grid" id="glossary-grid">
         <div class="skeleton" style="height:100px;border-radius:8px"></div>
@@ -334,7 +404,7 @@
         <div class="skeleton" style="height:100px;border-radius:8px"></div>
         <div class="skeleton" style="height:100px;border-radius:8px"></div>
       </div>
-      <div style="text-align:center;margin-top:2.5rem"><a href="glossary.html" class="btn-secondary">عرض القاموس الكامل ←</a></div>
+      <div style="text-align:center;margin-top:2.5rem"><a href="#glossary" class="btn-secondary">تصفّح المصطلحات</a></div>
     </div>
   </section>
 
@@ -343,10 +413,10 @@
       <div class="newsletter-inner reveal">
         <span class="section-tag">النشرة البريدية</span>
         <h2 class="section-title" id="newsletter-title">ابقَ على اطلاع دائم</h2>
-        <p class="section-subtitle">نشرة أسبوعية تجمع أهم أخبار الذكاء الاصطناعي — بالعربية حصراً</p>
+        <p class="section-subtitle">نشرة أسبوعية تجمع أهم أخبار الذكاء الاصطناعي بالعربية — مع توجيهك إلى صفحة الاشتراك عبر Substack</p>
         <div class="newsletter-form" role="form" aria-label="الاشتراك في النشرة البريدية">
           <input type="email" id="newsletter-email" class="newsletter-input" placeholder="أدخل بريدك الإلكتروني" aria-label="البريد الإلكتروني للاشتراك" autocomplete="email" inputmode="email">
-          <button class="btn-gold" id="newsletter-btn" type="button" onclick="handleNewsletter()">انضم للنشرة</button>
+          <button class="btn-gold" id="newsletter-btn" type="button" onclick="handleNewsletter()">الاشتراك عبر Substack</button>
         </div>
         <p class="newsletter-note">بدون سبام — نشرة أسبوعية فقط — يمكنك إلغاء الاشتراك في أي وقت</p>
         <p class="newsletter-message" id="newsletter-message" aria-live="polite" role="status"></p>
@@ -360,16 +430,40 @@
   <div class="footer-inner">
     <div class="footer-top">
       <div class="footer-brand">
-        <a href="/ar/" class="nav-logo" aria-label="ذكاء — الصفحة الرئيسية">ذكاء<span class="ac">.</span></a>
-        <p class="footer-desc">المرجع العربي الأول لمقارنة نماذج الذكاء الاصطناعي وفهم عالم AI بلغتك ومن منظورك</p>
+        <a href="/" class="nav-logo" aria-label="ذكاء — الصفحة الرئيسية">ذكاء<span class="ac">.</span></a>
+        <p class="footer-desc">مرجع عربي لتحليل ومقارنة نماذج الذكاء الاصطناعي وفهم عالم AI بلغتك ومن منظورك.</p>
       </div>
-      <div class="footer-col"><h4>الموقع</h4><ul><li><a href="#comparison">المقارنة</a></li><li><a href="#articles">المقالات</a></li><li><a href="#glossary">المصطلحات</a></li><li><a href="manifesto.html">البيان</a></li></ul></div>
-      <div class="footer-col"><h4>عن الموقع</h4><ul><li><a href="about.html">من نحن</a></li><li><a href="contact.html">تواصل معنا</a></li><li><a href="privacy.html">سياسة الخصوصية</a></li></ul></div>
-      <div class="footer-col"><h4>تابعنا</h4><ul><li><a href="https://substack.com" target="_blank" rel="noopener noreferrer">النشرة على Substack</a></li><li><a href="/en/">English Version</a></li></ul></div>
+      <div class="footer-col">
+        <h4>الموقع</h4>
+        <ul>
+          <li><a href="#comparison">المقارنة</a></li>
+          <li><a href="#articles">المقالات</a></li>
+          <li><a href="#glossary">المصطلحات</a></li>
+          <li><a href="manifesto.html">البيان</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>عن الموقع</h4>
+        <ul>
+          <li><a href="about.html">من نحن</a></li>
+          <li><a href="contact.html">تواصل معنا</a></li>
+          <li><a href="manifesto.html">رؤية المشروع</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>تابعنا</h4>
+        <ul>
+          <li><a href="https://zakae.substack.com" target="_blank" rel="noopener noreferrer">النشرة على Substack</a></li>
+          <li><a href="/models/claude.html">صفحة Claude</a></li>
+        </ul>
+      </div>
     </div>
     <div class="footer-bottom">
       <p class="footer-copy" id="footer-copy"></p>
-      <div class="footer-links"><a href="privacy.html">سياسة الخصوصية</a><a href="sitemap.xml">خريطة الموقع</a></div>
+      <div class="footer-links">
+        <a href="manifesto.html">البيان</a>
+        <a href="about.html">عن الموقع</a>
+      </div>
     </div>
   </div>
 </footer>
@@ -380,20 +474,26 @@
 
   // Scroll reveal
   const observer = new IntersectionObserver((entries) => {
-    entries.forEach(el => { if(el.isIntersecting){el.target.classList.add('visible');observer.unobserve(el.target)} });
-  }, {threshold:.08, rootMargin:'0px 0px -40px 0px'});
+    entries.forEach(el => {
+      if (el.isIntersecting) {
+        el.target.classList.add('visible');
+        observer.unobserve(el.target);
+      }
+    });
+  }, { threshold:.08, rootMargin:'0px 0px -40px 0px' });
+
   document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
 
   // Load data.json
   async function loadData() {
     try {
       const res = await fetch('/data.json');
-      if(!res.ok) throw new Error();
+      if (!res.ok) throw new Error();
       const data = await res.json();
       renderTable(data.models, data.site.lastUpdated);
       renderArticles(data.articles);
       renderGlossary(data.glossary);
-    } catch(e) {
+    } catch (e) {
       document.getElementById('table-container').innerHTML = '<p style="padding:2rem;text-align:center;color:var(--text-secondary)">تعذّر تحميل البيانات، يرجى تحديث الصفحة</p>';
     }
   }
@@ -416,7 +516,8 @@
     ];
     const tbody = rows.map(row=>`<tr><td><div class="feature-label"><span class="feature-icon" aria-hidden="true">${row.l}</span>${row.t}</div></td>${models.map(m=>`<td>${row.r(m)}</td>`).join('')}</tr>`).join('');
     document.getElementById('table-container').innerHTML = `<table><caption>مقارنة نماذج الذكاء الاصطناعي الكبرى — المصدر: اختبارات ذكاء</caption><thead><tr><th scope="col">المعيار</th>${headers}</tr></thead><tbody>${tbody}</tbody></table>`;
-    if(lastUpdated){
+
+    if (lastUpdated) {
       const d = new Date(lastUpdated);
       document.getElementById('last-updated').textContent = `آخر تحديث: ${d.toLocaleDateString('ar-EG',{year:'numeric',month:'long',day:'numeric'})}`;
     }
@@ -440,30 +541,77 @@
     const btn = document.getElementById('newsletter-btn');
     const msg = document.getElementById('newsletter-message');
     const email = input.value.trim();
+
     input.classList.remove('error');
     msg.className = 'newsletter-message';
     msg.textContent = '';
-    if(!email){input.classList.add('error');msg.classList.add('error-msg');msg.textContent='يرجى إدخال بريدك الإلكتروني';input.focus();return}
-    if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)){input.classList.add('error');msg.classList.add('error-msg');msg.textContent='يرجى إدخال بريد إلكتروني صحيح';input.focus();return}
-    btn.disabled=true; btn.textContent='جارٍ التوجيه...';
+
+    if (!email) {
+      input.classList.add('error');
+      msg.classList.add('error-msg');
+      msg.textContent = 'يرجى إدخال بريدك الإلكتروني';
+      input.focus();
+      return;
+    }
+
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+      input.classList.add('error');
+      msg.classList.add('error-msg');
+      msg.textContent = 'يرجى إدخال بريد إلكتروني صحيح';
+      input.focus();
+      return;
+    }
+
+    btn.disabled = true;
+    btn.textContent = 'جارٍ التوجيه...';
+
     window.open(`https://zakae.substack.com/subscribe?email=${encodeURIComponent(email)}`,'_blank','noopener,noreferrer');
-    msg.classList.add('success'); msg.textContent='✓ سيتم فتح صفحة الاشتراك في نافذة جديدة';
-    btn.textContent='تم ✓'; input.value='';
-    setTimeout(()=>{btn.disabled=false;btn.textContent='انضم للنشرة';msg.textContent='';msg.className='newsletter-message'},5000);
+
+    msg.classList.add('success');
+    msg.textContent = '✓ سيتم فتح صفحة الاشتراك في نافذة جديدة';
+    btn.textContent = 'تم ✓';
+    input.value = '';
+
+    setTimeout(() => {
+      btn.disabled = false;
+      btn.textContent = 'الاشتراك عبر Substack';
+      msg.textContent = '';
+      msg.className = 'newsletter-message';
+    }, 5000);
   }
-  document.getElementById('newsletter-email').addEventListener('keydown',e=>{if(e.key==='Enter')handleNewsletter()});
+
+  document.getElementById('newsletter-email').addEventListener('keydown',e=>{
+    if(e.key==='Enter') handleNewsletter();
+  });
 
   // Mobile nav
   const hamburger = document.getElementById('hamburger');
   const navLinks = document.getElementById('nav-links');
-  function closeNav(){navLinks.classList.remove('nav-open');hamburger.classList.remove('is-open');hamburger.setAttribute('aria-expanded','false')}
+
+  function closeNav() {
+    navLinks.classList.remove('nav-open');
+    hamburger.classList.remove('is-open');
+    hamburger.setAttribute('aria-expanded','false');
+  }
+
   hamburger.addEventListener('click',()=>{
     const isOpen = navLinks.classList.contains('nav-open');
-    if(isOpen){closeNav()}else{navLinks.classList.add('nav-open');hamburger.classList.add('is-open');hamburger.setAttribute('aria-expanded','true')}
+    if (isOpen) {
+      closeNav();
+    } else {
+      navLinks.classList.add('nav-open');
+      hamburger.classList.add('is-open');
+      hamburger.setAttribute('aria-expanded','true');
+    }
   });
+
   navLinks.querySelectorAll('a').forEach(l=>l.addEventListener('click',closeNav));
-  document.addEventListener('click',e=>{if(!hamburger.contains(e.target)&&!navLinks.contains(e.target))closeNav()});
-  window.addEventListener('resize',()=>{if(window.innerWidth>700)closeNav()});
+  document.addEventListener('click',e=>{
+    if(!hamburger.contains(e.target) && !navLinks.contains(e.target)) closeNav();
+  });
+  window.addEventListener('resize',()=>{
+    if(window.innerWidth>700) closeNav();
+  });
 
   loadData();
 </script>
