@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO -->
+  <title>ذكاء | المرجع العربي للذكاء الاصطناعي</title>
+  <meta name="description" content="ذكاء — المرجع العربي الأول لمقارنة نماذج الذكاء الاصطناعي. اكتشف الفرق بين Claude وChatGPT وGemini وDeepSeek وGrok بالعربية.">
+  <meta name="keywords" content="ذكاء اصطناعي, مقارنة نماذج AI, كلود, تشات جي بي تي, جيميني, ديب سيك, عربي">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://zakae.com/ar/">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="ذكاء | المرجع العربي للذكاء الاصطناعي">
+  <meta property="og:description" content="مقارنة نماذج الذكاء الاصطناعي، مقالات، أدوات وقاموس مصطلحات بالعربية">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://zakae.com/ar/">
+  <meta property="og:image" content="https://zakae.com/assets/og-image.png">
+  <meta property="og:locale" content="ar_AR">
+  <meta property="og:site_name" content="ذكاء">
+
+  <!-- Twitter Cards -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="ذكاء | المرجع العربي للذكاء الاصطناعي">
+  <meta name="twitter:description" content="مقارنة نماذج الذكاء الاصطناعي بالعربية — Claude, ChatGPT, Gemini, DeepSeek, Grok">
+  <meta name="twitter:image" content="https://zakae.com/assets/og-image.png">
+
+  <!-- hreflang -->
+  <link rel="alternate" hreflang="ar" href="https://zakae.com/ar/">
+  <link rel="alternate" hreflang="en" href="https://zakae.com/en/">
+  <link rel="alternate" hreflang="x-default" href="https://zakae.com/ar/">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "ذكاء",
+    "alternateName": "Zakae",
+    "url": "https://zakae.com",
+    "description": "المرجع العربي الأول لمقارنة نماذج الذكاء الاصطناعي",
+    "inLanguage": ["ar", "en"]
+  }
+  </script>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --white:#FAFAF8; --off-white:#F2F0EB; --light-gray:#E8E5DE;
+      --text-secondary:#7A7570; --text-primary:#1A1916;
+      --accent:#2A5C8F; --accent-light:#EBF2FA; --accent-hover:#1E4470;
+      --gold:#B8860B; --gold-light:#FDF8EC;
+      --success:#2D7A4F; --border:#E0DDD6;
+      --shadow-sm:0 1px 3px rgba(26,25,22,.06);
+      --shadow-md:0 4px 16px rgba(26,25,22,.08);
+      --shadow-lg:0 12px 40px rgba(26,25,22,.12);
+      --radius:12px; --radius-sm:8px;
+      --transition:all .25s cubic-bezier(.4,0,.2,1);
+    }
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{font-family:'Tajawal',sans-serif;background:var(--white);color:var(--text-primary);line-height:1.7;direction:rtl;overflow-x:hidden}
+
+    .skip-link{position:absolute;top:-100px;right:0;background:var(--accent);color:white;padding:.75rem 1.5rem;border-radius:0 0 var(--radius-sm) var(--radius-sm);font-weight:700;text-decoration:none;z-index:999;transition:top .2s}
+    .skip-link:focus{top:0}
+
+    nav{position:sticky;top:0;z-index:100;background:rgba(250,250,248,.95);backdrop-filter:blur(16px);border-bottom:1px solid var(--border);padding:0 2rem}
+    .nav-inner{max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:64px;position:relative}
+    .nav-logo{font-size:1.5rem;font-weight:800;color:var(--text-primary);text-decoration:none;letter-spacing:-.5px;display:flex;align-items:center;gap:.25rem}
+    .nav-logo .ac{color:var(--accent)}
+    .nav-logo .dot{width:6px;height:6px;background:var(--gold);border-radius:50%;display:inline-block;margin-bottom:2px}
+    .nav-links{display:flex;align-items:center;gap:.25rem;list-style:none}
+    .nav-links a{text-decoration:none;color:var(--text-secondary);font-size:.9rem;font-weight:500;padding:.5rem .875rem;border-radius:var(--radius-sm);transition:var(--transition)}
+    .nav-links a:hover,.nav-links a:focus-visible{color:var(--text-primary);background:var(--off-white);outline:none}
+    .nav-cta{background:var(--accent)!important;color:white!important;border-radius:20px!important;font-weight:600!important}
+    .nav-cta:hover{background:var(--accent-hover)!important}
+    .nav-right{display:flex;align-items:center;gap:.75rem}
+    .lang-switcher{display:flex;align-items:center;gap:.25rem;background:var(--off-white);border-radius:20px;padding:3px}
+    .lang-btn{font-size:.78rem;font-weight:700;padding:.3rem .7rem;border-radius:16px;text-decoration:none;transition:var(--transition);font-family:'IBM Plex Mono',monospace;color:var(--text-secondary)}
+    .lang-btn.active{background:white;color:var(--text-primary);box-shadow:var(--shadow-sm)}
+    .lang-btn:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+    .hamburger{display:none;background:none;border:1px solid var(--border);border-radius:var(--radius-sm);cursor:pointer;padding:.5rem;flex-direction:column;gap:5px;align-items:center;justify-content:center}
+    .hamburger span{display:block;width:20px;height:2px;background:var(--text-primary);border-radius:2px;transition:var(--transition)}
+    .hamburger:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+    .nav-links.nav-open{display:flex!important;flex-direction:column;position:absolute;top:64px;right:-2rem;left:-2rem;background:white;padding:1rem 1.5rem 1.5rem;border-bottom:1px solid var(--border);box-shadow:var(--shadow-md);gap:.25rem;z-index:99}
+    .nav-links.nav-open a{padding:.75rem 1rem;border-radius:var(--radius-sm);display:block}
+    .hamburger.is-open span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+    .hamburger.is-open span:nth-child(2){opacity:0}
+    .hamburger.is-open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+
+    .hero{padding:5rem 2rem 4rem;text-align:center;position:relative;overflow:hidden}
+    .hero::before{content:'';position:absolute;top:-100px;left:50%;transform:translateX(-50%);width:600px;height:600px;background:radial-gradient(circle,rgba(42,92,143,.06) 0%,transparent 70%);pointer-events:none}
+    .hero-badge{display:inline-flex;align-items:center;gap:.5rem;background:var(--gold-light);border:1px solid rgba(184,134,11,.2);color:var(--gold);font-size:.82rem;font-weight:600;padding:.375rem 1rem;border-radius:20px;margin-bottom:1.5rem;animation:fadeInDown .6s ease}
+    .hero h1{font-size:clamp(2.25rem,5.5vw,4rem);font-weight:800;line-height:1.2;margin-bottom:1.25rem;animation:fadeInUp .7s ease .1s both;letter-spacing:-1px}
+    .hero h1 em{font-style:normal;color:var(--accent);position:relative}
+    .hero h1 em::after{content:'';position:absolute;bottom:2px;right:0;left:0;height:3px;background:var(--accent);opacity:.2;border-radius:2px}
+    .hero-desc{font-size:1.1rem;color:var(--text-secondary);max-width:560px;margin:0 auto 2.5rem;animation:fadeInUp .7s ease .2s both}
+    .hero-actions{display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;animation:fadeInUp .7s ease .3s both}
+    .btn-primary{background:var(--accent);color:white;padding:.875rem 2rem;border-radius:50px;font-size:1rem;font-weight:700;text-decoration:none;transition:var(--transition);box-shadow:0 4px 16px rgba(42,92,143,.3);font-family:'Tajawal',sans-serif}
+    .btn-primary:hover{background:var(--accent-hover);transform:translateY(-2px)}
+    .btn-primary:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+    .btn-secondary{background:white;color:var(--text-primary);padding:.875rem 2rem;border-radius:50px;font-size:1rem;font-weight:600;text-decoration:none;transition:var(--transition);border:1.5px solid var(--border);font-family:'Tajawal',sans-serif}
+    .btn-secondary:hover{border-color:var(--text-primary);transform:translateY(-2px)}
+    .btn-secondary:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+    .hero-stats{display:flex;justify-content:center;gap:3rem;margin-top:3.5rem;padding-top:3rem;border-top:1px solid var(--border);animation:fadeInUp .7s ease .4s both;flex-wrap:wrap}
+    .stat{text-align:center}
+    .stat-number{font-size:2rem;font-weight:800;font-family:'IBM Plex Mono',monospace;display:block}
+    .stat-label{font-size:.85rem;color:var(--text-secondary)}
+
+    section{padding:5rem 2rem}
+    .container{max-width:1200px;margin:0 auto}
+    .section-header{text-align:center;margin-bottom:3rem}
+    .section-tag{display:inline-block;font-size:.78rem;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--accent);margin-bottom:.75rem;font-family:'IBM Plex Mono',monospace}
+    .section-title{font-size:clamp(1.6rem,3vw,2.25rem);font-weight:800;margin-bottom:.75rem;letter-spacing:-.5px}
+    .section-subtitle{font-size:1rem;color:var(--text-secondary);max-width:500px;margin:0 auto}
+
+    .features-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1.5rem}
+    .feature-card{padding:1.75rem;border:1px solid var(--border);border-radius:var(--radius);background:white;transition:var(--transition)}
+    .feature-card:hover{transform:translateY(-3px);box-shadow:var(--shadow-md);border-color:var(--accent)}
+    .feature-emoji{font-size:2rem;margin-bottom:1rem;display:block}
+    .feature-title{font-size:1rem;font-weight:700;margin-bottom:.5rem}
+    .feature-desc{font-size:.875rem;color:var(--text-secondary);line-height:1.6}
+
+    .comparison-section{background:var(--off-white)}
+    .table-wrapper{overflow-x:auto;border-radius:var(--radius);box-shadow:var(--shadow-lg);border:1px solid var(--border)}
+    table{width:100%;border-collapse:collapse;background:white;min-width:680px}
+    caption{font-size:.82rem;color:var(--text-secondary);padding:.75rem 1.5rem;text-align:right;caption-side:bottom;font-style:italic}
+    thead tr{background:var(--text-primary)}
+    thead th{padding:1.25rem 1rem;text-align:center;color:white;font-size:.88rem;font-weight:700;white-space:nowrap}
+    thead th:first-child{text-align:right;padding-right:1.5rem}
+    .model-header{display:flex;flex-direction:column;align-items:center;gap:.3rem}
+    .model-icon{width:32px;height:32px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:.85rem;font-weight:800}
+    tbody tr{border-bottom:1px solid var(--border);transition:var(--transition)}
+    tbody tr:last-child{border-bottom:none}
+    tbody tr:hover{background:var(--accent-light)}
+    tbody td{padding:.9rem 1rem;text-align:center;font-size:.88rem}
+    tbody td:first-child{text-align:right;padding-right:1.5rem;font-weight:600}
+    .feature-label{display:flex;align-items:center;gap:.5rem}
+    .feature-icon{font-size:1rem;width:24px;text-align:center}
+    .check{color:var(--success);font-size:1.1rem;font-weight:700}
+    .cross{color:#C0392B;font-size:1.1rem}
+    .partial{color:var(--gold);font-size:1rem}
+    .badge{display:inline-block;padding:.2rem .6rem;border-radius:20px;font-size:.75rem;font-weight:700}
+    .badge-green{background:#E8F5EE;color:var(--success)}
+    .badge-blue{background:var(--accent-light);color:var(--accent)}
+    .badge-gold{background:var(--gold-light);color:var(--gold)}
+    .badge-gray{background:var(--light-gray);color:var(--text-secondary)}
+    .last-updated{text-align:center;margin-top:1rem;font-size:.8rem;color:var(--text-secondary)}
+
+    .articles-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:1.5rem}
+    .article-card{background:white;border:1px solid var(--border);border-radius:var(--radius);overflow:hidden;transition:var(--transition);text-decoration:none;color:inherit;display:flex;flex-direction:column}
+    .article-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-lg);border-color:var(--accent)}
+    .article-card:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+    .article-img{height:160px;background:linear-gradient(135deg,var(--accent-light),var(--off-white));display:flex;align-items:center;justify-content:center;font-size:3rem}
+    .article-body{padding:1.5rem;flex:1;display:flex;flex-direction:column}
+    .article-tag{font-size:.75rem;font-weight:700;color:var(--accent);text-transform:uppercase;letter-spacing:1px;margin-bottom:.5rem;font-family:'IBM Plex Mono',monospace}
+    .article-title{font-size:1rem;font-weight:700;margin-bottom:.5rem;line-height:1.5}
+    .article-excerpt{font-size:.875rem;color:var(--text-secondary);flex:1;line-height:1.6}
+    .article-footer{display:flex;justify-content:space-between;margin-top:1rem;padding-top:1rem;border-top:1px solid var(--border);font-size:.8rem;color:var(--text-secondary)}
+
+    .glossary-section{background:var(--off-white)}
+    .glossary-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1rem}
+    .glossary-card{background:white;border:1px solid var(--border);border-radius:var(--radius-sm);padding:1.25rem;transition:var(--transition)}
+    .glossary-card:hover{border-color:var(--accent);box-shadow:var(--shadow-sm)}
+    .glossary-term{font-size:.8rem;font-weight:700;color:var(--accent);font-family:'IBM Plex Mono',monospace;margin-bottom:.25rem}
+    .glossary-arabic{font-size:1rem;font-weight:700;margin-bottom:.375rem}
+    .glossary-def{font-size:.82rem;color:var(--text-secondary);line-height:1.5}
+
+    .newsletter-section{background:var(--text-primary);color:white}
+    .newsletter-inner{max-width:580px;margin:0 auto;text-align:center}
+    .newsletter-inner .section-tag{color:var(--gold)}
+    .newsletter-inner .section-title{color:white}
+    .newsletter-inner .section-subtitle{color:rgba(255,255,255,.65)}
+    .newsletter-form{display:flex;gap:.75rem;margin-top:2rem}
+    .newsletter-input{flex:1;padding:.875rem 1.25rem;border-radius:50px;border:1.5px solid rgba(255,255,255,.15);background:rgba(255,255,255,.08);color:white;font-size:.95rem;font-family:'Tajawal',sans-serif;outline:none;transition:var(--transition);text-align:right}
+    .newsletter-input::placeholder{color:rgba(255,255,255,.4)}
+    .newsletter-input:focus{border-color:rgba(255,255,255,.4);background:rgba(255,255,255,.12)}
+    .newsletter-input.error{border-color:#ff6b6b}
+    .btn-gold{background:var(--gold);color:white;padding:.875rem 1.75rem;border-radius:50px;font-size:.95rem;font-weight:700;border:none;cursor:pointer;transition:var(--transition);white-space:nowrap;font-family:'Tajawal',sans-serif}
+    .btn-gold:hover{background:#9A7209;transform:translateY(-2px)}
+    .btn-gold:focus-visible{outline:3px solid white;outline-offset:3px}
+    .btn-gold:disabled{opacity:.7;cursor:not-allowed;transform:none}
+    .newsletter-note{font-size:.78rem;color:rgba(255,255,255,.4);margin-top:1rem}
+    .newsletter-message{font-size:.9rem;margin-top:1rem;min-height:1.4rem}
+    .newsletter-message.success{color:#7fffb0}
+    .newsletter-message.error-msg{color:#ff9999}
+
+    footer{background:var(--off-white);border-top:1px solid var(--border);padding:3rem 2rem 2rem}
+    .footer-inner{max-width:1200px;margin:0 auto}
+    .footer-top{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:3rem;margin-bottom:2.5rem}
+    .footer-brand .nav-logo{font-size:1.25rem;margin-bottom:.75rem;display:inline-flex}
+    .footer-desc{font-size:.875rem;color:var(--text-secondary);line-height:1.7;max-width:260px}
+    .footer-col h4{font-size:.85rem;font-weight:700;margin-bottom:1rem;text-transform:uppercase;letter-spacing:.5px}
+    .footer-col ul{list-style:none}
+    .footer-col ul li{margin-bottom:.5rem}
+    .footer-col ul li a{font-size:.875rem;color:var(--text-secondary);text-decoration:none;transition:var(--transition)}
+    .footer-col ul li a:hover{color:var(--accent)}
+    .footer-bottom{border-top:1px solid var(--border);padding-top:1.5rem;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem}
+    .footer-copy{font-size:.8rem;color:var(--text-secondary)}
+    .footer-links{display:flex;gap:1.5rem}
+    .footer-links a{font-size:.8rem;color:var(--text-secondary);text-decoration:none;transition:var(--transition)}
+    .footer-links a:hover{color:var(--accent)}
+
+    @keyframes fadeInDown{from{opacity:0;transform:translateY(-12px)}to{opacity:1;transform:translateY(0)}}
+    @keyframes fadeInUp{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+    .reveal{opacity:0;transform:translateY(20px);transition:opacity .6s ease,transform .6s ease}
+    .reveal.visible{opacity:1;transform:translateY(0)}
+    .skeleton{background:linear-gradient(90deg,var(--light-gray) 25%,var(--off-white) 50%,var(--light-gray) 75%);background-size:200% 100%;animation:shimmer 1.5s infinite;border-radius:var(--radius-sm)}
+    @keyframes shimmer{0%{background-position:200% 0}100%{background-position:-200% 0}}
+
+    @media(max-width:900px){.footer-top{grid-template-columns:1fr 1fr}}
+    @media(max-width:700px){
+      .nav-links{display:none}
+      .hamburger{display:flex}
+      .hero{padding:3rem 1.25rem 2.5rem}
+      .hero-stats{gap:1.5rem}
+      section{padding:3.5rem 1.25rem}
+      .newsletter-form{flex-direction:column}
+      .footer-top{grid-template-columns:1fr;gap:2rem}
+      .footer-bottom{flex-direction:column;align-items:flex-start}
+    }
+  </style>
+</head>
+<body>
+
+<a href="#main-content" class="skip-link">انتقل إلى المحتوى الرئيسي</a>
+
+<nav role="navigation" aria-label="القائمة الرئيسية">
+  <div class="nav-inner">
+    <a href="/ar/" class="nav-logo" aria-label="ذكاء — الصفحة الرئيسية">
+      ذكاء<span class="ac">.</span><span class="dot" aria-hidden="true"></span>
+    </a>
+    <ul class="nav-links" id="nav-links" role="list">
+      <li><a href="#comparison">المقارنة</a></li>
+      <li><a href="#articles">المقالات</a></li>
+      <li><a href="#glossary">المصطلحات</a></li>
+      <li><a href="manifesto.html">البيان</a></li>
+      <li><a href="about.html">عن الموقع</a></li>
+      <li><a href="contact.html" class="nav-cta">تواصل</a></li>
+    </ul>
+    <div class="nav-right">
+      <div class="lang-switcher" role="group" aria-label="اختيار اللغة">
+        <a href="/ar/" class="lang-btn active" hreflang="ar" aria-current="true" aria-label="العربية">AR</a>
+        <a href="/en/" class="lang-btn" hreflang="en" aria-label="English">EN</a>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="فتح القائمة" aria-expanded="false" aria-controls="nav-links">
+        <span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<main id="main-content">
+
+  <header class="hero" role="banner">
+    <div class="container">
+      <div class="hero-badge">المرجع العربي الأول لمقارنة نماذج الذكاء الاصطناعي</div>
+      <h1>اكتشف عالم<br><em>الذكاء الاصطناعي</em><br>بعيونٍ عربية</h1>
+      <p class="hero-desc">مقارنات شاملة، مقالات معمّقة، وأدوات تفاعلية — كل ما تحتاجه لفهم نماذج AI الكبرى بلغتك ومن منظورك</p>
+      <div class="hero-actions">
+        <a href="#comparison" class="btn-primary">ابدأ المقارنة</a>
+        <a href="#articles" class="btn-secondary">اقرأ المقالات</a>
+      </div>
+      <div class="hero-stats" aria-label="إحصائيات الموقع">
+        <div class="stat"><span class="stat-number">5+</span><span class="stat-label">نماذج مقارنة</span></div>
+        <div class="stat"><span class="stat-number">100+</span><span class="stat-label">مصطلح موضّح</span></div>
+        <div class="stat"><span class="stat-number">محدّث</span><span class="stat-label">باستمرار</span></div>
+        <div class="stat"><span class="stat-number">مجاني</span><span class="stat-label">بالكامل</span></div>
+      </div>
+    </div>
+  </header>
+
+  <section aria-labelledby="features-title">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">لماذا ذكاء؟</span>
+        <h2 class="section-title" id="features-title">كل ما تحتاجه في مكان واحد</h2>
+        <p class="section-subtitle">محتوى عربي أصيل، دقيق، ومحدّث — لا ترجمة آلية</p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card reveal"><span class="feature-emoji" aria-hidden="true">🔬</span><h3 class="feature-title">مقارنات موضوعية</h3><p class="feature-desc">نقارن النماذج بناءً على معايير حقيقية وتجارب فعلية، بعيداً عن التحيّز</p></div>
+        <div class="feature-card reveal"><span class="feature-emoji" aria-hidden="true">📖</span><h3 class="feature-title">محتوى عربي أصيل</h3><p class="feature-desc">كل مقال ومصطلح مكتوب بالعربية أصلاً، وليس مترجماً بشكل آلي</p></div>
+        <div class="feature-card reveal"><span class="feature-emoji" aria-hidden="true">⚡</span><h3 class="feature-title">تحديث مستمر</h3><p class="feature-desc">عالم AI يتغير بسرعة — نحرص على مواكبة كل جديد وتحديث المعلومات فوراً</p></div>
+        <div class="feature-card reveal"><span class="feature-emoji" aria-hidden="true">🛡️</span><h3 class="feature-title">موثوق وآمن</h3><p class="feature-desc">موقع نظيف بدون إعلانات مزعجة، يحترم خصوصيتك ويحمي بياناتك</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="comparison-section" id="comparison" aria-labelledby="comparison-title">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">المقارنة الشاملة</span>
+        <h2 class="section-title" id="comparison-title">نماذج الذكاء الاصطناعي الكبرى</h2>
+        <p class="section-subtitle">مقارنة موضوعية بين أبرز النماذج المتاحة حالياً</p>
+      </div>
+      <div class="table-wrapper reveal" role="region" aria-label="جدول مقارنة نماذج الذكاء الاصطناعي" tabindex="0">
+        <div id="table-container"><div class="skeleton" style="height:300px;margin:1rem;border-radius:8px"></div></div>
+      </div>
+      <p class="last-updated" id="last-updated" aria-live="polite"></p>
+    </div>
+  </section>
+
+  <section id="articles" aria-labelledby="articles-title">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">المقالات والأخبار</span>
+        <h2 class="section-title" id="articles-title">آخر ما كُتب في عالم AI</h2>
+        <p class="section-subtitle">مقالات معمّقة ومحللة بعيون عربية</p>
+      </div>
+      <div class="articles-grid" id="articles-grid">
+        <div class="skeleton" style="height:320px;border-radius:12px"></div>
+        <div class="skeleton" style="height:320px;border-radius:12px"></div>
+        <div class="skeleton" style="height:320px;border-radius:12px"></div>
+      </div>
+      <div style="text-align:center;margin-top:2.5rem"><a href="articles/" class="btn-secondary">عرض جميع المقالات ←</a></div>
+    </div>
+  </section>
+
+  <section class="glossary-section" id="glossary" aria-labelledby="glossary-title">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">قاموس المصطلحات</span>
+        <h2 class="section-title" id="glossary-title">مصطلحات AI بالعربية</h2>
+        <p class="section-subtitle">أكثر من 100 مصطلح موضّح بلغة بسيطة وواضحة</p>
+      </div>
+      <div class="glossary-grid" id="glossary-grid">
+        <div class="skeleton" style="height:100px;border-radius:8px"></div>
+        <div class="skeleton" style="height:100px;border-radius:8px"></div>
+        <div class="skeleton" style="height:100px;border-radius:8px"></div>
+        <div class="skeleton" style="height:100px;border-radius:8px"></div>
+      </div>
+      <div style="text-align:center;margin-top:2.5rem"><a href="glossary.html" class="btn-secondary">عرض القاموس الكامل ←</a></div>
+    </div>
+  </section>
+
+  <section class="newsletter-section" aria-labelledby="newsletter-title">
+    <div class="container">
+      <div class="newsletter-inner reveal">
+        <span class="section-tag">النشرة البريدية</span>
+        <h2 class="section-title" id="newsletter-title">ابقَ على اطلاع دائم</h2>
+        <p class="section-subtitle">نشرة أسبوعية تجمع أهم أخبار الذكاء الاصطناعي — بالعربية حصراً</p>
+        <div class="newsletter-form" role="form" aria-label="الاشتراك في النشرة البريدية">
+          <input type="email" id="newsletter-email" class="newsletter-input" placeholder="أدخل بريدك الإلكتروني" aria-label="البريد الإلكتروني للاشتراك" autocomplete="email" inputmode="email">
+          <button class="btn-gold" id="newsletter-btn" type="button" onclick="handleNewsletter()">انضم للنشرة</button>
+        </div>
+        <p class="newsletter-note">بدون سبام — نشرة أسبوعية فقط — يمكنك إلغاء الاشتراك في أي وقت</p>
+        <p class="newsletter-message" id="newsletter-message" aria-live="polite" role="status"></p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer role="contentinfo">
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="/ar/" class="nav-logo" aria-label="ذكاء — الصفحة الرئيسية">ذكاء<span class="ac">.</span></a>
+        <p class="footer-desc">المرجع العربي الأول لمقارنة نماذج الذكاء الاصطناعي وفهم عالم AI بلغتك ومن منظورك</p>
+      </div>
+      <div class="footer-col"><h4>الموقع</h4><ul><li><a href="#comparison">المقارنة</a></li><li><a href="#articles">المقالات</a></li><li><a href="#glossary">المصطلحات</a></li><li><a href="manifesto.html">البيان</a></li></ul></div>
+      <div class="footer-col"><h4>عن الموقع</h4><ul><li><a href="about.html">من نحن</a></li><li><a href="contact.html">تواصل معنا</a></li><li><a href="privacy.html">سياسة الخصوصية</a></li></ul></div>
+      <div class="footer-col"><h4>تابعنا</h4><ul><li><a href="https://substack.com" target="_blank" rel="noopener noreferrer">النشرة على Substack</a></li><li><a href="/en/">English Version</a></li></ul></div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy" id="footer-copy"></p>
+      <div class="footer-links"><a href="privacy.html">سياسة الخصوصية</a><a href="sitemap.xml">خريطة الموقع</a></div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // Dynamic year
+  document.getElementById('footer-copy').textContent = `© ${new Date().getFullYear()} ذكاء — zakae.com — جميع الحقوق محفوظة`;
+
+  // Scroll reveal
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(el => { if(el.isIntersecting){el.target.classList.add('visible');observer.unobserve(el.target)} });
+  }, {threshold:.08, rootMargin:'0px 0px -40px 0px'});
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+  // Load data.json
+  async function loadData() {
+    try {
+      const res = await fetch('/data.json');
+      if(!res.ok) throw new Error();
+      const data = await res.json();
+      renderTable(data.models, data.site.lastUpdated);
+      renderArticles(data.articles);
+      renderGlossary(data.glossary);
+    } catch(e) {
+      document.getElementById('table-container').innerHTML = '<p style="padding:2rem;text-align:center;color:var(--text-secondary)">تعذّر تحميل البيانات، يرجى تحديث الصفحة</p>';
+    }
+  }
+
+  function renderTable(models, lastUpdated) {
+    const bL = {excellent:'badge-green', good:'badge-blue', low:'badge-gray'};
+    const pL = {high:'badge-green', medium:'badge-blue', low:'badge-gray'};
+    const cL = {green:'badge-green', blue:'badge-blue', gold:'badge-gold'};
+    const headers = models.map(m=>`<th scope="col"><div class="model-header"><div class="model-icon" style="background:${m.bg};color:${m.color}">${m.icon}</div>${m.name}</div></th>`).join('');
+    const rows = [
+      {l:'💰',t:'نسخة مجانية', r:m=>m.free===true?'<span class="check">✓</span>':m.free==='partial'?'<span class="partial">◑</span>':'<span class="cross">✗</span>'},
+      {l:'🌐',t:'دعم العربية', r:m=>`<span class="badge ${bL[m.arabicLevel]||'badge-gray'}">${m.arabicSupport}</span>`},
+      {l:'🖼️',t:'تحليل الصور', r:m=>m.imageAnalysis?'<span class="check">✓</span>':'<span class="cross">✗</span>'},
+      {l:'🔍',t:'البحث على الويب', r:m=>m.webSearch?'<span class="check">✓</span>':'<span class="cross">✗</span>'},
+      {l:'💻',t:'كتابة الكود', r:m=>`<span class="badge ${bL[m.codingLevel]||'badge-gray'}">${m.coding}</span>`},
+      {l:'📝',t:'الكتابة الإبداعية', r:m=>`<span class="badge ${bL[m.creativeLevel]||'badge-gray'}">${m.creative}</span>`},
+      {l:'🔒',t:'الخصوصية', r:m=>`<span class="badge ${pL[m.privacyLevel]||'badge-gray'}">${m.privacy}</span>`},
+      {l:'📦',t:'نافذة السياق', r:m=>`<span class="badge ${cL[m.contextLevel]||'badge-gray'}">${m.contextWindow}</span>`},
+      {l:'🏢',t:'الشركة المطوّرة', r:m=>m.company}
+    ];
+    const tbody = rows.map(row=>`<tr><td><div class="feature-label"><span class="feature-icon" aria-hidden="true">${row.l}</span>${row.t}</div></td>${models.map(m=>`<td>${row.r(m)}</td>`).join('')}</tr>`).join('');
+    document.getElementById('table-container').innerHTML = `<table><caption>مقارنة نماذج الذكاء الاصطناعي الكبرى — المصدر: اختبارات ذكاء</caption><thead><tr><th scope="col">المعيار</th>${headers}</tr></thead><tbody>${tbody}</tbody></table>`;
+    if(lastUpdated){
+      const d = new Date(lastUpdated);
+      document.getElementById('last-updated').textContent = `آخر تحديث: ${d.toLocaleDateString('ar-EG',{year:'numeric',month:'long',day:'numeric'})}`;
+    }
+  }
+
+  function renderArticles(articles) {
+    const grid = document.getElementById('articles-grid');
+    grid.innerHTML = articles.map(a=>`<a href="${a.url}" class="article-card reveal" aria-label="اقرأ: ${a.title}"><div class="article-img" aria-hidden="true">${a.emoji}</div><div class="article-body"><div class="article-tag">${a.tag}</div><h3 class="article-title">${a.title}</h3><p class="article-excerpt">${a.excerpt}</p><div class="article-footer"><span>${a.readTime} قراءة</span><span>${a.date}</span></div></div></a>`).join('');
+    grid.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+  }
+
+  function renderGlossary(terms) {
+    const grid = document.getElementById('glossary-grid');
+    grid.innerHTML = terms.map(t=>`<div class="glossary-card reveal"><div class="glossary-term">${t.term}</div><div class="glossary-arabic">${t.arabic}</div><div class="glossary-def">${t.definition}</div></div>`).join('');
+    grid.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+  }
+
+  // Newsletter
+  function handleNewsletter() {
+    const input = document.getElementById('newsletter-email');
+    const btn = document.getElementById('newsletter-btn');
+    const msg = document.getElementById('newsletter-message');
+    const email = input.value.trim();
+    input.classList.remove('error');
+    msg.className = 'newsletter-message';
+    msg.textContent = '';
+    if(!email){input.classList.add('error');msg.classList.add('error-msg');msg.textContent='يرجى إدخال بريدك الإلكتروني';input.focus();return}
+    if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)){input.classList.add('error');msg.classList.add('error-msg');msg.textContent='يرجى إدخال بريد إلكتروني صحيح';input.focus();return}
+    btn.disabled=true; btn.textContent='جارٍ التوجيه...';
+    window.open(`https://zakae.substack.com/subscribe?email=${encodeURIComponent(email)}`,'_blank','noopener,noreferrer');
+    msg.classList.add('success'); msg.textContent='✓ سيتم فتح صفحة الاشتراك في نافذة جديدة';
+    btn.textContent='تم ✓'; input.value='';
+    setTimeout(()=>{btn.disabled=false;btn.textContent='انضم للنشرة';msg.textContent='';msg.className='newsletter-message'},5000);
+  }
+  document.getElementById('newsletter-email').addEventListener('keydown',e=>{if(e.key==='Enter')handleNewsletter()});
+
+  // Mobile nav
+  const hamburger = document.getElementById('hamburger');
+  const navLinks = document.getElementById('nav-links');
+  function closeNav(){navLinks.classList.remove('nav-open');hamburger.classList.remove('is-open');hamburger.setAttribute('aria-expanded','false')}
+  hamburger.addEventListener('click',()=>{
+    const isOpen = navLinks.classList.contains('nav-open');
+    if(isOpen){closeNav()}else{navLinks.classList.add('nav-open');hamburger.classList.add('is-open');hamburger.setAttribute('aria-expanded','true')}
+  });
+  navLinks.querySelectorAll('a').forEach(l=>l.addEventListener('click',closeNav));
+  document.addEventListener('click',e=>{if(!hamburger.contains(e.target)&&!navLinks.contains(e.target))closeNav()});
+  window.addEventListener('resize',()=>{if(window.innerWidth>700)closeNav()});
+
+  loadData();
+</script>
+</body>
+</html>

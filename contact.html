@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>تواصل معنا | ذكاء — zakae.com</title>
+  <meta name="description" content="تواصل مع فريق ذكاء — لأي استفسار، اقتراح، أو مساهمة في مجال الذكاء الاصطناعي.">
+  <link rel="canonical" href="https://zakae.com/ar/contact.html">
+  <meta property="og:title" content="تواصل معنا | ذكاء">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <!-- reCAPTCHA v3 - replace YOUR_SITE_KEY with your actual key -->
+  <!-- <script src="https://www.google.com/recaptcha/api.js?render=YOUR_SITE_KEY"></script> -->
+  <style>
+    :root{--white:#FAFAF8;--off-white:#F2F0EB;--light-gray:#E8E5DE;--text-secondary:#7A7570;--text-primary:#1A1916;--accent:#2A5C8F;--accent-light:#EBF2FA;--accent-hover:#1E4470;--gold:#B8860B;--gold-light:#FDF8EC;--success:#2D7A4F;--error:#C0392B;--border:#E0DDD6;--shadow-sm:0 1px 3px rgba(26,25,22,.06);--shadow-md:0 4px 16px rgba(26,25,22,.08);--shadow-lg:0 12px 40px rgba(26,25,22,.12);--radius:12px;--radius-sm:8px;--transition:all .25s cubic-bezier(.4,0,.2,1)}
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{font-family:'Tajawal',sans-serif;background:var(--white);color:var(--text-primary);line-height:1.8;direction:rtl;overflow-x:hidden}
+    .skip-link{position:absolute;top:-100px;right:0;background:var(--accent);color:white;padding:.75rem 1.5rem;font-weight:700;text-decoration:none;z-index:999;transition:top .2s}
+    .skip-link:focus{top:0}
+    nav{position:sticky;top:0;z-index:100;background:rgba(250,250,248,.95);backdrop-filter:blur(16px);border-bottom:1px solid var(--border);padding:0 2rem}
+    .nav-inner{max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:64px;position:relative}
+    .nav-logo{font-size:1.5rem;font-weight:800;color:var(--text-primary);text-decoration:none;letter-spacing:-.5px;display:flex;align-items:center;gap:.25rem}
+    .nav-logo .ac{color:var(--accent)}
+    .nav-logo .dot{width:6px;height:6px;background:var(--gold);border-radius:50%;display:inline-block;margin-bottom:2px}
+    .nav-links{display:flex;align-items:center;gap:.25rem;list-style:none}
+    .nav-links a{text-decoration:none;color:var(--text-secondary);font-size:.9rem;font-weight:500;padding:.5rem .875rem;border-radius:var(--radius-sm);transition:var(--transition)}
+    .nav-links a:hover{color:var(--text-primary);background:var(--off-white)}
+    .nav-links a.active{color:var(--accent);font-weight:700}
+    .nav-cta{background:var(--accent)!important;color:white!important;border-radius:20px!important;font-weight:600!important}
+    .nav-right{display:flex;align-items:center;gap:.75rem}
+    .lang-switcher{display:flex;align-items:center;gap:.25rem;background:var(--off-white);border-radius:20px;padding:3px}
+    .lang-btn{font-size:.78rem;font-weight:700;padding:.3rem .7rem;border-radius:16px;text-decoration:none;transition:var(--transition);font-family:'IBM Plex Mono',monospace;color:var(--text-secondary)}
+    .lang-btn.active{background:white;color:var(--text-primary);box-shadow:var(--shadow-sm)}
+    .hamburger{display:none;background:none;border:1px solid var(--border);border-radius:var(--radius-sm);cursor:pointer;padding:.5rem;flex-direction:column;gap:5px;align-items:center;justify-content:center}
+    .hamburger span{display:block;width:20px;height:2px;background:var(--text-primary);border-radius:2px;transition:var(--transition)}
+    .nav-links.nav-open{display:flex!important;flex-direction:column;position:absolute;top:64px;right:-2rem;left:-2rem;background:white;padding:1rem 1.5rem 1.5rem;border-bottom:1px solid var(--border);box-shadow:var(--shadow-md);gap:.25rem;z-index:99}
+    .nav-links.nav-open a{padding:.75rem 1rem;display:block}
+    .hamburger.is-open span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+    .hamburger.is-open span:nth-child(2){opacity:0}
+    .hamburger.is-open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+
+    .page-hero{padding:5rem 2rem 4rem;background:var(--off-white);border-bottom:1px solid var(--border);text-align:center}
+    .page-tag{display:inline-block;font-size:.78rem;font-weight:700;letter-spacing:1.5px;text-transform:uppercase;color:var(--accent);margin-bottom:.75rem;font-family:'IBM Plex Mono',monospace}
+    .page-hero h1{font-size:clamp(2rem,4.5vw,3.25rem);font-weight:800;letter-spacing:-1px;margin-bottom:1rem;animation:fadeInUp .7s ease both}
+    .page-hero p{font-size:1.1rem;color:var(--text-secondary);max-width:520px;margin:0 auto;animation:fadeInUp .7s ease .1s both}
+
+    .contact-body{max-width:1000px;margin:0 auto;padding:5rem 2rem;display:grid;grid-template-columns:1fr 1.6fr;gap:4rem;align-items:start}
+
+    /* SIDEBAR */
+    .contact-sidebar{}
+    .contact-sidebar h2{font-size:1.25rem;font-weight:800;margin-bottom:1.5rem;letter-spacing:-.5px}
+    .contact-channels{display:flex;flex-direction:column;gap:1rem;margin-bottom:2.5rem}
+    .contact-channel{display:flex;align-items:flex-start;gap:1rem;padding:1.25rem;background:white;border:1px solid var(--border);border-radius:var(--radius-sm);transition:var(--transition);text-decoration:none;color:inherit}
+    .contact-channel:hover{border-color:var(--accent);box-shadow:var(--shadow-sm);transform:translateY(-2px)}
+    .channel-icon{font-size:1.5rem;flex-shrink:0;margin-top:.1rem}
+    .channel-title{font-size:.9rem;font-weight:700;margin-bottom:.2rem}
+    .channel-desc{font-size:.82rem;color:var(--text-secondary);line-height:1.5}
+    .channel-link{font-size:.8rem;color:var(--accent);font-weight:600;font-family:'IBM Plex Mono',monospace;margin-top:.25rem;display:block}
+
+    .response-note{background:var(--gold-light);border:1px solid rgba(184,134,11,.2);border-radius:var(--radius-sm);padding:1.25rem}
+    .response-note p{font-size:.85rem;color:#7A6210;line-height:1.6}
+    .response-note strong{color:var(--gold)}
+
+    /* FORM */
+    .contact-form-wrapper{}
+    .contact-form-wrapper h2{font-size:1.25rem;font-weight:800;margin-bottom:1.5rem;letter-spacing:-.5px}
+
+    .form-group{margin-bottom:1.25rem}
+    .form-label{display:block;font-size:.875rem;font-weight:700;margin-bottom:.5rem;color:var(--text-primary)}
+    .form-label span{color:var(--error);margin-right:.2rem}
+    .form-input,.form-textarea,.form-select{
+      width:100%;
+      padding:.875rem 1rem;
+      border:1.5px solid var(--border);
+      border-radius:var(--radius-sm);
+      font-size:.95rem;
+      font-family:'Tajawal',sans-serif;
+      color:var(--text-primary);
+      background:white;
+      transition:var(--transition);
+      direction:rtl;
+      outline:none;
+    }
+    .form-input:focus,.form-textarea:focus,.form-select:focus{border-color:var(--accent);box-shadow:0 0 0 3px rgba(42,92,143,.1)}
+    .form-input.error,.form-textarea.error{border-color:var(--error)}
+    .form-textarea{resize:vertical;min-height:140px;line-height:1.7}
+    .form-select{cursor:pointer;appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%237A7570' stroke-width='1.5' fill='none'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:left 1rem center}
+    .form-error{font-size:.8rem;color:var(--error);margin-top:.35rem;display:none}
+    .form-error.visible{display:block}
+    .char-count{font-size:.78rem;color:var(--text-secondary);text-align:left;margin-top:.35rem;font-family:'IBM Plex Mono',monospace}
+
+    .form-submit{
+      width:100%;
+      padding:1rem;
+      background:var(--accent);
+      color:white;
+      border:none;
+      border-radius:var(--radius-sm);
+      font-size:1rem;
+      font-weight:700;
+      font-family:'Tajawal',sans-serif;
+      cursor:pointer;
+      transition:var(--transition);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      gap:.5rem;
+    }
+    .form-submit:hover{background:var(--accent-hover);transform:translateY(-1px)}
+    .form-submit:disabled{opacity:.7;cursor:not-allowed;transform:none}
+    .form-submit:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+
+    /* SUCCESS STATE */
+    .form-success{display:none;text-align:center;padding:3rem 2rem;background:white;border:1px solid var(--border);border-radius:var(--radius)}
+    .form-success.visible{display:block}
+    .success-icon{font-size:3rem;margin-bottom:1rem;display:block}
+    .form-success h3{font-size:1.25rem;font-weight:800;margin-bottom:.75rem}
+    .form-success p{font-size:.95rem;color:var(--text-secondary)}
+
+    footer{background:var(--off-white);border-top:1px solid var(--border);padding:2rem}
+    .footer-bottom{max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem}
+    .footer-copy{font-size:.8rem;color:var(--text-secondary)}
+    .footer-links{display:flex;gap:1.5rem}
+    .footer-links a{font-size:.8rem;color:var(--text-secondary);text-decoration:none;transition:var(--transition)}
+    .footer-links a:hover{color:var(--accent)}
+
+    .reveal{opacity:0;transform:translateY(20px);transition:opacity .6s ease,transform .6s ease}
+    .reveal.visible{opacity:1;transform:translateY(0)}
+    @keyframes fadeInUp{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
+
+    @media(max-width:700px){
+      .nav-links{display:none}.hamburger{display:flex}
+      .contact-body{grid-template-columns:1fr;gap:2.5rem;padding:3rem 1.25rem}
+      .footer-bottom{flex-direction:column;align-items:flex-start}
+    }
+  </style>
+</head>
+<body>
+
+<a href="#main-content" class="skip-link">انتقل إلى المحتوى الرئيسي</a>
+
+<nav role="navigation" aria-label="القائمة الرئيسية">
+  <div class="nav-inner">
+    <a href="/ar/" class="nav-logo">ذكاء<span class="ac">.</span><span class="dot" aria-hidden="true"></span></a>
+    <ul class="nav-links" id="nav-links" role="list">
+      <li><a href="index.html#comparison">المقارنة</a></li>
+      <li><a href="index.html#articles">المقالات</a></li>
+      <li><a href="index.html#glossary">المصطلحات</a></li>
+      <li><a href="manifesto.html">البيان</a></li>
+      <li><a href="about.html">عن الموقع</a></li>
+      <li><a href="contact.html" class="nav-cta active">تواصل</a></li>
+    </ul>
+    <div class="nav-right">
+      <div class="lang-switcher" role="group" aria-label="اختيار اللغة">
+        <a href="/ar/contact.html" class="lang-btn active" hreflang="ar">AR</a>
+        <a href="/en/contact.html" class="lang-btn" hreflang="en">EN</a>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="فتح القائمة" aria-expanded="false" aria-controls="nav-links">
+        <span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<main id="main-content">
+
+  <header class="page-hero" role="banner">
+    <span class="page-tag">تواصل معنا</span>
+    <h1>نسمعك — تحدّث إلينا</h1>
+    <p>سواء كان لديك سؤال، اقتراح، أو رغبة في المساهمة — نرحب بكل تواصل</p>
+  </header>
+
+  <div class="contact-body">
+
+    <!-- SIDEBAR -->
+    <aside class="contact-sidebar reveal" aria-label="قنوات التواصل">
+      <h2>قنوات التواصل</h2>
+      <div class="contact-channels">
+        <div class="contact-channel" tabindex="0">
+          <span class="channel-icon" aria-hidden="true">✉️</span>
+          <div>
+            <div class="channel-title">البريد الإلكتروني</div>
+            <div class="channel-desc">للاستفسارات العامة والمقترحات</div>
+            <span class="channel-link">contact@zakae.com</span>
+          </div>
+        </div>
+        <a href="https://substack.com" target="_blank" rel="noopener noreferrer" class="contact-channel">
+          <span class="channel-icon" aria-hidden="true">📬</span>
+          <div>
+            <div class="channel-title">النشرة البريدية</div>
+            <div class="channel-desc">اشترك للحصول على تحليلاتنا الأسبوعية</div>
+            <span class="channel-link">zakae.substack.com ↗</span>
+          </div>
+        </a>
+        <a href="manifesto.html" class="contact-channel">
+          <span class="channel-icon" aria-hidden="true">📜</span>
+          <div>
+            <div class="channel-title">اقرأ البيان</div>
+            <div class="channel-desc">تعرف على رؤيتنا وموقفنا الفكري</div>
+            <span class="channel-link">البيان ←</span>
+          </div>
+        </a>
+      </div>
+
+      <div class="response-note" role="note">
+        <p><strong>وقت الاستجابة:</strong> نحرص على الرد خلال 48 ساعة في أيام العمل. رسائل المساهمة المحتوى تأخذ أولوية أعلى.</p>
+      </div>
+    </aside>
+
+    <!-- FORM -->
+    <div class="contact-form-wrapper reveal">
+      <h2>أرسل رسالتك</h2>
+
+      <div id="contact-form" aria-label="نموذج التواصل">
+        <div class="form-group">
+          <label class="form-label" for="name">الاسم <span aria-hidden="true">*</span></label>
+          <input type="text" id="name" class="form-input" placeholder="اسمك الكريم" autocomplete="name" aria-required="true" maxlength="100">
+          <p class="form-error" id="name-error" role="alert">يرجى إدخال اسمك</p>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="email">البريد الإلكتروني <span aria-hidden="true">*</span></label>
+          <input type="email" id="email" class="form-input" placeholder="بريدك الإلكتروني" autocomplete="email" inputmode="email" aria-required="true">
+          <p class="form-error" id="email-error" role="alert">يرجى إدخال بريد إلكتروني صحيح</p>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="subject">موضوع الرسالة <span aria-hidden="true">*</span></label>
+          <select id="subject" class="form-select" aria-required="true">
+            <option value="">اختر الموضوع</option>
+            <option value="question">سؤال أو استفسار</option>
+            <option value="suggestion">اقتراح لمحتوى جديد</option>
+            <option value="correction">تصحيح معلومة</option>
+            <option value="contribution">مساهمة في الموقع</option>
+            <option value="partnership">تعاون أو شراكة</option>
+            <option value="other">أخرى</option>
+          </select>
+          <p class="form-error" id="subject-error" role="alert">يرجى اختيار موضوع الرسالة</p>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="message">الرسالة <span aria-hidden="true">*</span></label>
+          <textarea id="message" class="form-textarea" placeholder="اكتب رسالتك هنا..." aria-required="true" maxlength="2000"></textarea>
+          <p class="char-count" id="char-count" aria-live="polite">0 / 2000</p>
+          <p class="form-error" id="message-error" role="alert">يرجى كتابة رسالتك (20 حرف على الأقل)</p>
+        </div>
+
+        <!-- Honeypot anti-spam -->
+        <div style="display:none" aria-hidden="true">
+          <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
+        </div>
+
+        <button type="button" class="form-submit" id="submit-btn" onclick="submitForm()">
+          <span id="btn-text">إرسال الرسالة</span>
+        </button>
+      </div>
+
+      <!-- SUCCESS -->
+      <div class="form-success" id="form-success" role="status" aria-live="polite">
+        <span class="success-icon" aria-hidden="true">✓</span>
+        <h3>تم إرسال رسالتك بنجاح!</h3>
+        <p>شكراً لتواصلك معنا. سنرد عليك خلال 48 ساعة في أيام العمل.</p>
+      </div>
+    </div>
+
+  </div>
+
+</main>
+
+<footer role="contentinfo">
+  <div class="footer-bottom">
+    <p class="footer-copy" id="footer-copy"></p>
+    <div class="footer-links">
+      <a href="index.html">الرئيسية</a>
+      <a href="privacy.html">سياسة الخصوصية</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('footer-copy').textContent = `© ${new Date().getFullYear()} ذكاء — zakae.com`;
+
+  // Char count
+  const messageEl = document.getElementById('message');
+  const charCount = document.getElementById('char-count');
+  messageEl.addEventListener('input', () => {
+    const len = messageEl.value.length;
+    charCount.textContent = `${len} / 2000`;
+    charCount.style.color = len > 1800 ? '#C0392B' : 'var(--text-secondary)';
+  });
+
+  // Validate
+  function validate() {
+    let valid = true;
+    const fields = [
+      { id: 'name', errId: 'name-error', check: v => v.trim().length >= 2 },
+      { id: 'email', errId: 'email-error', check: v => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v.trim()) },
+      { id: 'subject', errId: 'subject-error', check: v => v !== '' },
+      { id: 'message', errId: 'message-error', check: v => v.trim().length >= 20 }
+    ];
+    fields.forEach(f => {
+      const el = document.getElementById(f.id);
+      const err = document.getElementById(f.errId);
+      if(!f.check(el.value)){
+        el.classList.add('error');
+        err.classList.add('visible');
+        valid = false;
+      } else {
+        el.classList.remove('error');
+        err.classList.remove('visible');
+      }
+    });
+    return valid;
+  }
+
+  // Clear error on input
+  ['name','email','subject','message'].forEach(id => {
+    document.getElementById(id).addEventListener('input', () => {
+      document.getElementById(id).classList.remove('error');
+      document.getElementById(id + '-error').classList.remove('visible');
+    });
+  });
+
+  // Submit
+  async function submitForm() {
+    // Honeypot check
+    if(document.getElementById('website').value) return;
+    if(!validate()) return;
+
+    const btn = document.getElementById('submit-btn');
+    const btnText = document.getElementById('btn-text');
+    btn.disabled = true;
+    btnText.textContent = 'جارٍ الإرسال...';
+
+    const formData = {
+      name: document.getElementById('name').value.trim(),
+      email: document.getElementById('email').value.trim(),
+      subject: document.getElementById('subject').value,
+      message: document.getElementById('message').value.trim()
+    };
+
+    try {
+      // Replace YOUR_FORMSPREE_ID with your actual Formspree form ID
+      const res = await fetch('https://formspree.io/f/YOUR_FORMSPREE_ID', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+        body: JSON.stringify(formData)
+      });
+
+      if(res.ok) {
+        document.getElementById('contact-form').style.display = 'none';
+        document.getElementById('form-success').classList.add('visible');
+      } else {
+        throw new Error();
+      }
+    } catch(e) {
+      btnText.textContent = 'حدث خطأ — حاول مرة أخرى';
+      btn.disabled = false;
+      setTimeout(() => { btnText.textContent = 'إرسال الرسالة'; }, 3000);
+    }
+  }
+
+  // Scroll reveal
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(el => { if(el.isIntersecting){el.target.classList.add('visible');observer.unobserve(el.target)} });
+  }, {threshold:.08});
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+  // Mobile nav
+  const hamburger = document.getElementById('hamburger');
+  const navLinks = document.getElementById('nav-links');
+  function closeNav(){navLinks.classList.remove('nav-open');hamburger.classList.remove('is-open');hamburger.setAttribute('aria-expanded','false')}
+  hamburger.addEventListener('click',()=>{const isOpen=navLinks.classList.contains('nav-open');if(isOpen){closeNav()}else{navLinks.classList.add('nav-open');hamburger.classList.add('is-open');hamburger.setAttribute('aria-expanded','true')}});
+  navLinks.querySelectorAll('a').forEach(l=>l.addEventListener('click',closeNav));
+  document.addEventListener('click',e=>{if(!hamburger.contains(e.target)&&!navLinks.contains(e.target))closeNav()});
+  window.addEventListener('resize',()=>{if(window.innerWidth>700)closeNav()});
+</script>
+</body>
+</html>

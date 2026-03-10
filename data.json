@@ -1,0 +1,179 @@
+{
+  "site": {
+    "name": "ذكاء",
+    "tagline": "المرجع العربي الأول لمقارنة نماذج الذكاء الاصطناعي",
+    "url": "https://zakae.com",
+    "lastUpdated": "2026-03-10"
+  },
+  "models": [
+    {
+      "id": "claude",
+      "name": "Claude",
+      "company": "Anthropic",
+      "icon": "C",
+      "color": "#0066CC",
+      "bg": "#D4E9FF",
+      "free": true,
+      "arabicSupport": "جيد جداً",
+      "arabicLevel": "good",
+      "imageAnalysis": true,
+      "webSearch": true,
+      "coding": "ممتاز",
+      "codingLevel": "excellent",
+      "creative": "ممتاز",
+      "creativeLevel": "excellent",
+      "privacy": "عالية",
+      "privacyLevel": "high",
+      "contextWindow": "200K",
+      "contextLevel": "green"
+    },
+    {
+      "id": "chatgpt",
+      "name": "ChatGPT",
+      "company": "OpenAI",
+      "icon": "G",
+      "color": "#1A8C1A",
+      "bg": "#E8FFE8",
+      "free": true,
+      "arabicSupport": "ممتاز",
+      "arabicLevel": "excellent",
+      "imageAnalysis": true,
+      "webSearch": true,
+      "coding": "ممتاز",
+      "codingLevel": "excellent",
+      "creative": "ممتاز",
+      "creativeLevel": "excellent",
+      "privacy": "متوسطة",
+      "privacyLevel": "medium",
+      "contextWindow": "128K",
+      "contextLevel": "blue"
+    },
+    {
+      "id": "gemini",
+      "name": "Gemini",
+      "company": "Google",
+      "icon": "Ge",
+      "color": "#E65C00",
+      "bg": "#FFF3E0",
+      "free": true,
+      "arabicSupport": "ممتاز",
+      "arabicLevel": "excellent",
+      "imageAnalysis": true,
+      "webSearch": true,
+      "coding": "جيد جداً",
+      "codingLevel": "good",
+      "creative": "جيد جداً",
+      "creativeLevel": "good",
+      "privacy": "متوسطة",
+      "privacyLevel": "medium",
+      "contextWindow": "1M+",
+      "contextLevel": "gold"
+    },
+    {
+      "id": "deepseek",
+      "name": "DeepSeek",
+      "company": "DeepSeek",
+      "icon": "D",
+      "color": "#6600CC",
+      "bg": "#F0E8FF",
+      "free": true,
+      "arabicSupport": "جيد",
+      "arabicLevel": "good",
+      "imageAnalysis": true,
+      "webSearch": true,
+      "coding": "ممتاز",
+      "codingLevel": "excellent",
+      "creative": "جيد",
+      "creativeLevel": "good",
+      "privacy": "محدودة",
+      "privacyLevel": "low",
+      "contextWindow": "128K",
+      "contextLevel": "blue"
+    },
+    {
+      "id": "grok",
+      "name": "Grok",
+      "company": "xAI",
+      "icon": "Gr",
+      "color": "#CC0000",
+      "bg": "#FFE8E8",
+      "free": "partial",
+      "arabicSupport": "محدود",
+      "arabicLevel": "low",
+      "imageAnalysis": true,
+      "webSearch": true,
+      "coding": "جيد جداً",
+      "codingLevel": "good",
+      "creative": "جيد",
+      "creativeLevel": "good",
+      "privacy": "محدودة",
+      "privacyLevel": "low",
+      "contextWindow": "131K",
+      "contextLevel": "blue"
+    }
+  ],
+  "articles": [
+    {
+      "id": "claude-vs-chatgpt",
+      "title": "Claude مقابل ChatGPT — أيهما أفضل في 2026؟",
+      "excerpt": "مقارنة شاملة بين النموذجين الأكثر استخداماً في العالم، من حيث الدقة والأمان ودعم العربية",
+      "tag": "مقارنة",
+      "emoji": "🤖",
+      "readTime": "٨ دقائق",
+      "date": "مارس 2026",
+      "url": "articles/claude-vs-chatgpt.html"
+    },
+    {
+      "id": "deepseek-revolution",
+      "title": "DeepSeek — النموذج الصيني الذي غيّر المعادلة",
+      "excerpt": "تحليل معمّق لصعود DeepSeek وتأثيره على مشهد الذكاء الاصطناعي العالمي",
+      "tag": "تحليل",
+      "emoji": "🌊",
+      "readTime": "١٢ دقيقة",
+      "date": "فبراير 2026",
+      "url": "articles/deepseek-revolution.html"
+    },
+    {
+      "id": "ai-arabic",
+      "title": "الذكاء الاصطناعي واللغة العربية — أين نحن؟",
+      "excerpt": "تقييم صريح لمستوى دعم النماذج الكبرى للغة العربية وما يجب على المطورين العرب فعله",
+      "tag": "عمق",
+      "emoji": "🌍",
+      "readTime": "١٠ دقائق",
+      "date": "يناير 2026",
+      "url": "articles/ai-arabic.html"
+    }
+  ],
+  "glossary": [
+    {
+      "term": "LLM",
+      "arabic": "النموذج اللغوي الكبير",
+      "definition": "نموذج ذكاء اصطناعي مدرَّب على كميات ضخمة من النصوص لفهم اللغة وتوليدها"
+    },
+    {
+      "term": "Prompt",
+      "arabic": "الموجّه / الأمر",
+      "definition": "النص الذي تكتبه للتواصل مع نموذج الذكاء الاصطناعي وتوجيهه نحو مهمة معينة"
+    },
+    {
+      "term": "RAG",
+      "arabic": "التوليد المعزّز بالاسترجاع",
+      "definition": "تقنية تمكّن النموذج من البحث في قاعدة بيانات خارجية لتحسين دقة إجاباته"
+    },
+    {
+      "term": "Context Window",
+      "arabic": "نافذة السياق",
+      "definition": "الحد الأقصى من النص الذي يمكن للنموذج معالجته في مرة واحدة"
+    },
+    {
+      "term": "Fine-tuning",
+      "arabic": "الضبط الدقيق",
+      "definition": "عملية تدريب إضافي لنموذج موجود على بيانات متخصصة لتحسين أدائه في مجال معين"
+    },
+    {
+      "term": "Hallucination",
+      "arabic": "الهلوسة",
+      "definition": "ظاهرة يختلق فيها النموذج معلومات غير صحيحة ويقدمها بثقة وكأنها حقائق"
+    }
+  ]
+}
