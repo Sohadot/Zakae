@@ -1,19 +1,72 @@
 {
   "site": {
     "name": "ذكاء",
-    "tagline": "المرجع العربي الأول لمقارنة نماذج الذكاء الاصطناعي",
+    "alternateName": "Zakae",
+    "tagline": "مرجع عربي لتحليل ومقارنة نماذج الذكاء الاصطناعي",
+    "mission": "فهم الذكاء الاصطناعي بالعربية، بمنهج تحليلي واضح، ومن منظور عربي أصيل.",
     "url": "https://zakae.com",
-    "lastUpdated": "2026-03-10"
+    "language": "ar",
+    "lastUpdated": "2026-03-10",
+    "newsletterUrl": "https://zakae.substack.com",
+    "contactEmail": "hello@zakae.com"
+  },
+  "homepage": {
+    "heroBadge": "مرجع عربي لتحليل ومقارنة نماذج الذكاء الاصطناعي",
+    "heroTitle": "اكتشف عالم الذكاء الاصطناعي بعيون عربية",
+    "heroDescription": "مقارنات شاملة، مقالات معمّقة، وأدلة عملية — كل ما تحتاجه لفهم نماذج AI الكبرى بلغتك ومن منظورك.",
+    "primaryCta": {
+      "label": "ابدأ المقارنة",
+      "target": "#comparison"
+    },
+    "secondaryCta": {
+      "label": "اقرأ المقالات",
+      "target": "#articles"
+    },
+    "stats": [
+      { "value": "5+", "label": "نماذج مقارنة" },
+      { "value": "100+", "label": "مصطلح موضّح" },
+      { "value": "محدّث", "label": "بشكل مستمر" },
+      { "value": "مجاني", "label": "بالكامل" }
+    ],
+    "startHere": [
+      {
+        "title": "Claude",
+        "description": "ابدأ بصفحة Claude المرجعية لفهم النموذج، قدراته، وأهم استخداماته.",
+        "emoji": "🧠",
+        "url": "/models/claude.html"
+      },
+      {
+        "title": "المقارنة الشاملة",
+        "description": "شاهد الفروقات الأساسية بين أبرز نماذج الذكاء الاصطناعي في جدول واحد.",
+        "emoji": "📊",
+        "url": "#comparison"
+      },
+      {
+        "title": "قاموس المصطلحات",
+        "description": "ابدأ بالمفاهيم الأساسية مثل LLM وRAG وFine-tuning بلغة عربية واضحة.",
+        "emoji": "📘",
+        "url": "#glossary"
+      }
+    ]
   },
   "models": [
     {
       "id": "claude",
+      "slug": "claude",
       "name": "Claude",
       "company": "Anthropic",
+      "officialUrl": "https://claude.ai",
+      "pageUrl": "/models/claude.html",
       "icon": "C",
       "color": "#0066CC",
       "bg": "#D4E9FF",
+      "featured": true,
+      "launchYear": "2023",
+      "shortDescription": "نموذج ذكاء اصطناعي يركز على التحليل الطويل، الكتابة الدقيقة، والتعامل الجيد مع المستندات.",
+      "bestFor": ["التحليل", "قراءة الملفات", "الكتابة الطويلة"],
+      "weaknesses": ["أقل انتشارًا من ChatGPT", "بعض الميزات تختلف حسب البلد"],
       "free": true,
+      "pricing": "مجاني ومدفوع",
       "arabicSupport": "جيد جداً",
       "arabicLevel": "good",
       "imageAnalysis": true,
@@ -29,12 +82,21 @@
     },
     {
       "id": "chatgpt",
+      "slug": "chatgpt",
       "name": "ChatGPT",
       "company": "OpenAI",
+      "officialUrl": "https://chatgpt.com",
+      "pageUrl": "/models/chatgpt.html",
       "icon": "G",
       "color": "#1A8C1A",
       "bg": "#E8FFE8",
+      "featured": true,
+      "launchYear": "2022",
+      "shortDescription": "النموذج الأشهر للمحادثة العامة، البحث، الكتابة، والمهام اليومية.",
+      "bestFor": ["المحادثة العامة", "الإنتاجية", "الشرح", "التعددية"],
+      "weaknesses": ["بعض الميزات متغيرة بين الخطط", "الخصوصية ليست الأعلى مقارنة ببعض البدائل"],
       "free": true,
+      "pricing": "مجاني ومدفوع",
       "arabicSupport": "ممتاز",
       "arabicLevel": "excellent",
       "imageAnalysis": true,
@@ -50,12 +112,21 @@
     },
     {
       "id": "gemini",
+      "slug": "gemini",
       "name": "Gemini",
       "company": "Google",
+      "officialUrl": "https://gemini.google.com",
+      "pageUrl": "/models/gemini.html",
       "icon": "Ge",
       "color": "#E65C00",
       "bg": "#FFF3E0",
+      "featured": true,
+      "launchYear": "2023",
+      "shortDescription": "نموذج Google متعدد القدرات مع تكامل قوي مع خدماتها وسياق واسع جدًا في بعض الإصدارات.",
+      "bestFor": ["التكامل مع Google", "السياق الطويل", "المهام العامة"],
+      "weaknesses": ["تجربة الاستخدام تختلف حسب المنتج", "الوضوح في الخطط ليس دائمًا الأفضل"],
       "free": true,
+      "pricing": "مجاني ومدفوع",
       "arabicSupport": "ممتاز",
       "arabicLevel": "excellent",
       "imageAnalysis": true,
@@ -71,12 +142,21 @@
     },
     {
       "id": "deepseek",
+      "slug": "deepseek",
       "name": "DeepSeek",
       "company": "DeepSeek",
+      "officialUrl": "https://www.deepseek.com",
+      "pageUrl": "/models/deepseek.html",
       "icon": "D",
       "color": "#6600CC",
       "bg": "#F0E8FF",
+      "featured": false,
+      "launchYear": "2024",
+      "shortDescription": "نموذج صيني برز بقوة خاصة في البرمجة والتكلفة.",
+      "bestFor": ["البرمجة", "التجريب", "متابعة السوق الصيني"],
+      "weaknesses": ["دعم العربية ليس الأفضل", "الخصوصية محدودة"],
       "free": true,
+      "pricing": "مجاني ومدفوع",
       "arabicSupport": "جيد",
       "arabicLevel": "good",
       "imageAnalysis": true,
@@ -92,12 +172,21 @@
     },
     {
       "id": "grok",
+      "slug": "grok",
       "name": "Grok",
       "company": "xAI",
+      "officialUrl": "https://grok.com",
+      "pageUrl": "/models/grok.html",
       "icon": "Gr",
       "color": "#CC0000",
       "bg": "#FFE8E8",
+      "featured": false,
+      "launchYear": "2023",
+      "shortDescription": "نموذج xAI المعروف بنبرته المختلفة وارتباطه بمنظومة X.",
+      "bestFor": ["التفاعل السريع", "المحتوى الخفيف", "متابعة منظومة X"],
+      "weaknesses": ["العربية محدودة", "الخصوصية محدودة", "ليس الأفضل للمحتوى التحليلي الطويل"],
       "free": "partial",
+      "pricing": "جزئي / مدفوع",
       "arabicSupport": "محدود",
       "arabicLevel": "low",
       "imageAnalysis": true,
@@ -115,65 +204,112 @@
   "articles": [
     {
       "id": "claude-vs-chatgpt",
+      "slug": "claude-vs-chatgpt",
       "title": "Claude مقابل ChatGPT — أيهما أفضل في 2026؟",
-      "excerpt": "مقارنة شاملة بين النموذجين الأكثر استخداماً في العالم، من حيث الدقة والأمان ودعم العربية",
+      "excerpt": "مقارنة شاملة بين النموذجين الأكثر استخداماً في العالم، من حيث الدقة والأمان ودعم العربية.",
       "tag": "مقارنة",
+      "category": "comparison",
       "emoji": "🤖",
       "readTime": "٨ دقائق",
       "date": "مارس 2026",
+      "updatedAt": "2026-03-10",
+      "featured": true,
+      "status": "planned",
       "url": "articles/claude-vs-chatgpt.html"
     },
     {
       "id": "deepseek-revolution",
+      "slug": "deepseek-revolution",
       "title": "DeepSeek — النموذج الصيني الذي غيّر المعادلة",
-      "excerpt": "تحليل معمّق لصعود DeepSeek وتأثيره على مشهد الذكاء الاصطناعي العالمي",
+      "excerpt": "تحليل معمّق لصعود DeepSeek وتأثيره على مشهد الذكاء الاصطناعي العالمي.",
       "tag": "تحليل",
+      "category": "analysis",
       "emoji": "🌊",
       "readTime": "١٢ دقيقة",
       "date": "فبراير 2026",
+      "updatedAt": "2026-03-10",
+      "featured": true,
+      "status": "planned",
       "url": "articles/deepseek-revolution.html"
     },
     {
       "id": "ai-arabic",
+      "slug": "ai-arabic",
       "title": "الذكاء الاصطناعي واللغة العربية — أين نحن؟",
-      "excerpt": "تقييم صريح لمستوى دعم النماذج الكبرى للغة العربية وما يجب على المطورين العرب فعله",
+      "excerpt": "تقييم صريح لمستوى دعم النماذج الكبرى للغة العربية وما يجب على المطورين العرب فعله.",
       "tag": "عمق",
+      "category": "depth",
       "emoji": "🌍",
       "readTime": "١٠ دقائق",
       "date": "يناير 2026",
+      "updatedAt": "2026-03-10",
+      "featured": true,
+      "status": "planned",
       "url": "articles/ai-arabic.html"
     }
   ],
   "glossary": [
     {
+      "id": "llm",
+      "slug": "llm",
       "term": "LLM",
       "arabic": "النموذج اللغوي الكبير",
-      "definition": "نموذج ذكاء اصطناعي مدرَّب على كميات ضخمة من النصوص لفهم اللغة وتوليدها"
+      "category": "foundation",
+      "difficulty": "beginner",
+      "definition": "نموذج ذكاء اصطناعي مدرَّب على كميات ضخمة من النصوص لفهم اللغة وتوليدها."
     },
     {
+      "id": "prompt",
+      "slug": "prompt",
       "term": "Prompt",
       "arabic": "الموجّه / الأمر",
-      "definition": "النص الذي تكتبه للتواصل مع نموذج الذكاء الاصطناعي وتوجيهه نحو مهمة معينة"
+      "category": "interaction",
+      "difficulty": "beginner",
+      "definition": "النص الذي تكتبه للتواصل مع نموذج الذكاء الاصطناعي وتوجيهه نحو مهمة معينة."
     },
     {
+      "id": "rag",
+      "slug": "rag",
       "term": "RAG",
       "arabic": "التوليد المعزّز بالاسترجاع",
-      "definition": "تقنية تمكّن النموذج من البحث في قاعدة بيانات خارجية لتحسين دقة إجاباته"
+      "category": "architecture",
+      "difficulty": "intermediate",
+      "definition": "تقنية تمكّن النموذج من البحث في قاعدة بيانات خارجية لتحسين دقة إجاباته."
     },
     {
+      "id": "context-window",
+      "slug": "context-window",
       "term": "Context Window",
       "arabic": "نافذة السياق",
-      "definition": "الحد الأقصى من النص الذي يمكن للنموذج معالجته في مرة واحدة"
+      "category": "foundation",
+      "difficulty": "beginner",
+      "definition": "الحد الأقصى من النص الذي يمكن للنموذج معالجته في مرة واحدة."
     },
     {
+      "id": "fine-tuning",
+      "slug": "fine-tuning",
       "term": "Fine-tuning",
       "arabic": "الضبط الدقيق",
-      "definition": "عملية تدريب إضافي لنموذج موجود على بيانات متخصصة لتحسين أدائه في مجال معين"
+      "category": "training",
+      "difficulty": "intermediate",
+      "definition": "عملية تدريب إضافي لنموذج موجود على بيانات متخصصة لتحسين أدائه في مجال معين."
     },
     {
+      "id": "hallucination",
+      "slug": "hallucination",
       "term": "Hallucination",
       "arabic": "الهلوسة",
-      "definition": "ظاهرة يختلق فيها النموذج معلومات غير صحيحة ويقدمها بثقة وكأنها حقائق"
+      "category": "risk",
+      "difficulty": "beginner",
+      "definition": "ظاهرة يختلق فيها النموذج معلومات غير صحيحة ويقدمها بثقة وكأنها حقائق."
+    }
+  ],
+  "topTen": [
+    {
+      "month": "2026-04",
+      "title": "أفضل 10 أدوات ذكاء اصطناعي — أبريل 2026",
+      "status": "planned",
+      "url": "articles/top-ten-ai-tools-april-2026.html"
     }
   ]
 }
