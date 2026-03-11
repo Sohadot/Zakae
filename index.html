@@ -546,7 +546,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
   function renderArticles(articles) {
     const grid = document.getElementById('articles-grid');
-    grid.innerHTML = articles.map(a=>`<a href="${a.url}" class="article-card reveal" aria-label="اقرأ: ${a.title}"><div class="article-img" aria-hidden="true">${a.emoji}</div><div class="article-body"><div class="article-tag">${a.tag}</div><h3 class="article-title">${a.title}</h3><p class="article-excerpt">${a.excerpt}</p><div class="article-footer"><span>${a.readTime} قراءة</span><span>${a.date}</span></div></div></a>`).join('');
+    grid.innerHTML = articles.map(a=>`<a href="${a.url}" class="article-card reveal" aria-label="اقرأ: ${a.title}"><div class="article-img" aria-hidden="true">${a.emoji}</div><div class="article-body"><div class="article-tag">${a.tag}</div><h3 class="article-title">${a.title}</h3><p class="article-excerpt">${a.excerpt}</p><div class="article-footer"><span>${a.readTime} قراءة</span><span>${formatArabicDate(a.date)}</span></div></div></a>`).join('');
     grid.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
   }
 
