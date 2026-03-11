@@ -231,7 +231,37 @@
     "readTime": "10 دقائق",
     "date": "2026-03-10",
     "url": "articles/ai-arabic.html"
-  }
+  },
+   {
+  "id": "asia-ai-race",
+  "title": "الصين واليابان وكوريا الجنوبية في سباق الذكاء الاصطناعي",
+  "excerpt": "تحليل سباق الذكاء الاصطناعي في آسيا",
+  "tag": "تحليل",
+  "emoji": "🌏",
+  "readTime": "11 دقيقة",
+  "date": "2026-03-11",
+  "url": "articles/asia-ai-race.html"
+    },
+    {
+  "id": "chatgpt-guide",
+  "title": "ما هو ChatGPT؟ شرح النموذج الذي غيّر العالم",
+  "excerpt": "شرح شامل لـ ChatGPT: ما هو، كيف يعمل، من طوّره، ما استخداماته، وهل يدعم العربية؟ دليل واضح ومتكامل للقارئ العربي.",
+  "tag": "شرح",
+  "emoji": "💬",
+  "readTime": "١٠ دقائق",
+  "date": "2026-03-11",
+  "url": "articles/chatgpt-guide.html"
+    },
+    {
+  "id": "gemini-guide",
+  "title": "ما هو Gemini؟ شرح نموذج Google الذي ينافس الجميع",
+  "excerpt": "شرح شامل لـ Gemini من Google: ما هو، كيف يعمل، ما أبرز قدراته، وما الفرق بينه وبين ChatGPT وClaude؟ دليل عربي واضح ومتكامل.",
+  "tag": "شرح",
+  "emoji": "🔷",
+  "readTime": "١٠ دقائق",
+  "date": "2026-03-11",
+  "url": "articles/gemini-guide.html"
+}
 ],
   "glossary": [
     {
