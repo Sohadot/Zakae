@@ -202,52 +202,37 @@
     }
   ],
   "articles": [
-    {
-      "id": "claude-vs-chatgpt",
-      "slug": "claude-vs-chatgpt",
-      "title": "Claude مقابل ChatGPT — أيهما أفضل في 2026؟",
-      "excerpt": "مقارنة شاملة بين النموذجين الأكثر استخداماً في العالم، من حيث الدقة والأمان ودعم العربية.",
-      "tag": "مقارنة",
-      "category": "comparison",
-      "emoji": "🤖",
-      "readTime": "٨ دقائق",
-      "date": "مارس 2026",
-      "updatedAt": "2026-03-10",
-      "featured": true,
-      "status": "planned",
-      "url": "articles/claude-vs-chatgpt.html"
-    },
-    {
-      "id": "deepseek-revolution",
-      "slug": "deepseek-revolution",
-      "title": "DeepSeek — النموذج الصيني الذي غيّر المعادلة",
-      "excerpt": "تحليل معمّق لصعود DeepSeek وتأثيره على مشهد الذكاء الاصطناعي العالمي.",
-      "tag": "تحليل",
-      "category": "analysis",
-      "emoji": "🌊",
-      "readTime": "١٢ دقيقة",
-      "date": "فبراير 2026",
-      "updatedAt": "2026-03-10",
-      "featured": true,
-      "status": "planned",
-      "url": "articles/deepseek-revolution.html"
-    },
-    {
-      "id": "ai-arabic",
-      "slug": "ai-arabic",
-      "title": "الذكاء الاصطناعي واللغة العربية — أين نحن؟",
-      "excerpt": "تقييم صريح لمستوى دعم النماذج الكبرى للغة العربية وما يجب على المطورين العرب فعله.",
-      "tag": "عمق",
-      "category": "depth",
-      "emoji": "🌍",
-      "readTime": "١٠ دقائق",
-      "date": "يناير 2026",
-      "updatedAt": "2026-03-10",
-      "featured": true,
-      "status": "planned",
-      "url": "articles/ai-arabic.html"
-    }
-  ],
+  {
+    "id": "claude-vs-chatgpt",
+    "title": "Claude مقابل ChatGPT — أيهما أفضل في 2026؟",
+    "excerpt": "مقارنة شاملة بين النموذجين الأكثر استخداماً في العالم، من حيث الدقة والأمان ودعم العربية",
+    "tag": "مقارنة",
+    "emoji": "🤖",
+    "readTime": "٨ دقائق",
+    "date": "10 مارس 2026",
+    "url": "articles/claude-vs-chatgpt.html"
+  },
+  {
+    "id": "deepseek-revolution",
+    "title": "DeepSeek — النموذج الصيني الذي غيّر المعادلة",
+    "excerpt": "تحليل معمّق لصعود DeepSeek وتأثيره على مشهد الذكاء الاصطناعي العالمي",
+    "tag": "تحليل",
+    "emoji": "🌊",
+    "readTime": "12 دقيقة",
+    "date": "10 مارس 2026",
+    "url": "articles/deepseek-revolution.html"
+  },
+  {
+    "id": "ai-arabic",
+    "title": "الذكاء الاصطناعي واللغة العربية — أين نحن؟",
+    "excerpt": "تقييم صريح لمستوى دعم النماذج الكبرى للغة العربية وما يجب على المطورين العرب فعله",
+    "tag": "عمق",
+    "emoji": "🌍",
+    "readTime": "10 دقائق",
+    "date": "10 مارس 2026",
+    "url": "articles/ai-arabic.html"
+  }
+],
   "glossary": [
     {
       "id": "llm",
