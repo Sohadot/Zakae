@@ -507,19 +507,29 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
   // Load data.json
   async function loadData() {
-    try {
-      const res = await fetch('/data.json');
-      if (!res.ok) throw new Error();
-      const data = await res.json();
-      renderTable(data.models, data.site.lastUpdated);
-      renderArticles(data.articles);
-      renderGlossary(data.glossary);
-    } catch (e) {
-      document.getElementById('table-container').innerHTML = '<p style="padding:2rem;text-align:center;color:var(--text-secondary)">تعذّر تحميل البيانات، يرجى تحديث الصفحة</p>';
-    }
+  try {
+    const res = await fetch('data.json');
+    if(!res.ok) throw new Error();
+    const data = await res.json();
+    renderTable(data.models, data.site.lastUpdated);
+    renderArticles(data.articles);
+    renderGlossary(data.glossary);
+  } catch(e) {
+    document.getElementById('table-container').innerHTML = '<p style="padding:2rem;text-align:center;color:var(--text-secondary)">تعذّر تحميل البيانات، يرجى تحديث الصفحة</p>';
   }
+}
 
-  function renderTable(models, lastUpdated) {
+function formatArabicDate(dateString) {
+  const d = new Date(dateString);
+  if (isNaN(d)) return dateString;
+  return d.toLocaleDateString('ar-EG', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric'
+  });
+}
+
+function renderTable(models, lastUpdated)
     const bL = {excellent:'badge-green', good:'badge-blue', low:'badge-gray'};
     const pL = {high:'badge-green', medium:'badge-blue', low:'badge-gray'};
     const cL = {green:'badge-green', blue:'badge-blue', gold:'badge-gold'};
