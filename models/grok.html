@@ -1,0 +1,1175 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Grok — التحليل المرجعي الشامل 2026 | ذكاء</title>
+  <meta name="description" content="تحليل مرجعي شامل لنظام Grok من xAI في 2026: Grok 4.20 وGrok 4.1 Fast، reasoning وnon-reasoning، Agent Tools، Web Search، X Search، Code Execution، Remote MCP، والطبقة متعددة الوكلاء." />
+  <meta name="keywords" content="Grok, xAI Grok, Grok 4.20, Grok 4.1 Fast, Grok reasoning, Grok agent tools, Web Search, X Search, Remote MCP, تحليل Grok, ذكاء" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://zakae.com/models/grok.html" />
+
+  <meta property="og:title" content="Grok — التحليل المرجعي الشامل 2026 | ذكاء" />
+  <meta property="og:description" content="تحليل عربي مرجعي يشرح Grok كنظام agentic: النماذج، البحث، X Search، code execution، وطبقة multi-agent." />
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://zakae.com/models/grok.html" />
+  <meta property="og:image" content="https://zakae.com/assets/images/og-grok-model-2026.png" />
+  <meta property="og:site_name" content="ذكاء" />
+  <meta property="og:locale" content="ar_AR" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Grok — التحليل المرجعي الشامل 2026 | ذكاء" />
+  <meta name="twitter:description" content="ما هو Grok فعليًا؟ صفحة مرجعية شاملة لعائلة Grok 4، الأدوات، البحث، طبقة الوكلاء، وتموضعه الحقيقي في السوق." />
+  <meta name="twitter:image" content="https://zakae.com/assets/images/og-grok-model-2026.png" />
+
+  <meta property="article:published_time" content="2026-04-10" />
+  <meta property="article:modified_time" content="2026-04-10" />
+  <meta property="article:author" content="ذكاء" />
+  <meta property="article:section" content="تحليل نموذج" />
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Article",
+    "headline":"Grok — التحليل المرجعي الشامل 2026",
+    "description":"تحليل مرجعي شامل لنظام Grok من xAI في 2026: النماذج، الأدوات، البحث، طبقة الوكلاء، وGrok 4.20 وGrok 4.1 Fast.",
+    "datePublished":"2026-04-10",
+    "dateModified":"2026-04-10",
+    "mainEntityOfPage":{
+      "@type":"WebPage",
+      "@id":"https://zakae.com/models/grok.html"
+    },
+    "author":{
+      "@type":"Organization",
+      "name":"ذكاء"
+    },
+    "publisher":{
+      "@type":"Organization",
+      "name":"ذكاء",
+      "url":"https://zakae.com",
+      "email":"agent@sohadot.com"
+    },
+    "about":{
+      "@type":"SoftwareApplication",
+      "name":"Grok",
+      "applicationCategory":"Artificial Intelligence"
+    },
+    "inLanguage":"ar"
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"BreadcrumbList",
+    "itemListElement":[
+      {
+        "@type":"ListItem",
+        "position":1,
+        "name":"الرئيسية",
+        "item":"https://zakae.com/"
+      },
+      {
+        "@type":"ListItem",
+        "position":2,
+        "name":"النماذج",
+        "item":"https://zakae.com/models/"
+      },
+      {
+        "@type":"ListItem",
+        "position":3,
+        "name":"Grok"
+      }
+    ]
+  }
+  </script>
+
+  <!-- Google Tag Manager -->
+  <script>
+  (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-PJPX3XXJ');
+  </script>
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PWSP38400Y"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-PWSP38400Y');
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800&family=IBM+Plex+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --white:#FAFAF8;
+      --off-white:#F2F0EB;
+      --light-gray:#E8E5DE;
+      --text-secondary:#7A7570;
+      --text-primary:#1A1916;
+      --accent:#2A5C8F;
+      --accent-light:#EBF2FA;
+      --accent-hover:#1E4470;
+      --gold:#B8860B;
+      --gold-light:#FDF8EC;
+      --success:#2D7A4F;
+      --success-light:#E8F5EE;
+      --warning:#C05C00;
+      --warning-light:#FFF3E0;
+      --error:#C0392B;
+      --error-light:#FDECEA;
+      --grok:#0C0F17;
+      --grok-light:#EEF1F7;
+      --grok-dark:#202A40;
+      --grok-accent:#9FB8FF;
+      --bg-dark:#07090F;
+      --bg-dark-2:#111520;
+      --border:#E0DDD6;
+      --shadow-sm:0 1px 3px rgba(26,25,22,.06);
+      --shadow-md:0 4px 16px rgba(26,25,22,.08);
+      --shadow-lg:0 12px 40px rgba(26,25,22,.12);
+      --radius:12px;
+      --radius-sm:8px;
+      --transition:all .25s cubic-bezier(.4,0,.2,1);
+    }
+
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    body{
+      font-family:'Tajawal',sans-serif;
+      background:var(--white);
+      color:var(--text-primary);
+      line-height:1.8;
+      direction:rtl;
+      overflow-x:hidden;
+    }
+
+    .skip-link{
+      position:absolute;top:-100px;right:0;background:var(--accent);color:white;
+      padding:.75rem 1.5rem;font-weight:700;text-decoration:none;z-index:999;transition:top .2s
+    }
+    .skip-link:focus{top:0}
+
+    .reading-progress{
+      position:fixed;top:0;right:0;left:0;height:3px;background:var(--light-gray);z-index:200
+    }
+    .reading-progress-bar{
+      height:100%;
+      background:linear-gradient(to left,var(--grok-accent),var(--grok-dark));
+      width:0%;transition:width .1s
+    }
+
+    nav{
+      position:sticky;top:0;z-index:100;background:rgba(250,250,248,.95);
+      backdrop-filter:blur(16px);border-bottom:1px solid var(--border);padding:0 2rem
+    }
+    .nav-inner{
+      max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;
+      height:64px;position:relative
+    }
+    .nav-logo{
+      font-size:1.5rem;font-weight:800;color:var(--text-primary);text-decoration:none;
+      letter-spacing:-.5px;display:flex;align-items:center;gap:.25rem
+    }
+    .nav-logo .ac{color:var(--accent)}
+    .nav-logo .dot{
+      width:6px;height:6px;background:var(--gold);border-radius:50%;display:inline-block;margin-bottom:2px
+    }
+    .nav-links{display:flex;align-items:center;gap:.25rem;list-style:none}
+    .nav-links a{
+      text-decoration:none;color:var(--text-secondary);font-size:.9rem;font-weight:500;
+      padding:.5rem .875rem;border-radius:var(--radius-sm);transition:var(--transition)
+    }
+    .nav-links a:hover{color:var(--text-primary);background:var(--off-white)}
+    .nav-cta{background:var(--accent)!important;color:white!important;border-radius:20px!important;font-weight:600!important}
+    .nav-right{display:flex;align-items:center;gap:.75rem}
+    .lang-switcher{display:flex;align-items:center;gap:.25rem;background:var(--off-white);border-radius:20px;padding:3px}
+    .lang-btn{
+      font-size:.78rem;font-weight:700;padding:.3rem .7rem;border-radius:16px;text-decoration:none;
+      transition:var(--transition);font-family:'IBM Plex Mono',monospace;color:var(--text-secondary)
+    }
+    .lang-btn.active{background:white;color:var(--text-primary);box-shadow:var(--shadow-sm)}
+    .hamburger{
+      display:none;background:none;border:1px solid var(--border);border-radius:var(--radius-sm);cursor:pointer;
+      padding:.5rem;flex-direction:column;gap:5px;align-items:center;justify-content:center
+    }
+    .hamburger span{
+      display:block;width:20px;height:2px;background:var(--text-primary);border-radius:2px;transition:var(--transition)
+    }
+    .nav-links.nav-open{
+      display:flex!important;flex-direction:column;position:absolute;top:64px;right:-2rem;left:-2rem;background:white;
+      padding:1rem 1.5rem 1.5rem;border-bottom:1px solid var(--border);box-shadow:var(--shadow-md);gap:.25rem;z-index:99
+    }
+    .nav-links.nav-open a{padding:.75rem 1rem;display:block}
+    .hamburger.is-open span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+    .hamburger.is-open span:nth-child(2){opacity:0}
+    .hamburger.is-open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+
+    .model-hero{
+      background:
+        radial-gradient(circle at 18% 22%, rgba(159,184,255,.20), transparent 25%),
+        radial-gradient(circle at 82% 18%, rgba(159,184,255,.08), transparent 22%),
+        linear-gradient(180deg,var(--bg-dark),var(--bg-dark-2));
+      color:white;
+      padding:4rem 2rem 2.25rem;
+      position:relative;
+      overflow:hidden;
+    }
+    .model-hero::before{
+      content:'';
+      position:absolute;inset:0;
+      background:linear-gradient(90deg, transparent 0%, rgba(255,255,255,.03) 48%, transparent 100%);
+      pointer-events:none;
+    }
+    .model-hero-inner{max-width:1200px;margin:0 auto}
+
+    .breadcrumb{
+      font-size:.82rem;color:rgba(255,255,255,.5);margin-bottom:2rem;
+      display:flex;align-items:center;gap:.5rem;flex-wrap:wrap
+    }
+    .breadcrumb a{color:rgba(255,255,255,.72);text-decoration:none;font-weight:600;transition:var(--transition)}
+    .breadcrumb a:hover{color:white}
+    .breadcrumb span{color:rgba(255,255,255,.3)}
+
+    .model-hero-grid{
+      display:grid;grid-template-columns:1.18fr .82fr;gap:3rem;align-items:end
+    }
+    .model-badge{
+      display:inline-flex;align-items:center;gap:.5rem;background:rgba(255,255,255,.08);
+      border:1px solid rgba(255,255,255,.12);color:rgba(255,255,255,.8);font-size:.78rem;font-weight:700;
+      padding:.375rem 1rem;border-radius:20px;margin-bottom:1.25rem;font-family:'IBM Plex Mono',monospace
+    }
+    .model-badge-dot{
+      width:7px;height:7px;background:var(--grok-accent);border-radius:50%;display:inline-block
+    }
+    .model-hero h1{
+      font-size:clamp(2.6rem,6vw,4.7rem);font-weight:800;line-height:1.06;letter-spacing:-2px;margin-bottom:.65rem
+    }
+    .model-hero h1 .model-name-main{color:var(--grok-accent)}
+    .model-by{
+      font-size:1.05rem;color:rgba(255,255,255,.52);font-weight:400;margin-bottom:1.5rem;
+      font-family:'IBM Plex Mono',monospace
+    }
+    .model-tagline{
+      font-size:1.12rem;color:rgba(255,255,255,.78);max-width:760px;line-height:1.85;margin-bottom:1.6rem
+    }
+    .page-meta{
+      display:flex;flex-wrap:wrap;gap:10px;margin:0 0 1.35rem;padding:12px 14px;
+      border:1px solid rgba(255,255,255,.08);border-radius:12px;background:rgba(255,255,255,.03);
+      font-size:.95rem;color:#d8d8d8
+    }
+    .page-meta span{display:inline-flex;align-items:center;gap:6px}
+
+    .model-quick-verdict{display:flex;gap:1rem;flex-wrap:wrap}
+    .verdict-pill{
+      display:flex;align-items:center;gap:.5rem;font-size:.84rem;font-weight:700;padding:.5rem 1rem;
+      border-radius:999px;border:1px solid rgba(255,255,255,.12)
+    }
+    .verdict-pill.blue{background:rgba(159,184,255,.16);border-color:rgba(159,184,255,.28);color:#d4e0ff}
+    .verdict-pill.green{background:rgba(45,122,79,.18);border-color:rgba(45,122,79,.28);color:#a8f2c3}
+    .verdict-pill.orange{background:rgba(192,92,0,.18);border-color:rgba(192,92,0,.28);color:#ffd0a2}
+
+    .model-scorecard{
+      background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:var(--radius);
+      padding:1.5rem;backdrop-filter:blur(10px);margin-bottom:.2rem
+    }
+    .scorecard-title{
+      font-size:.82rem;color:rgba(255,255,255,.54);text-transform:uppercase;letter-spacing:1px;
+      margin-bottom:1rem;font-family:'IBM Plex Mono',monospace;font-weight:700
+    }
+    .score-row{
+      display:grid;grid-template-columns:92px 1fr 62px;gap:.75rem;align-items:center;margin-bottom:.9rem
+    }
+    .score-row:last-child{margin-bottom:0}
+    .score-label-small{font-size:.82rem;color:#fff;font-weight:700}
+    .score-track{height:6px;background:rgba(255,255,255,.12);border-radius:999px;overflow:hidden}
+    .score-fill{height:100%;border-radius:999px;background:linear-gradient(to left,var(--grok-accent),#ffffff)}
+    .score-value{font-size:.8rem;color:rgba(255,255,255,.72);font-family:'IBM Plex Mono',monospace}
+
+    .hero-image-wrap{
+      max-width:1200px;margin:0 auto;padding:2rem 2rem 0
+    }
+    .article-hero{
+      width:100%;max-height:480px;object-fit:cover;border-radius:18px;display:block;
+      box-shadow:var(--shadow-lg);border:1px solid rgba(0,0,0,.05)
+    }
+
+    .tabs-nav{
+      background:var(--white);border-top:1px solid var(--border);border-bottom:1px solid var(--border);
+      position:sticky;top:64px;z-index:90
+    }
+    .tabs-nav-inner{
+      max-width:1200px;margin:0 auto;display:flex;overflow-x:auto;scrollbar-width:none;padding:0 2rem
+    }
+    .tabs-nav-inner::-webkit-scrollbar{display:none}
+    .tab-btn{
+      flex-shrink:0;padding:1rem 1.15rem;font-size:.875rem;font-weight:700;color:var(--text-secondary);
+      background:none;border:none;cursor:pointer;font-family:'Tajawal',sans-serif;border-bottom:2px solid transparent;
+      transition:var(--transition);white-space:nowrap
+    }
+    .tab-btn:hover{color:var(--text-primary)}
+    .tab-btn.active{color:var(--grok-dark);border-bottom-color:var(--grok-dark)}
+
+    .model-layout{
+      max-width:1200px;margin:0 auto;padding:3rem 2rem;display:grid;grid-template-columns:1fr 320px;gap:3rem;align-items:start
+    }
+    .content-section{
+      margin-bottom:4rem;opacity:0;transform:translateY(16px);transition:opacity .6s ease,transform .6s ease
+    }
+    .content-section.visible{opacity:1;transform:translateY(0)}
+
+    .section-label{
+      font-family:'IBM Plex Mono',monospace;font-size:.75rem;font-weight:700;color:var(--grok-dark);
+      letter-spacing:2px;text-transform:uppercase;margin-bottom:.75rem;display:block
+    }
+    .content-section h2{
+      font-size:clamp(1.45rem,2.6vw,2rem);font-weight:800;letter-spacing:-.5px;margin-bottom:1.15rem;color:var(--text-primary)
+    }
+    .content-section p{
+      font-size:1rem;color:#34322F;line-height:1.95;margin-bottom:1rem
+    }
+
+    .lead-box{
+      background:linear-gradient(180deg,#fff,#faf9f7);
+      border:1px solid var(--border);border-radius:var(--radius);padding:1.5rem;margin:1.5rem 0 0
+    }
+    .lead-box p:last-child{margin-bottom:0}
+
+    .matrix-grid{
+      display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-top:1.5rem
+    }
+    .matrix-card{
+      border:1px solid var(--border);border-radius:var(--radius);padding:1.4rem;background:white
+    }
+    .matrix-card.highlight{
+      background:var(--grok-light);border-color:rgba(159,184,255,.22)
+    }
+    .matrix-card h3{
+      font-size:1rem;font-weight:800;margin-bottom:.8rem;color:var(--text-primary)
+    }
+    .matrix-card.highlight h3{color:var(--grok-dark)}
+    .matrix-card ul{list-style:none;display:flex;flex-direction:column;gap:.55rem}
+    .matrix-card li{
+      font-size:.92rem;color:#302D2A;display:flex;gap:.6rem;line-height:1.7
+    }
+    .matrix-card li::before{
+      content:'•';font-weight:800;flex-shrink:0;color:var(--grok-dark)
+    }
+
+    .compare-table-wrap{
+      overflow-x:auto;border:1px solid var(--border);border-radius:var(--radius);box-shadow:var(--shadow-sm);margin-top:1.5rem
+    }
+    .comparison-table{
+      width:100%;border-collapse:collapse;background:white;min-width:760px
+    }
+    .comparison-table th,.comparison-table td{
+      padding:1rem;text-align:right;border-bottom:1px solid var(--border);vertical-align:top
+    }
+    .comparison-table th{background:var(--off-white);font-weight:800}
+    .comparison-table tr:last-child td{border-bottom:none}
+    .comparison-table td:first-child{
+      font-weight:700;color:var(--text-primary);white-space:nowrap
+    }
+    .badge{
+      display:inline-block;padding:.22rem .7rem;border-radius:999px;font-size:.76rem;font-weight:800
+    }
+    .badge.grok{background:var(--grok-light);color:var(--grok-dark)}
+    .badge.neutral{background:var(--off-white);color:var(--text-secondary)}
+    .subnote{
+      font-size:.88rem;color:var(--text-secondary);margin-top:.85rem
+    }
+
+    .sw-grid{
+      display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-top:1.5rem
+    }
+    .sw-card{
+      border-radius:var(--radius);padding:1.5rem;border:1px solid var(--border)
+    }
+    .sw-card.strengths{background:var(--success-light);border-color:rgba(45,122,79,.18)}
+    .sw-card.limits{background:var(--warning-light);border-color:rgba(192,92,0,.18)}
+    .sw-card h3{
+      font-size:.95rem;font-weight:800;margin-bottom:.95rem;display:flex;align-items:center;gap:.5rem;
+      text-transform:uppercase;letter-spacing:.5px;font-family:'IBM Plex Mono',monospace
+    }
+    .sw-card.strengths h3{color:var(--success)}
+    .sw-card.limits h3{color:var(--warning)}
+    .sw-list{list-style:none;display:flex;flex-direction:column;gap:.7rem}
+    .sw-list li{
+      font-size:.92rem;color:#302D2A;line-height:1.7;display:flex;gap:.6rem;align-items:flex-start
+    }
+    .sw-list li::before{flex-shrink:0;margin-top:.15rem;font-size:.9rem;font-weight:800}
+    .strengths .sw-list li::before{content:'✓';color:var(--success)}
+    .limits .sw-list li::before{content:'○';color:var(--warning)}
+
+    .note-box{
+      background:var(--accent-light);border:1px solid rgba(42,92,143,.15);
+      border-radius:var(--radius-sm);padding:1.1rem 1.25rem;margin:1.5rem 0
+    }
+    .note-box p{margin:0;color:var(--accent);font-size:.92rem;line-height:1.8}
+
+    .quote-box{
+      background:white;border:1px solid var(--border);border-right:4px solid var(--grok-dark);
+      border-radius:var(--radius-sm);padding:1.15rem 1.15rem 1.15rem 1rem;margin:1.5rem 0
+    }
+    .quote-box p{margin:0;font-size:.98rem;color:#2F2C29}
+
+    .faq{margin-top:2rem}
+    .faq details{
+      margin-bottom:12px;padding:14px 16px;border-radius:12px;border:1px solid var(--border);background:white
+    }
+    .faq summary{cursor:pointer;font-weight:700}
+    .faq p{margin-top:12px}
+
+    .model-sidebar{
+      position:sticky;top:130px;display:flex;flex-direction:column;gap:1.25rem
+    }
+    .sidebar-card{
+      background:white;border:1px solid var(--border);border-radius:var(--radius);padding:1.4rem
+    }
+    .sidebar-card h3{
+      font-size:.875rem;font-weight:800;text-transform:uppercase;letter-spacing:1px;
+      color:var(--text-secondary);margin-bottom:1rem;font-family:'IBM Plex Mono',monospace
+    }
+    .quick-facts{display:flex;flex-direction:column;gap:.75rem}
+    .fact-row{
+      display:flex;justify-content:space-between;align-items:flex-start;gap:.6rem;font-size:.85rem;
+      padding-bottom:.75rem;border-bottom:1px solid var(--border)
+    }
+    .fact-row:last-child{border:none;padding-bottom:0}
+    .fact-label{color:var(--text-secondary);font-weight:600}
+    .fact-value{font-weight:700;text-align:left;color:var(--text-primary)}
+    .fact-value.blue{color:var(--grok-dark)}
+    .fact-value.green{color:var(--success)}
+    .fact-value.orange{color:var(--warning)}
+
+    .toc-list{list-style:none}
+    .toc-list li{margin-bottom:.35rem}
+    .toc-list a{
+      font-size:.85rem;color:var(--text-secondary);text-decoration:none;transition:var(--transition);
+      display:block;padding:.35rem .7rem;border-right:2px solid transparent;border-radius:0 var(--radius-sm) var(--radius-sm) 0
+    }
+    .toc-list a:hover,.toc-list a.active{
+      color:var(--grok-dark);border-right-color:var(--grok-dark);background:var(--grok-light)
+    }
+
+    .sidebar-compare a{
+      display:flex;align-items:center;justify-content:space-between;padding:.75rem;border-radius:var(--radius-sm);
+      font-size:.875rem;font-weight:700;text-decoration:none;color:var(--text-primary);
+      border:1px solid var(--border);transition:var(--transition);margin-bottom:.5rem
+    }
+    .sidebar-compare a:hover{border-color:var(--accent);background:var(--accent-light);color:var(--accent)}
+    .sidebar-compare a:last-child{margin:0}
+
+    footer{
+      background:var(--off-white);border-top:1px solid var(--border);padding:2rem
+    }
+    .footer-bottom{
+      max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;
+      flex-wrap:wrap;gap:1rem
+    }
+    .footer-copy{font-size:.8rem;color:var(--text-secondary)}
+    .footer-links{display:flex;gap:1.5rem}
+    .footer-links a{font-size:.8rem;color:var(--text-secondary);text-decoration:none;transition:var(--transition)}
+    .footer-links a:hover{color:var(--accent)}
+
+    @media(max-width:1020px){
+      .model-hero-grid{grid-template-columns:1fr}
+      .model-layout{grid-template-columns:1fr}
+      .model-sidebar{position:static}
+    }
+
+    @media(max-width:700px){
+      .nav-links{display:none}
+      .hamburger{display:flex}
+      .model-hero{padding:3rem 1.25rem 2rem}
+      .hero-image-wrap{padding:1.25rem 1.25rem 0}
+      .tabs-nav-inner{padding:0 1rem}
+      .model-layout{padding:2.25rem 1.25rem}
+      .matrix-grid,.sw-grid{grid-template-columns:1fr}
+      .footer-bottom{flex-direction:column;align-items:flex-start}
+    }
+  </style>
+</head>
+
+<body>
+
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PJPX3XXJ"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+  <div class="reading-progress" role="progressbar" aria-label="تقدم القراءة" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+    <div class="reading-progress-bar" id="progress-bar"></div>
+  </div>
+
+  <a href="#main-content" class="skip-link">انتقل إلى المحتوى الرئيسي</a>
+
+  <nav role="navigation" aria-label="القائمة الرئيسية">
+    <div class="nav-inner">
+      <a href="/" class="nav-logo" aria-label="ذكاء — الصفحة الرئيسية">
+        ذكاء<span class="ac">.</span><span class="dot" aria-hidden="true"></span>
+      </a>
+      <ul class="nav-links" id="nav-links" role="list">
+        <li><a href="/#comparison">المقارنة</a></li>
+        <li><a href="/#articles">المقالات</a></li>
+        <li><a href="/#glossary">المصطلحات</a></li>
+        <li><a href="/manifesto.html">البيان</a></li>
+        <li><a href="/about.html">عن الموقع</a></li>
+        <li><a href="/contact.html" class="nav-cta">تواصل</a></li>
+      </ul>
+      <div class="nav-right">
+        <div class="lang-switcher" role="group" aria-label="اختيار اللغة">
+          <a href="/models/grok.html" class="lang-btn active" hreflang="ar" aria-current="true">AR</a>
+          <span class="lang-btn" style="opacity:.5;cursor:not-allowed">EN</span>
+        </div>
+        <button class="hamburger" id="hamburger" aria-label="فتح القائمة" aria-expanded="false" aria-controls="nav-links">
+          <span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <main id="main-content">
+
+    <header class="model-hero" role="banner">
+      <div class="model-hero-inner">
+        <nav class="breadcrumb" aria-label="مسار التنقل">
+          <a href="/">الرئيسية</a>
+          <span>←</span>
+          <a href="/models/">النماذج</a>
+          <span>←</span>
+          <span aria-current="page">Grok</span>
+        </nav>
+
+        <div class="model-hero-grid">
+          <div class="model-identity">
+            <div class="model-badge">
+              <span class="model-badge-dot" aria-hidden="true"></span>
+              محدث — أبريل 2026
+            </div>
+
+            <h1>
+              <span class="model-name-main">Grok</span><br>
+              <span style="font-size:.56em;color:rgba(255,255,255,.62);letter-spacing:-1px">من xAI</span>
+            </h1>
+
+            <div class="page-meta">
+              <span>آخر تحديث: <time datetime="2026-04-10">10 أبريل 2026</time></span>
+              <span>الفئة: agentic AI platform</span>
+              <span>التركيز: الأدوات، البحث، الوكلاء، والسياق الضخم</span>
+            </div>
+
+            <p class="model-by">grok.com · x.ai/api · docs.x.ai</p>
+
+            <p class="model-tagline">
+              Grok لا يُقرأ بدقة إذا قُدّم فقط كنموذج محادثة أو كواجهة مرتبطة بمنصة X.
+              تموضعه الحقيقي اليوم هو أقرب إلى منصة agentic واسعة النطاق: نماذج reasoning
+              وnon-reasoning، نافذة سياقية ضخمة، بحث ويب مباشر، X Search، code execution،
+              remote MCP، وطبقة multi-agent تجعل Grok مهمًا حين تكون المهمة بحثية أو تشغيلية
+              أو قائمة على الأدوات أكثر من كونها مجرد إجابة لغوية منفصلة.
+            </p>
+
+            <div class="model-quick-verdict" role="list" aria-label="خلاصة سريعة">
+              <div class="verdict-pill blue" role="listitem">Grok قوي حين يكون المطلوب Tool-Orchestrated Work لا مجرد رد نصي</div>
+              <div class="verdict-pill green" role="listitem">نافذة 2M تجعل تموضعه مختلفًا في المهام الكبيرة والبحث الممتد</div>
+              <div class="verdict-pill orange" role="listitem">الطبقة متعددة الوكلاء مفيدة، لكنها تزيد الكلفة والكمون وتعقيد التشغيل</div>
+            </div>
+          </div>
+
+          <aside class="model-scorecard" aria-label="محاور القوة">
+            <div class="scorecard-title">محاور القوة البنيوية</div>
+
+            <div class="score-row">
+              <div class="score-label-small">السياق</div>
+              <div class="score-track"><div class="score-fill" style="width:96%"></div></div>
+              <div class="score-value">2M</div>
+            </div>
+
+            <div class="score-row">
+              <div class="score-label-small">الأدوات</div>
+              <div class="score-track"><div class="score-fill" style="width:93%"></div></div>
+              <div class="score-value">قوية</div>
+            </div>
+
+            <div class="score-row">
+              <div class="score-label-small">البحث</div>
+              <div class="score-track"><div class="score-fill" style="width:94%"></div></div>
+              <div class="score-value">مباشر</div>
+            </div>
+
+            <div class="score-row">
+              <div class="score-label-small">الوكالة</div>
+              <div class="score-track"><div class="score-fill" style="width:92%"></div></div>
+              <div class="score-value">متقدمة</div>
+            </div>
+
+            <div class="score-row">
+              <div class="score-label-small">المرونة</div>
+              <div class="score-track"><div class="score-fill" style="width:88%"></div></div>
+              <div class="score-value">عالية</div>
+            </div>
+
+            <div class="score-row">
+              <div class="score-label-small">الوضوح</div>
+              <div class="score-track"><div class="score-fill" style="width:78%"></div></div>
+              <div class="score-value">يحتاج خبرة</div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </header>
+
+    <div class="hero-image-wrap">
+      <img
+        src="/assets/images/grok-model-analysis-2026.png"
+        alt="تحليل مرجعي لنظام Grok من xAI في 2026"
+        class="article-hero">
+    </div>
+
+    <div class="tabs-nav" role="tablist" aria-label="أقسام الصفحة">
+      <div class="tabs-nav-inner">
+        <button class="tab-btn active" role="tab" onclick="scrollToSection('overview')">ما هو Grok؟</button>
+        <button class="tab-btn" role="tab" onclick="scrollToSection('model-layer')">طبقة النماذج</button>
+        <button class="tab-btn" role="tab" onclick="scrollToSection('agent-tools')">Agent Tools</button>
+        <button class="tab-btn" role="tab" onclick="scrollToSection('search-layer')">البحث والبيانات الحية</button>
+        <button class="tab-btn" role="tab" onclick="scrollToSection('multi-agent')">الطبقة متعددة الوكلاء</button>
+        <button class="tab-btn" role="tab" onclick="scrollToSection('strengths-limits')">القوة والحدود</button>
+        <button class="tab-btn" role="tab" onclick="scrollToSection('verdict')">الخلاصة</button>
+      </div>
+    </div>
+
+    <div class="model-layout">
+
+      <article class="model-content">
+
+        <section class="content-section" id="overview">
+          <span class="section-label">المدخل المرجعي</span>
+          <h2>ما هو Grok فعليًا؟</h2>
+          <p>
+            Grok ليس مجرد نموذج لغوي آخر، وليس مجرد واجهة “مرتبطة بـ X” كما توحي القراءة السطحية.
+            البنية الحالية تكشف شيئًا أعمق: xAI تبني Grok كمنصة agentic يكون فيها النموذج نفسه
+            جزءًا من منظومة تنفيذ أوسع تضم البحث اللحظي، والبحث داخل X، وتنفيذ الكود، واستدعاء
+            الأدوات، وربط خوادم MCP الخارجية، والعمل في بعض الحالات بعدة وكلاء متعاونين.
+          </p>
+          <p>
+            لهذا فإن فهم Grok يجب أن يبدأ من السؤال: ما الذي يجعله مختلفًا بنيويًا؟ والجواب هو أن
+            xAI لا تقدم “نموذجًا قويًا” فحسب، بل تقدم طبقة تشغيل كاملة حيث يكون النموذج نواة
+            orchestration فوق أدوات فعلية. هنا يتحول الذكاء من مجرد إجابة إلى عملية تجمع بين
+            reasoning والبحث والتنفيذ.
+          </p>
+
+          <div class="lead-box">
+            <p>
+              الحكم المرجعي الصحيح على Grok هو أنه <strong>منصة Agentic Tool Use ذات سياق ضخم</strong>،
+              وليست مجرد واجهة محادثة ذات شخصية أو حضور اجتماعي.
+            </p>
+          </div>
+        </section>
+
+        <section class="content-section" id="model-layer">
+          <span class="section-label">طبقة النماذج</span>
+          <h2>Grok 4.20 وGrok 4.1 Fast: تموضع واضح بين الطبقة الرئيسية والطبقة الاقتصادية</h2>
+          <p>
+            الطبقة الحالية في xAI أوضح من معظم القراءات العامة: هناك اليوم نموذج رئيسي هو
+            <strong>Grok 4.20</strong>، مع نسختين reasoning وnon-reasoning، وهناك طبقة ثانية هي
+            <strong>Grok 4.1 Fast</strong> أيضًا بنسختي reasoning وnon-reasoning. الأهم أن جميع هذه
+            الطبقات تحمل نافذة سياقية تصل إلى <strong>2M</strong>، ما يضع Grok في فئة مختلفة عندما
+            يتعلق الأمر بالبحث الممتد، أو الملفات الطويلة، أو المعالجة السياقية الواسعة.
+          </p>
+          <p>
+            فلسفة xAI هنا واضحة: النسخة الرئيسية 4.20 هي الطبقة العليا من حيث التموضع والقوة العامة،
+            بينما 4.1 Fast هي الطبقة الاقتصادية السريعة، الموجهة خصوصًا للاستخدامات القائمة على
+            tool-calling والوكلاء الإنتاجيين. بذلك لا يقدم Grok “نموذجًا واحدًا للجميع”، بل يوزع
+            العمل بين طبقة عليا وطبقة أسرع وأرخص.
+          </p>
+
+          <div class="matrix-grid">
+            <div class="matrix-card highlight">
+              <h3>Grok 4.20 Reasoning</h3>
+              <ul>
+                <li>الطبقة الرئيسية الحالية في xAI</li>
+                <li>موجهة للمهام الصعبة، البحث العميق، والتنسيق بين الأدوات</li>
+                <li>ملائمة عندما تكون الجودة والقدرة العامة أهم من خفض التكلفة</li>
+              </ul>
+            </div>
+
+            <div class="matrix-card highlight">
+              <h3>Grok 4.20 Non-Reasoning</h3>
+              <ul>
+                <li>نسخة latency-sensitive من الطبقة الرئيسية</li>
+                <li>مفيدة حين تريد الاستفادة من البنية نفسها بسرعة أعلى</li>
+                <li>تظل داخل نفس تموضع 4.20 لكن بدون المسار reasoning الكامل</li>
+              </ul>
+            </div>
+
+            <div class="matrix-card">
+              <h3>Grok 4.1 Fast Reasoning</h3>
+              <ul>
+                <li>الطبقة الاقتصادية المتقدمة</li>
+                <li>تُقدَّم بوصفها cost-efficient وتتفوق خصوصًا في tool-calling</li>
+                <li>خيار عملي للمطور الذي يبني agents على نطاق أوسع</li>
+              </ul>
+            </div>
+
+            <div class="matrix-card">
+              <h3>Grok 4.1 Fast Non-Reasoning</h3>
+              <ul>
+                <li>النسخة الأسرع للحالات الحساسة للكمون</li>
+                <li>مفيدة في الإنتاج واسع النطاق حيث لا تحتاج كل طلب إلى reasoning كامل</li>
+                <li>تمثل طبقة “اقتصاد التشغيل” في المنظومة</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="compare-table-wrap">
+            <table class="comparison-table">
+              <thead>
+                <tr>
+                  <th>العنصر</th>
+                  <th>Grok 4.20</th>
+                  <th>Grok 4.1 Fast</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>التموضع</td>
+                  <td>الطبقة الرئيسية الحالية</td>
+                  <td>الطبقة الاقتصادية السريعة</td>
+                </tr>
+                <tr>
+                  <td>الوضعان</td>
+                  <td>reasoning / non-reasoning</td>
+                  <td>reasoning / non-reasoning</td>
+                </tr>
+                <tr>
+                  <td>السياق</td>
+                  <td><span class="badge grok">2M</span></td>
+                  <td><span class="badge grok">2M</span></td>
+                </tr>
+                <tr>
+                  <td>التركيز العملي</td>
+                  <td>الجودة العامة + agentic orchestration</td>
+                  <td>tool-calling بكلفة أقل وسرعة أعلى</td>
+                </tr>
+                <tr>
+                  <td>المنطق التشغيلي</td>
+                  <td>طبقة عليا للمهام المركبة</td>
+                  <td>طبقة أوسع للنشر الإنتاجي</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <p class="subnote">
+            الفارق الحقيقي هنا ليس “من الأقوى فقط”، بل: أي طبقة تختار لبناء agentic workflow قابل للتوسع؟
+          </p>
+        </section>
+
+        <section class="content-section" id="agent-tools">
+          <span class="section-label">Agent Tools</span>
+          <h2>Agent Tools: هنا يتموضع Grok فعليًا كنظام تنفيذ لا كنموذج نصي فقط</h2>
+          <p>
+            أقوى ما يميز Grok اليوم ليس مجرد قدرته على الإجابة، بل منظومة الأدوات التي تحيط به.
+            xAI تقدم رسميًا أربع طبقات مهمة هنا: <strong>Web Search</strong> للبحث المباشر على الويب،
+            و<strong>X Search</strong> للوصول إلى المحتوى الآني على X، و<strong>Code Execution</strong>
+            لتنفيذ بايثون بشكل مباشر، و<strong>Remote MCP Tools</strong> للاتصال بخوادم MCP خارجية
+            وتوسيع قدرات Grok بأدوات وأنظمة من طرف ثالث.
+          </p>
+          <p>
+            هذه الطبقة تجعل Grok مختلفًا بنيويًا عن الأنظمة التي تركز على “المحادثة الممتازة”
+            فقط. عندما يصبح بإمكان النموذج أن يبحث، ويفتش في X، ويشغل كودًا، ويصل إلى MCP server،
+            فإنك لا تتعامل بعد ذلك مع نموذج منفصل، بل مع طبقة orchestrator فوق بيئة تنفيذ.
+          </p>
+
+          <div class="matrix-grid">
+            <div class="matrix-card highlight">
+              <h3>Web Search</h3>
+              <ul>
+                <li>بحث لحظي على الويب مع browsing للصفحات</li>
+                <li>مهم للمعلومات المتغيرة والبحث الحديث</li>
+                <li>متاح رسميًا على Responses API</li>
+              </ul>
+            </div>
+
+            <div class="matrix-card highlight">
+              <h3>X Search</h3>
+              <ul>
+                <li>وصول مباشر إلى محتوى X</li>
+                <li>يدعم keyword search وsemantic search وthread fetch</li>
+                <li>يمنح Grok زاوية مختلفة في الرصد الآني للمجال العام</li>
+              </ul>
+            </div>
+
+            <div class="matrix-card">
+              <h3>Code Execution</h3>
+              <ul>
+                <li>كتابة وتشغيل Python داخل الطلب نفسه</li>
+                <li>مفيد للتحليل العددي، التحقق، والعمليات متعددة الخطوات</li>
+                <li>ينقل Grok من الاستدلال النظري إلى تنفيذ قابل للاختبار</li>
+              </ul>
+            </div>
+
+            <div class="matrix-card">
+              <h3>Remote MCP</h3>
+              <ul>
+                <li>ربط Grok بخوادم MCP خارجية</li>
+                <li>توسيع المنظومة بأدوات وبيانات من أنظمة أخرى</li>
+                <li>يجعل Grok منصة قابلة للتوصيل لا صندوقًا مغلقًا</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="note-box">
+            <p>
+              إذا أردت قراءة Grok على نحو مرجعي، فلا تبدأ من “جودة إجابته فقط”، بل من هذه الطبقة:
+              ماذا يستطيع أن يستدعي؟ كيف يبحث؟ أين ينفذ؟ وكيف يتصل بالعالم الخارجي؟
+            </p>
+          </div>
+        </section>
+
+        <section class="content-section" id="search-layer">
+          <span class="section-label">البحث والبيانات الحية</span>
+          <h2>البحث في Grok ليس طبقة تجميلية، بل جزء من تموضعه المعرفي</h2>
+          <p>
+            أحد أهم الفروق في Grok هو أن xAI لا تضع البحث كميزة هامشية، بل تجعله جزءًا مركزيًا من
+            طريقة العمل. Web Search موجه للويب المفتوح، بينما X Search موجه للبيئة الاجتماعية الحية
+            داخل X. وبهذا يصبح Grok قادرًا على التحرك بين طبقتين من المعرفة: الويب كفضاء وثائقي،
+            وX كفضاء لحظي اجتماعي. هذه الازدواجية تمنحه تموضعًا مختلفًا خصوصًا في الأخبار، المزاج
+            العام، النقاشات الجارية، والسياقات التي تتطلب تحديثًا لحظيًا.
+          </p>
+          <p>
+            لكن يجب فهم هذا بحذر: البحث يمنح Grok قدرة أعلى على التحديث، لكنه لا يلغي الحاجة إلى
+            التحقق. القيمة المرجعية هنا ليست أن Grok “يعرف كل شيء الآن”، بل أنه يملك أدوات رسمية
+            للوصول إلى الويب وX بشكل مدمج، ما يجعله أكثر ملاءمة لبعض فئات البحث اللحظي من النماذج
+            التي تتعامل مع الويب أو البيانات الاجتماعية كإضافات أقل تكاملًا.
+          </p>
+
+          <div class="quote-box">
+            <p>
+              في Grok، البحث ليس بديلًا عن التفكير؛ بل طبقة تغذي التفكير وتوسعه. وهذا هو الفرق
+              بين نموذج “يستجيب من الذاكرة” ومنصة “تبحث ثم تستدل ثم تنفذ”.
+            </p>
+          </div>
+
+          <div class="compare-table-wrap">
+            <table class="comparison-table">
+              <thead>
+                <tr>
+                  <th>الطبقة</th>
+                  <th>وظيفتها في Grok</th>
+                  <th>قيمتها البنيوية</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Web Search</td>
+                  <td>الوصول إلى الويب الحي والصفحات الحديثة</td>
+                  <td>تقليل الاعتماد على المعرفة الثابتة فقط</td>
+                </tr>
+                <tr>
+                  <td>X Search</td>
+                  <td>الوصول إلى محتوى X والبحث الدلالي والخيوط</td>
+                  <td>طبقة رصد اجتماعي وآني لا يملكها كل المنافسين بنفس الشكل</td>
+                </tr>
+                <tr>
+                  <td>Code Execution</td>
+                  <td>تنفيذ الحساب والتحليل والتحقق برمجيًا</td>
+                  <td>ربط البحث والتحليل بنتائج قابلة للفحص</td>
+                </tr>
+                <tr>
+                  <td>MCP</td>
+                  <td>الاتصال بأدوات وخدمات خارجية</td>
+                  <td>فتح Grok على أنظمة العمل الفعلية بدل إبقائه داخل واجهة مغلقة</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section class="content-section" id="multi-agent">
+          <span class="section-label">الطبقة متعددة الوكلاء</span>
+          <h2>grok-4.20-multi-agent: عندما يتحول Grok من نموذج واحد إلى فريق بحث صغير</h2>
+          <p>
+            هذه الطبقة بالذات تجعل Grok مهمًا استراتيجيًا. xAI توفر نموذجًا متعدد الوكلاء هو
+            <strong>grok-4.20-multi-agent</strong>. وهنا تحدث نقطة مفاهيمية مهمة جدًا:
+            `reasoning.effort` لا يتحكم في “كم يفكر النموذج”، بل في <strong>عدد الوكلاء المشاركين</strong>.
+            الإعدادات المنخفضة أو المتوسطة تعني 4 agents، بينما الإعدادات العالية أو القصوى تعني
+            16 agent. وهذا يكشف أن Grok لا يعامل التفكير فقط كعملية داخلية، بل كتنسيق بين عدة
+            وحدات بحثية متعاونة.
+          </p>
+          <p>
+            من الناحية المرجعية، هذه ليست مجرد زيادة رقمية. 4 agents مناسبة للبحث السريع والمركز،
+            بينما 16 agents أنسب للموضوعات المركبة والمتعددة الأبعاد. ومع ذلك، تأتي هذه القوة مع
+            ثمن واضح: كمون أعلى، واستهلاك أكبر، وحاجة إلى فهم متى يستحق الأمر تشغيل فريق وكلاء
+            بدل الاكتفاء بنموذج واحد.
+          </p>
+
+          <div class="matrix-grid">
+            <div class="matrix-card highlight">
+              <h3>4 Agents</h3>
+              <ul>
+                <li>مناسب للبحث السريع والموضوعات المركزة</li>
+                <li>كمون أقل وكلفة أقل نسبيًا</li>
+                <li>الاختيار العملي لمعظم الاستعلامات متعددة الخطوات</li>
+              </ul>
+            </div>
+
+            <div class="matrix-card highlight">
+              <h3>16 Agents</h3>
+              <ul>
+                <li>مناسب للموضوعات الأعمق والأكثر تشعبًا</li>
+                <li>يناسب البحث المركب متعدد الزوايا</li>
+                <li>أقوى، لكنه أبطأ وأكثر تكلفة</li>
+              </ul>
+            </div>
+
+            <div class="matrix-card">
+              <h3>سلوك الإخراج</h3>
+              <ul>
+                <li>المستخدم يرى في العادة مخرجات القائد النهائية فقط</li>
+                <li>تفاصيل بقية الوكلاء لا تظهر افتراضيًا كلها</li>
+                <li>وهذا يبقي الناتج نظيفًا، لكنه يخفي تعقيد المنظومة تحت السطح</li>
+              </ul>
+            </div>
+
+            <div class="matrix-card">
+              <h3>الدلالة الأهم</h3>
+              <ul>
+                <li>Grok لا يوسع التفكير فقط؛ بل يوزع العمل بين وكلاء</li>
+                <li>وهذا يجعله أقرب إلى research system منه إلى single-model assistant</li>
+                <li>لكن نجاحه هنا يعتمد على حسن اختيار متى تستخدم هذه الطبقة فعلًا</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="content-section" id="strengths-limits">
+          <span class="section-label">التحليل النقدي</span>
+          <h2>نقاط القوة البنيوية وحدود Grok الفعلية</h2>
+
+          <div class="sw-grid">
+            <div class="sw-card strengths">
+              <h3>✓ نقاط القوة</h3>
+              <ul class="sw-list">
+                <li>تموضع واضح كنظام agentic مبني حول الأدوات، لا مجرد نموذج نصي منفصل.</li>
+                <li>نافذة سياقية 2M تمنحه مرونة قوية جدًا في البحث والملفات والمهام طويلة الأفق.</li>
+                <li>وجود Web Search وX Search وCode Execution وRemote MCP داخل المنظومة الرسمية يمنحه عمقًا تشغيليًا حقيقيًا.</li>
+                <li>التمييز بين reasoning وnon-reasoning داخل 4.20 و4.1 Fast يمنح المطور سيطرة أوضح على السرعة والكلفة والعمق.</li>
+                <li>الطبقة متعددة الوكلاء تفتح مجالًا فعليًا للبحث المركب وdeep research بطريقة بنيوية لا شكلية.</li>
+              </ul>
+            </div>
+
+            <div class="sw-card limits">
+              <h3>○ الحدود والتحديات</h3>
+              <ul class="sw-list">
+                <li>كلما زادت agency، زادت الحاجة إلى إشراف أوضح وهندسة تشغيلية أذكى من جانب المطور أو المستخدم المتقدم.</li>
+                <li>القوة في الأدوات لا تعني بالضرورة بساطة الاستخدام؛ Grok يميل إلى مكافأة المستخدم الذي يفهم كيف يبني workflow جيدًا.</li>
+                <li>الطبقة متعددة الوكلاء قوية، لكنها ليست “مجانية” من حيث الكمون واستهلاك الموارد.</li>
+                <li>وجود reasoning وnon-reasoning وطبقات متعددة قد يربك القراءة السطحية لمن يريد نموذجًا واحدًا بسيطًا فقط.</li>
+                <li>البحث الحي يزيد القيمة، لكنه لا يعفي من التحقق التحريري والمنهجي، خصوصًا في المحتوى الاجتماعي اللحظي.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="quote-box">
+            <p>
+              Grok لا يحاول أن يكون “الأبسط دائمًا”، بل يحاول أن يكون أكثر فائدة عندما تتحول المهمة
+              إلى orchestration بين البحث، الأدوات، والاستدلال. وهذا مصدر قوته، ومصدر تعقيده أيضًا.
+            </p>
+          </div>
+        </section>
+
+        <section class="content-section" id="verdict">
+          <span class="section-label">الخلاصة المرجعية</span>
+          <h2>كيف يجب أن نفهم Grok في 2026؟</h2>
+          <p>
+            Grok ليس مجرد نموذج “سياقه كبير” أو “مرتبط بالويب وX”. القراءة الأدق أنه منصة agentic
+            واسعة النطاق، تتعامل مع النموذج بوصفه قلبًا لمنظومة أدوات تنفيذية وبحثية. Grok 4.20
+            يمثل الطبقة الرئيسية الحالية، بينما Grok 4.1 Fast يمثل الطبقة السريعة الاقتصادية،
+            والطبقة متعددة الوكلاء تضيف مستوى أعمق من البحث المركب عندما تحتاجه بالفعل.
+          </p>
+          <p>
+            لذلك فإن اختيار Grok يكون منطقيًا عندما تكون المهمة قائمة على البحث الحي، والأدوات،
+            والتنسيق بين مصادر متعددة، والسياق الطويل، أو الوكلاء الإنتاجيين. أما إذا كانت الأولوية
+            فقط لتجربة دردشة بسيطة مع أقل قدر من التعقيد، فقد لا تكون هذه المنظومة هي الأبسط دائمًا.
+          </p>
+          <p>
+            العبارة المرجعية الأدق هنا هي: <strong>Grok منصة Tool-Oriented Reasoning ذات طبقة Agentic قوية</strong>،
+            لا مجرد واجهة محادثة ذات شخصية مميزة.
+          </p>
+
+          <div class="lead-box">
+            <p>
+              <strong>الحكم النهائي:</strong> اختر Grok عندما تريد نظامًا يبني فوق البحث الحي،
+              والأدوات، وX، وتنفيذ الكود، والسياق الضخم، والبحث متعدد الوكلاء — أي عندما تكون القيمة
+              في orchestration، لا في الجواب النصي وحده.
+            </p>
+          </div>
+
+          <div class="faq">
+            <h2>أسئلة سريعة حول Grok</h2>
+
+            <details>
+              <summary>هل Grok نموذج واحد أم عدة طبقات؟</summary>
+              <p>حاليًا لدى xAI طبقة رئيسية هي Grok 4.20 وطبقة أسرع اقتصادية هي Grok 4.1 Fast، وكلتاهما بوضعي reasoning وnon-reasoning، إضافة إلى طبقة grok-4.20-multi-agent.</p>
+            </details>
+
+            <details>
+              <summary>هل Grok يدعم البحث الحي رسميًا؟</summary>
+              <p>نعم. تدعم المنظومة الرسمية Web Search وX Search، مع تكاملها عبر Agent Tools وResponses API.</p>
+            </details>
+
+            <details>
+              <summary>ما معنى multi-agent في Grok؟</summary>
+              <p>يعني أن النموذج قد يعمل بعدة وكلاء متعاونين، وفي grok-4.20-multi-agent يحدد reasoning.effort عدد الوكلاء (4 أو 16) وليس “شدة التفكير” بمعناها التقليدي.</p>
+            </details>
+          </div>
+        </section>
+
+      </article>
+
+      <aside class="model-sidebar" aria-label="معلومات جانبية">
+
+        <div class="sidebar-card">
+          <h3>حقائق سريعة</h3>
+          <div class="quick-facts">
+            <div class="fact-row"><span class="fact-label">المطور</span><span class="fact-value">xAI</span></div>
+            <div class="fact-row"><span class="fact-label">الطبقة الرئيسية</span><span class="fact-value blue">Grok 4.20</span></div>
+            <div class="fact-row"><span class="fact-label">الطبقة الاقتصادية</span><span class="fact-value blue">Grok 4.1 Fast</span></div>
+            <div class="fact-row"><span class="fact-label">السياق</span><span class="fact-value blue">2M</span></div>
+            <div class="fact-row"><span class="fact-label">Web Search</span><span class="fact-value green">مدعوم</span></div>
+            <div class="fact-row"><span class="fact-label">X Search</span><span class="fact-value green">مدعوم</span></div>
+            <div class="fact-row"><span class="fact-label">Code Execution</span><span class="fact-value green">مدعوم</span></div>
+            <div class="fact-row"><span class="fact-label">Remote MCP</span><span class="fact-value green">مدعوم</span></div>
+            <div class="fact-row"><span class="fact-label">Multi-Agent</span><span class="fact-value orange">4 أو 16 agents</span></div>
+          </div>
+        </div>
+
+        <div class="sidebar-card">
+          <h3>محتويات الصفحة</h3>
+          <ul class="toc-list" id="toc-list" aria-label="قائمة الأقسام"></ul>
+        </div>
+
+        <div class="sidebar-card sidebar-compare">
+          <h3>قارن أو استكمل</h3>
+          <a href="/models/chatgpt.html">
+            <span>صفحة ChatGPT المرجعية</span>
+            <span style="font-size:.78rem;color:var(--text-secondary)">مقارنة ←</span>
+          </a>
+          <a href="/models/claude.html">
+            <span>صفحة Claude المرجعية</span>
+            <span style="font-size:.78rem;color:var(--text-secondary)">مقارنة ←</span>
+          </a>
+          <a href="/models/gemini.html">
+            <span>صفحة Gemini المرجعية</span>
+            <span style="font-size:.78rem;color:var(--text-secondary)">تحليل ←</span>
+          </a>
+        </div>
+
+      </aside>
+
+    </div>
+
+  </main>
+
+  <footer role="contentinfo">
+    <div class="footer-bottom">
+      <p class="footer-copy" id="footer-copy"></p>
+      <div class="footer-links">
+        <a href="/">الرئيسية</a>
+        <a href="/about.html">عن الموقع</a>
+        <a href="/contact.html">تواصل</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('footer-copy').textContent = `© ${new Date().getFullYear()} ذكاء — zakae.com`;
+
+    window.addEventListener('scroll', () => {
+      const body = document.body;
+      const total = body.scrollHeight - window.innerHeight;
+      const progress = total > 0 ? Math.min(100, (window.scrollY / total) * 100) : 0;
+      const bar = document.getElementById('progress-bar');
+      bar.style.width = progress + '%';
+      bar.parentElement.setAttribute('aria-valuenow', Math.round(progress));
+    });
+
+    const sections = document.querySelectorAll('.content-section');
+    const tocList = document.getElementById('toc-list');
+
+    sections.forEach(section => {
+      const h2 = section.querySelector('h2');
+      if (!h2) return;
+      const li = document.createElement('li');
+      const a = document.createElement('a');
+      a.href = `#${section.id}`;
+      a.textContent = h2.textContent;
+      li.appendChild(a);
+      tocList.appendChild(li);
+    });
+
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: .06, rootMargin: '0px 0px -40px 0px' });
+
+    sections.forEach(section => revealObserver.observe(section));
+
+    const tocObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          tocList.querySelectorAll('a').forEach(a => a.classList.remove('active'));
+          const active = tocList.querySelector(`a[href="#${entry.target.id}"]`);
+          if (active) active.classList.add('active');
+        }
+      });
+    }, { threshold: .3, rootMargin: '-20% 0px -60% 0px' });
+
+    sections.forEach(section => tocObserver.observe(section));
+
+    function scrollToSection(id) {
+      const el = document.getElementById(id);
+      if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('nav-links');
+
+    function closeNav() {
+      navLinks.classList.remove('nav-open');
+      hamburger.classList.remove('is-open');
+      hamburger.setAttribute('aria-expanded', 'false');
+    }
+
+    hamburger.addEventListener('click', () => {
+      const isOpen = navLinks.classList.contains('nav-open');
+      if (isOpen) {
+        closeNav();
+      } else {
+        navLinks.classList.add('nav-open');
+        hamburger.classList.add('is-open');
+        hamburger.setAttribute('aria-expanded', 'true');
+      }
+    });
+
+    navLinks.querySelectorAll('a').forEach(link => link.addEventListener('click', closeNav));
+    document.addEventListener('click', e => {
+      if (!hamburger.contains(e.target) && !navLinks.contains(e.target)) closeNav();
+    });
+    window.addEventListener('resize', () => {
+      if (window.innerWidth > 700) closeNav();
+    });
+  </script>
+
+</body>
+</html>
