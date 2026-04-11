@@ -1,0 +1,209 @@
+/* Zakae — about.html */
+.page-hero {
+  padding: 5rem 2rem 4rem;
+  background: var(--off-white);
+  border-bottom: 1px solid var(--border);
+  text-align: center;
+}
+.page-tag {
+  display: inline-block;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 0.75rem;
+  font-family: 'IBM Plex Mono', monospace;
+}
+.page-hero h1 {
+  font-size: clamp(2rem, 4.5vw, 3.25rem);
+  font-weight: 800;
+  letter-spacing: -1px;
+  margin-bottom: 1rem;
+  animation: fadeInUp 0.7s ease both;
+}
+.page-hero p {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  max-width: 560px;
+  margin: 0 auto;
+  animation: fadeInUp 0.7s ease 0.1s both;
+}
+
+.about-body { max-width: 900px; margin: 0 auto; padding: 5rem 2rem; }
+
+.about-intro {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+  margin-bottom: 5rem;
+}
+.about-intro-text h2 {
+  font-size: clamp(1.5rem, 2.5vw, 2rem);
+  font-weight: 800;
+  margin-bottom: 1.25rem;
+  letter-spacing: -0.5px;
+}
+.about-intro-text p {
+  font-size: 1rem;
+  color: #3a3835;
+  line-height: 1.85;
+  margin-bottom: 1rem;
+}
+.about-intro-visual {
+  background: var(--text-primary);
+  border-radius: var(--radius);
+  padding: 2.5rem;
+  color: white;
+  text-align: center;
+}
+.visual-number {
+  font-size: 4rem;
+  font-weight: 800;
+  font-family: 'IBM Plex Mono', monospace;
+  color: var(--gold);
+  display: block;
+  line-height: 1;
+}
+.visual-label {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.6);
+  margin-top: 0.5rem;
+  display: block;
+}
+.visual-divider { height: 1px; background: rgba(255, 255, 255, 0.1); margin: 1.5rem 0; }
+
+.values-section { margin-bottom: 5rem; }
+.values-section h2 {
+  font-size: clamp(1.4rem, 2.5vw, 1.9rem);
+  font-weight: 800;
+  margin-bottom: 2rem;
+  letter-spacing: -0.5px;
+}
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.25rem;
+}
+.value-card {
+  padding: 1.75rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background: white;
+  transition: var(--transition);
+  position: relative;
+  overflow: hidden;
+}
+.value-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 3px;
+  height: 0;
+  background: var(--accent);
+  transition: height 0.3s ease;
+}
+.value-card:hover::before { height: 100%; }
+.value-card:hover { box-shadow: var(--shadow-md); }
+.value-number {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--accent);
+  letter-spacing: 1px;
+  margin-bottom: 0.75rem;
+  display: block;
+}
+.value-title { font-size: 1rem; font-weight: 700; margin-bottom: 0.5rem; }
+.value-desc { font-size: 0.875rem; color: var(--text-secondary); line-height: 1.65; }
+
+.coverage-section {
+  background: var(--off-white);
+  border-radius: var(--radius);
+  padding: 3rem;
+  margin-bottom: 5rem;
+}
+.coverage-section h2 {
+  font-size: clamp(1.4rem, 2.5vw, 1.9rem);
+  font-weight: 800;
+  margin-bottom: 0.75rem;
+  letter-spacing: -0.5px;
+}
+.coverage-section > p { font-size: 1rem; color: var(--text-secondary); margin-bottom: 2rem; }
+.coverage-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 0.75rem;
+}
+.coverage-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.875rem 1rem;
+  background: white;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--border);
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+.coverage-icon { font-size: 1.25rem; flex-shrink: 0; }
+
+.promise-section {
+  text-align: center;
+  padding: 3rem;
+  border: 2px solid var(--text-primary);
+  border-radius: var(--radius);
+  margin-bottom: 5rem;
+}
+.promise-section h2 {
+  font-size: clamp(1.4rem, 2.5vw, 1.9rem);
+  font-weight: 800;
+  margin-bottom: 1rem;
+  letter-spacing: -0.5px;
+}
+.promise-section p {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  max-width: 500px;
+  margin: 0 auto 1.5rem;
+}
+.promise-items { display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; }
+.promise-item { display: flex; align-items: center; gap: 0.5rem; font-size: 0.9rem; font-weight: 600; }
+.promise-check { color: #2d7a4f; font-size: 1.1rem; }
+
+.about-cta {
+  background: var(--text-primary);
+  color: white;
+  border-radius: var(--radius);
+  padding: 3rem;
+  text-align: center;
+}
+.about-cta h2 {
+  font-size: 1.75rem;
+  font-weight: 800;
+  margin-bottom: 0.75rem;
+  letter-spacing: -0.5px;
+}
+.about-cta p { color: rgba(255, 255, 255, 0.65); margin-bottom: 2rem; font-size: 1rem; }
+.cta-buttons { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+.about-cta .btn-primary {
+  background: var(--gold);
+  box-shadow: none;
+}
+.about-cta .btn-primary:hover { background: #9a7209; }
+.about-cta .btn-secondary {
+  background: transparent;
+  color: white;
+  border: 1.5px solid rgba(255, 255, 255, 0.3);
+}
+.about-cta .btn-secondary:hover { border-color: white; }
+
+@media (max-width: 700px) {
+  .about-intro { grid-template-columns: 1fr; gap: 2rem; }
+  .about-body { padding: 3rem 1.25rem; }
+  .coverage-section { padding: 2rem 1.25rem; }
+  .promise-section { padding: 2rem 1.25rem; }
+  .about-cta { padding: 2rem 1.25rem; }
+}

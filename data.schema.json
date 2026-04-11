@@ -1,0 +1,81 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://zakae.com/data.schema.json",
+  "title": "Zakae data.json",
+  "type": "object",
+  "required": ["site", "models", "articles", "glossary"],
+  "properties": {
+    "site": {
+      "type": "object",
+      "required": ["name", "url", "lastUpdated"],
+      "properties": {
+        "name": { "type": "string" },
+        "alternateName": { "type": "string" },
+        "url": { "type": "string", "format": "uri" },
+        "lastUpdated": { "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$" },
+        "contactEmail": { "type": "string", "format": "email" },
+        "newsletterUrl": { "type": "string", "format": "uri" }
+      }
+    },
+    "models": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "name", "company", "icon"],
+        "properties": {
+          "id": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+          "name": { "type": "string" },
+          "company": { "type": "string" },
+          "icon": { "type": "string", "maxLength": 8 },
+          "bg": { "type": "string", "pattern": "^#[0-9A-Fa-f]{3,8}$" },
+          "color": { "type": "string", "pattern": "^#[0-9A-Fa-f]{3,8}$" },
+          "free": { "type": ["boolean", "string"] },
+          "arabicLevel": { "type": "string", "enum": ["excellent", "good", "low"] },
+          "codingLevel": { "type": "string" },
+          "creativeLevel": { "type": "string" },
+          "privacyLevel": { "type": "string" },
+          "contextLevel": { "type": "string" },
+          "arabicSupport": { "type": "string" },
+          "coding": { "type": "string" },
+          "creative": { "type": "string" },
+          "privacy": { "type": "string" },
+          "contextWindow": { "type": "string" },
+          "imageAnalysis": { "type": "boolean" },
+          "webSearch": { "type": "boolean" }
+        }
+      }
+    },
+    "articles": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "title", "excerpt", "url", "tag", "date"],
+        "properties": {
+          "id": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+          "title": { "type": "string" },
+          "excerpt": { "type": "string" },
+          "url": {
+            "type": "string",
+            "pattern": "^(articles/[a-z0-9._-]+\\.html|[a-z0-9._-]+\\.html)$"
+          },
+          "tag": { "type": "string" },
+          "emoji": { "type": "string", "maxLength": 8 },
+          "readTime": { "type": "string" },
+          "date": { "type": "string", "pattern": "^\\d{4}-\\d{2}-\\d{2}$" }
+        }
+      }
+    },
+    "glossary": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["term", "arabic", "definition"],
+        "properties": {
+          "term": { "type": "string" },
+          "arabic": { "type": "string" },
+          "definition": { "type": "string" }
+        }
+      }
+    }
+  }
+}

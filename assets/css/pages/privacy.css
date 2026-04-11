@@ -1,0 +1,23 @@
+/* Zakae — privacy.html */
+.legal-body { max-width: 800px; margin: 0 auto; padding: 3rem 2rem 5rem; }
+.legal-body h2 {
+  font-size: 1.2rem;
+  font-weight: 800;
+  margin: 2rem 0 0.75rem;
+  color: var(--text-primary);
+}
+.legal-body h2:first-of-type { margin-top: 0; }
+.legal-body p,
+.legal-body li {
+  font-size: 0.95rem;
+  color: #3a3835;
+  line-height: 1.85;
+  margin-bottom: 0.75rem;
+}
+.legal-body ul { padding-right: 1.25rem; margin-bottom: 1rem; }
+.legal-body a { color: var(--accent); font-weight: 600; }
+.legal-updated { font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 2rem; }
+
+@media (max-width: 700px) {
+  .legal-body { padding: 2rem 1.25rem 4rem; }
+}

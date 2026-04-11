@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>البيان | ذكاء — zakae.com</title>
   <meta name="description" content="بيان ذكاء — لماذا هذا الموقع موجود، ولماذا الآن، ولماذا بالعربية. موقف فكري واضح في عصر الذكاء الاصطناعي.">
-  <link rel="canonical" href="https://zakae.com/ar/manifesto.html">
+  <link rel="canonical" href="https://zakae.com/manifesto.html">
   <meta property="og:title" content="البيان | ذكاء">
   <meta property="og:description" content="المستقبل التقني لا يُشاهَد من بعيد — بل يُبنى. بيان ذكاء في عصر الذكاء الاصطناعي.">
   <meta property="og:type" content="article">
@@ -16,338 +16,57 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --white:#FAFAF8; --off-white:#F2F0EB; --light-gray:#E8E5DE;
-      --text-secondary:#7A7570; --text-primary:#1A1916;
-      --accent:#2A5C8F; --accent-light:#EBF2FA; --accent-hover:#1E4470;
-      --gold:#B8860B; --gold-light:#FDF8EC;
-      --border:#E0DDD6;
-      --shadow-sm:0 1px 3px rgba(26,25,22,.06);
-      --shadow-md:0 4px 16px rgba(26,25,22,.08);
-      --radius:12px; --radius-sm:8px;
-      --transition:all .25s cubic-bezier(.4,0,.2,1);
-    }
-    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-    html{scroll-behavior:smooth}
-    body{font-family:'Tajawal',sans-serif;background:var(--white);color:var(--text-primary);line-height:1.8;direction:rtl;overflow-x:hidden}
-
-    .skip-link{position:absolute;top:-100px;right:0;background:var(--accent);color:white;padding:.75rem 1.5rem;font-weight:700;text-decoration:none;z-index:999;transition:top .2s}
-    .skip-link:focus{top:0}
-
-    nav{position:sticky;top:0;z-index:100;background:rgba(250,250,248,.95);backdrop-filter:blur(16px);border-bottom:1px solid var(--border);padding:0 2rem}
-    .nav-inner{max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:64px;position:relative}
-    .nav-logo{font-size:1.5rem;font-weight:800;color:var(--text-primary);text-decoration:none;letter-spacing:-.5px;display:flex;align-items:center;gap:.25rem}
-    .nav-logo .ac{color:var(--accent)}
-    .nav-logo .dot{width:6px;height:6px;background:var(--gold);border-radius:50%;display:inline-block;margin-bottom:2px}
-    .nav-links{display:flex;align-items:center;gap:.25rem;list-style:none}
-    .nav-links a{text-decoration:none;color:var(--text-secondary);font-size:.9rem;font-weight:500;padding:.5rem .875rem;border-radius:var(--radius-sm);transition:var(--transition)}
-    .nav-links a:hover{color:var(--text-primary);background:var(--off-white)}
-    .nav-links a.active{color:var(--accent);font-weight:700}
-    .nav-cta{background:var(--accent)!important;color:white!important;border-radius:20px!important;font-weight:600!important}
-    .nav-right{display:flex;align-items:center;gap:.75rem}
-    .lang-switcher{display:flex;align-items:center;gap:.25rem;background:var(--off-white);border-radius:20px;padding:3px}
-    .lang-btn{font-size:.78rem;font-weight:700;padding:.3rem .7rem;border-radius:16px;text-decoration:none;transition:var(--transition);font-family:'IBM Plex Mono',monospace;color:var(--text-secondary)}
-    .lang-btn.active{background:white;color:var(--text-primary);box-shadow:var(--shadow-sm)}
-    .hamburger{display:none;background:none;border:1px solid var(--border);border-radius:var(--radius-sm);cursor:pointer;padding:.5rem;flex-direction:column;gap:5px;align-items:center;justify-content:center}
-    .hamburger span{display:block;width:20px;height:2px;background:var(--text-primary);border-radius:2px;transition:var(--transition)}
-    .nav-links.nav-open{display:flex!important;flex-direction:column;position:absolute;top:64px;right:-2rem;left:-2rem;background:white;padding:1rem 1.5rem 1.5rem;border-bottom:1px solid var(--border);box-shadow:var(--shadow-md);gap:.25rem;z-index:99}
-    .nav-links.nav-open a{padding:.75rem 1rem;display:block}
-    .hamburger.is-open span:nth-child(1){transform:translateY(7px) rotate(45deg)}
-    .hamburger.is-open span:nth-child(2){opacity:0}
-    .hamburger.is-open span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
-
-    /* MANIFESTO HERO */
-    .manifesto-hero {
-      background: var(--text-primary);
-      color: white;
-      padding: 6rem 2rem 5rem;
-      text-align: center;
-      position: relative;
-      overflow: hidden;
-    }
-    .manifesto-hero::before {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background: radial-gradient(ellipse at 50% 0%, rgba(42,92,143,.4) 0%, transparent 60%);
-      pointer-events: none;
-    }
-    .manifesto-hero::after {
-      content: 'ذكاء';
-      position: absolute;
-      font-size: 20rem;
-      font-weight: 800;
-      color: rgba(255,255,255,.02);
-      bottom: -4rem;
-      left: 50%;
-      transform: translateX(-50%);
-      white-space: nowrap;
-      pointer-events: none;
-      font-family: 'Tajawal', sans-serif;
-    }
-
-    .manifesto-label {
-      display: inline-block;
-      font-size: .78rem;
-      font-weight: 700;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      color: var(--gold);
-      font-family: 'IBM Plex Mono', monospace;
-      margin-bottom: 2rem;
-      animation: fadeInDown .6s ease;
-    }
-
-    .manifesto-hero h1 {
-      font-size: clamp(2rem, 5vw, 3.5rem);
-      font-weight: 800;
-      line-height: 1.25;
-      margin-bottom: 2rem;
-      animation: fadeInUp .7s ease .1s both;
-      letter-spacing: -1px;
-      max-width: 800px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    .manifesto-hero h1 .highlight {
-      color: var(--gold);
-      position: relative;
-    }
-
-    .manifesto-opening {
-      font-size: 1.2rem;
-      color: rgba(255,255,255,.7);
-      max-width: 600px;
-      margin: 0 auto;
-      animation: fadeInUp .7s ease .2s both;
-      font-weight: 300;
-    }
-
-    /* MANIFESTO BODY */
-    .manifesto-body {
-      max-width: 780px;
-      margin: 0 auto;
-      padding: 5rem 2rem;
-    }
-
-    .manifesto-section {
-      margin-bottom: 4rem;
-      opacity: 0;
-      transform: translateY(20px);
-      transition: opacity .7s ease, transform .7s ease;
-    }
-    .manifesto-section.visible { opacity: 1; transform: translateY(0); }
-
-    .manifesto-number {
-      font-family: 'IBM Plex Mono', monospace;
-      font-size: .78rem;
-      font-weight: 700;
-      color: var(--accent);
-      letter-spacing: 2px;
-      margin-bottom: .75rem;
-      display: block;
-    }
-
-    .manifesto-section h2 {
-      font-size: clamp(1.4rem, 2.5vw, 1.9rem);
-      font-weight: 800;
-      color: var(--text-primary);
-      margin-bottom: 1.25rem;
-      letter-spacing: -.5px;
-      line-height: 1.3;
-    }
-
-    .manifesto-section p {
-      font-size: 1.05rem;
-      color: #3A3835;
-      line-height: 1.9;
-      margin-bottom: 1.25rem;
-    }
-
-    .manifesto-section p:last-child { margin-bottom: 0; }
-
-    .manifesto-quote {
-      border-right: 4px solid var(--gold);
-      padding: 1.25rem 1.75rem;
-      margin: 2rem 0;
-      background: var(--gold-light);
-      border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
-    }
-
-    .manifesto-quote p {
-      font-size: 1.15rem;
-      font-weight: 700;
-      color: var(--text-primary) !important;
-      font-style: italic;
-      margin: 0 !important;
-      line-height: 1.7;
-    }
-
-    .manifesto-divider {
-      display: flex;
-      align-items: center;
-      gap: 1rem;
-      margin: 3.5rem 0;
-      color: var(--border);
-    }
-    .manifesto-divider::before,
-    .manifesto-divider::after {
-      content: '';
-      flex: 1;
-      height: 1px;
-      background: var(--border);
-    }
-    .manifesto-divider span {
-      font-family: 'IBM Plex Mono', monospace;
-      font-size: .75rem;
-      color: var(--mid-gray);
-      white-space: nowrap;
-    }
-
-    /* CLOSING STATEMENT */
-    .manifesto-closing {
-      background: var(--text-primary);
-      color: white;
-      padding: 5rem 2rem;
-      text-align: center;
-    }
-    .manifesto-closing-inner { max-width: 700px; margin: 0 auto; }
-    .manifesto-closing h2 {
-      font-size: clamp(1.75rem, 4vw, 3rem);
-      font-weight: 800;
-      line-height: 1.3;
-      margin-bottom: 1.5rem;
-      letter-spacing: -1px;
-    }
-    .manifesto-closing h2 em {
-      font-style: normal;
-      color: var(--gold);
-    }
-    .manifesto-closing p {
-      font-size: 1.05rem;
-      color: rgba(255,255,255,.65);
-      margin-bottom: 2.5rem;
-    }
-    .btn-gold {
-      display: inline-block;
-      background: var(--gold);
-      color: white;
-      padding: .875rem 2.5rem;
-      border-radius: 50px;
-      font-size: 1rem;
-      font-weight: 700;
-      text-decoration: none;
-      transition: var(--transition);
-      font-family: 'Tajawal', sans-serif;
-    }
-    .btn-gold:hover { background: #9A7209; transform: translateY(-2px); }
-
-    /* SHARE */
-    .manifesto-share {
-      padding: 3rem 2rem;
-      text-align: center;
-      border-top: 1px solid var(--border);
-      background: var(--off-white);
-    }
-    .share-label { font-size: .85rem; color: var(--text-secondary); margin-bottom: 1rem; font-weight: 600; }
-    .share-buttons { display: flex; gap: .75rem; justify-content: center; flex-wrap: wrap; }
-    .share-btn {
-      display: inline-flex;
-      align-items: center;
-      gap: .5rem;
-      padding: .6rem 1.25rem;
-      border-radius: 50px;
-      font-size: .875rem;
-      font-weight: 600;
-      text-decoration: none;
-      transition: var(--transition);
-      font-family: 'Tajawal', sans-serif;
-      cursor: pointer;
-      border: none;
-    }
-    .share-x { background: #1a1a1a; color: white; }
-    .share-x:hover { background: #333; transform: translateY(-2px); }
-    .share-copy { background: white; color: var(--text-primary); border: 1.5px solid var(--border); }
-    .share-copy:hover { border-color: var(--accent); transform: translateY(-2px); }
-
-    footer{background:var(--off-white);border-top:1px solid var(--border);padding:2rem}
-    .footer-bottom{max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:1rem}
-    .footer-copy{font-size:.8rem;color:var(--text-secondary)}
-    .footer-links{display:flex;gap:1.5rem}
-    .footer-links a{font-size:.8rem;color:var(--text-secondary);text-decoration:none;transition:var(--transition)}
-    .footer-links a:hover{color:var(--accent)}
-
-    @keyframes fadeInDown{from{opacity:0;transform:translateY(-12px)}to{opacity:1;transform:translateY(0)}}
-    @keyframes fadeInUp{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
-
-    @media(max-width:700px){
-      .nav-links{display:none}
-      .hamburger{display:flex}
-      .manifesto-hero{padding:4rem 1.25rem 3rem}
-      .manifesto-body{padding:3rem 1.25rem}
-      .footer-bottom{flex-direction:column;align-items:flex-start}
-    }
-  </style>
-</head>
-  <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-PJPX3XXJ');</script>
-<!-- End Google Tag Manager -->
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-PWSP38400Y"></script>
-<script>
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/pages/manifesto.css">
+  <script>
+  (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-PJPX3XXJ');
+  </script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PWSP38400Y"></script>
+  <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'G-PWSP38400Y');
-</script>
-  
+  </script>
+</head>
 <body>
-  <!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PJPX3XXJ"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-<!-- End Google Tag Manager (noscript) -->
-
-<a href="#main-content" class="skip-link">انتقل إلى المحتوى الرئيسي</a>
-
-<nav role="navigation" aria-label="القائمة الرئيسية">
-  <div class="nav-inner">
-    <a href="/ar/" class="nav-logo">ذكاء<span class="ac">.</span><span class="dot" aria-hidden="true"></span></a>
-    <ul class="nav-links" id="nav-links" role="list">
-      <li><a href="index.html#comparison">المقارنة</a></li>
-      <li><a href="index.html#articles">المقالات</a></li>
-      <li><a href="index.html#glossary">المصطلحات</a></li>
-      <li><a href="manifesto.html" class="active">البيان</a></li>
-      <li><a href="about.html">عن الموقع</a></li>
-      <li><a href="contact.html" class="nav-cta">تواصل</a></li>
-    </ul>
-    <div class="nav-right">
-      <div class="lang-switcher" role="group" aria-label="اختيار اللغة">
-        <a href="/ar/manifesto.html" class="lang-btn active" hreflang="ar">AR</a>
-        <a href="/en/manifesto.html" class="lang-btn" hreflang="en">EN</a>
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PJPX3XXJ" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  <a href="#main-content" class="skip-link">انتقل إلى المحتوى الرئيسي</a>
+  <nav role="navigation" aria-label="القائمة الرئيسية">
+    <div class="nav-inner">
+      <a href="/" class="nav-logo" aria-label="ذكاء — الصفحة الرئيسية">ذكاء<span class="ac">.</span><span class="dot" aria-hidden="true"></span></a>
+      <ul class="nav-links" id="nav-links" role="list">
+        <li><a href="/#comparison">المقارنة</a></li>
+        <li><a href="/#articles">المقالات</a></li>
+        <li><a href="/#glossary">المصطلحات</a></li>
+        <li><a href="/manifesto.html" class="active">البيان</a></li>
+        <li><a href="/about.html">عن الموقع</a></li>
+        <li><a href="/contact.html" class="nav-cta">تواصل</a></li>
+      </ul>
+      <div class="nav-right">
+        <div class="lang-switcher" role="group" aria-label="اختيار اللغة">
+          <a href="/manifesto.html" class="lang-btn active" aria-current="page">AR</a>
+          <span class="lang-btn disabled" aria-label="الإنجليزية قريباً">EN</span>
+        </div>
+        <button class="hamburger" id="hamburger" type="button" aria-label="فتح القائمة" aria-expanded="false" aria-controls="nav-links">
+          <span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span>
+        </button>
       </div>
-      <button class="hamburger" id="hamburger" aria-label="فتح القائمة" aria-expanded="false" aria-controls="nav-links">
-        <span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span>
-      </button>
     </div>
-  </div>
-</nav>
+  </nav>
 
 <main id="main-content">
-
   <header class="manifesto-hero" role="banner">
     <div class="manifesto-label">البيان — Manifesto</div>
     <h1>المستقبل التقني<br>لا يُشاهَد من بعيد —<br><span class="highlight">بل يُبنى</span></h1>
     <p class="manifesto-opening">موقف فكري واضح في عصر يُعيد فيه الذكاء الاصطناعي رسم حدود الممكن</p>
   </header>
 
-  <article class="manifesto-body" id="main-content" aria-label="بيان ذكاء">
+  <article class="manifesto-body" aria-label="بيان ذكاء">
 
     <div class="manifesto-section">
       <span class="manifesto-number">— 01</span>
@@ -399,7 +118,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="manifesto-closing-inner">
       <h2>انضم إلى من يبني —<br>لا إلى من <em>يشاهد</em></h2>
       <p>اشترك في النشرة الأسبوعية، شارك البيان، وكن جزءاً من المجتمع الذي يضع العقل العربي في قلب عصر الذكاء الاصطناعي.</p>
-      <a href="index.html#newsletter" class="btn-gold">ابدأ معنا</a>
+      <a href="/#newsletter" class="btn-gold">ابدأ معنا</a>
     </div>
   </div>
 
@@ -418,12 +137,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 </main>
 
-<footer role="contentinfo">
+<footer class="simple-footer" role="contentinfo">
   <div class="footer-bottom">
     <p class="footer-copy" id="footer-copy"></p>
     <div class="footer-links">
-      <a href="index.html">الرئيسية</a>
-      <a href="privacy.html">سياسة الخصوصية</a>
+      <a href="/">الرئيسية</a>
+      <a href="/privacy.html">سياسة الخصوصية</a>
     </div>
   </div>
 </footer>
