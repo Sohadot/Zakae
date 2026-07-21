@@ -227,12 +227,41 @@ def check_glossary_page() -> None:
             )
 
 
+def check_orphans() -> None:
+    """لا صفحة محتوى بلا روابط داخلية واردة (منع الجزر المعزولة). الرئيسية مستثناة."""
+    pages = content_pages()
+    indeg: dict[str, int] = {p: 0 for p in pages}
+    for rel in pages:
+        html = (ROOT / rel).read_text(encoding="utf-8")
+        seen = set()
+        for href in re.findall(r'href="(/[^"#?]*)', html):
+            target = href.split("#")[0].split("?")[0].lstrip("/")
+            if not target:
+                cand = "index.html"
+            elif target.endswith("/"):
+                cand = target + "index.html"
+            elif (ROOT / target).exists():
+                cand = target
+            elif (ROOT / (target + ".html")).exists():
+                cand = target + ".html"
+            else:
+                continue
+            if cand in indeg and cand != rel:
+                seen.add(cand)
+        for c in seen:
+            indeg[c] += 1
+    for rel, deg in indeg.items():
+        if rel != "index.html" and deg == 0:
+            err(f"{rel}: صفحة يتيمة — لا روابط داخلية واردة (اربطها من صفحة ذات صلة)")
+
+
 def main() -> int:
     canon_map = check_pages()
     check_data()
     check_sitemap(canon_map)
     check_internal_links()
     check_glossary_page()
+    check_orphans()
 
     print(f"صفحات محتوى مفحوصة: {len(content_pages())}")
     if warnings:
