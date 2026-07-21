@@ -28,7 +28,7 @@
         "label": "نماذج مقارنة"
       },
       {
-        "value": "31",
+        "value": "48",
         "label": "مصطلح موضّح"
       },
       {
@@ -651,6 +651,159 @@
       "category": "interaction",
       "difficulty": "intermediate",
       "definition": "تعليمات خفية تُحدّد شخصية النموذج ودوره وحدوده قبل بدء المحادثة مع المستخدم."
+    },
+    {
+      "id": "machine-learning",
+      "slug": "machine-learning",
+      "term": "Machine Learning",
+      "arabic": "تعلّم الآلة",
+      "category": "foundation",
+      "difficulty": "beginner",
+      "definition": "فرع من الذكاء الاصطناعي تتعلّم فيه الأنظمة من البيانات لاكتشاف الأنماط بدل برمجتها صراحةً بقواعد ثابتة."
+    },
+    {
+      "id": "deep-learning",
+      "slug": "deep-learning",
+      "term": "Deep Learning",
+      "arabic": "التعلّم العميق",
+      "category": "foundation",
+      "difficulty": "beginner",
+      "definition": "فرع من تعلّم الآلة يستخدم شبكات عصبية متعددة الطبقات لتعلّم تمثيلات معقّدة، وهو أساس النماذج اللغوية الحديثة."
+    },
+    {
+      "id": "neural-network",
+      "slug": "neural-network",
+      "term": "Neural Network",
+      "arabic": "الشبكة العصبية",
+      "category": "architecture",
+      "difficulty": "intermediate",
+      "definition": "بنية حسابية مستوحاة من الدماغ، تتكوّن من طبقات من «العُقد» المترابطة التي تعالج البيانات وتتعلّم منها."
+    },
+    {
+      "id": "generative-ai",
+      "slug": "generative-ai",
+      "term": "Generative AI",
+      "arabic": "الذكاء الاصطناعي التوليدي",
+      "category": "foundation",
+      "difficulty": "beginner",
+      "definition": "أنظمة ذكاء اصطناعي تنتج محتوى جديداً — نصاً أو صوراً أو صوتاً أو شيفرة — بدل تصنيف مدخلات قائمة فقط."
+    },
+    {
+      "id": "supervised-learning",
+      "slug": "supervised-learning",
+      "term": "Supervised Learning",
+      "arabic": "التعلّم المُوجَّه",
+      "category": "training",
+      "difficulty": "intermediate",
+      "definition": "تدريب النموذج على بيانات موسومة بإجاباتها الصحيحة، ليتعلّم ربط المدخلات بالمخرجات المطلوبة."
+    },
+    {
+      "id": "unsupervised-learning",
+      "slug": "unsupervised-learning",
+      "term": "Unsupervised Learning",
+      "arabic": "التعلّم غير المُوجَّه",
+      "category": "training",
+      "difficulty": "intermediate",
+      "definition": "تدريب النموذج على بيانات بلا وسوم، ليكتشف بنى وأنماطاً خفية فيها بنفسه."
+    },
+    {
+      "id": "reinforcement-learning",
+      "slug": "reinforcement-learning",
+      "term": "Reinforcement Learning",
+      "arabic": "التعلّم المعزّز",
+      "category": "training",
+      "difficulty": "advanced",
+      "definition": "أسلوب تعلّم يكتسب فيه النظام سلوكه عبر التجربة والمكافأة، محاولاً تعظيم مكافأة تراكمية عبر الزمن."
+    },
+    {
+      "id": "pretraining",
+      "slug": "pretraining",
+      "term": "Pretraining",
+      "arabic": "التدريب المسبق",
+      "category": "training",
+      "difficulty": "intermediate",
+      "definition": "المرحلة الأولى التي يتعلّم فيها النموذج اللغة العامة من كمّ ضخم من النصوص، قبل ضبطه لمهام محددة."
+    },
+    {
+      "id": "alignment",
+      "slug": "alignment",
+      "term": "Alignment",
+      "arabic": "المواءمة",
+      "category": "risk",
+      "difficulty": "advanced",
+      "definition": "جهود جعل سلوك النموذج متوافقاً مع القيم والنوايا البشرية، بحيث يكون مفيداً وصادقاً وغير ضار."
+    },
+    {
+      "id": "agi",
+      "slug": "agi",
+      "term": "AGI",
+      "arabic": "الذكاء الاصطناعي العام",
+      "category": "foundation",
+      "difficulty": "beginner",
+      "definition": "مستوى افتراضي من الذكاء الاصطناعي يضاهي القدرة البشرية عبر معظم المهام المعرفية — لم يتحقّق بعد."
+    },
+    {
+      "id": "prompt-injection",
+      "slug": "prompt-injection",
+      "term": "Prompt Injection",
+      "arabic": "حقن الموجّهات",
+      "category": "risk",
+      "difficulty": "intermediate",
+      "definition": "هجوم أمني يُدسّ فيه نص خبيث ضمن المدخلات لخداع النموذج وتجاوز تعليماته الأصلية."
+    },
+    {
+      "id": "vector-database",
+      "slug": "vector-database",
+      "term": "Vector Database",
+      "arabic": "قاعدة البيانات المتجهية",
+      "category": "architecture",
+      "difficulty": "intermediate",
+      "definition": "قاعدة بيانات مخصّصة لتخزين التضمينات والبحث فيها بالتشابه الدلالي، وهي عمود فقري لأنظمة RAG."
+    },
+    {
+      "id": "semantic-search",
+      "slug": "semantic-search",
+      "term": "Semantic Search",
+      "arabic": "البحث الدلالي",
+      "category": "architecture",
+      "difficulty": "intermediate",
+      "definition": "بحث يعتمد على المعنى لا مطابقة الكلمات الحرفية، فيجد النتائج المتقاربة في المفهوم حتى باختلاف الألفاظ."
+    },
+    {
+      "id": "knowledge-cutoff",
+      "slug": "knowledge-cutoff",
+      "term": "Knowledge Cutoff",
+      "arabic": "حدّ المعرفة",
+      "category": "foundation",
+      "difficulty": "beginner",
+      "definition": "التاريخ الذي تتوقّف عنده معرفة النموذج المكتسبة من التدريب؛ لا يعلم بأحداث بعده ما لم يُزوَّد بها."
+    },
+    {
+      "id": "tool-use",
+      "slug": "tool-use",
+      "term": "Tool Use",
+      "arabic": "استدعاء الأدوات",
+      "category": "agents",
+      "difficulty": "intermediate",
+      "definition": "قدرة النموذج على استدعاء أدوات أو دوال خارجية (بحث، حاسبة، واجهات) لتنفيذ مهام تتجاوز توليد النص."
+    },
+    {
+      "id": "diffusion-model",
+      "slug": "diffusion-model",
+      "term": "Diffusion Model",
+      "arabic": "نموذج الانتشار",
+      "category": "architecture",
+      "difficulty": "advanced",
+      "definition": "نوع من النماذج التوليدية يُنتج الصور بتحويل ضوضاء عشوائية تدريجياً إلى صورة متماسكة، يقوم عليه كثير من مولّدات الصور."
+    },
+    {
+      "id": "gpu",
+      "slug": "gpu",
+      "term": "GPU",
+      "arabic": "وحدة معالجة الرسوميات",
+      "category": "deployment",
+      "difficulty": "beginner",
+      "definition": "معالج متخصص في العمليات المتوازية الضخمة، وهو العتاد الأساسي لتدريب نماذج الذكاء الاصطناعي وتشغيلها."
     }
   ],
   "topTen": [
