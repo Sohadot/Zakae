@@ -79,6 +79,24 @@
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>https://zakae.com/articles/prompt-engineering-guide.html</loc>
+    <lastmod>2026-07-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://zakae.com/articles/rag-explained-arabic.html</loc>
+    <lastmod>2026-07-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://zakae.com/articles/open-vs-closed-models.html</loc>
+    <lastmod>2026-07-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
     <loc>https://zakae.com/articles/claude-vs-chatgpt.html</loc>
     <lastmod>2026-04-11</lastmod>
     <changefreq>monthly</changefreq>

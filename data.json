@@ -262,6 +262,36 @@
       "url": "articles/how-to-choose-ai-model.html"
     },
     {
+      "id": "prompt-engineering-guide",
+      "title": "هندسة الموجّهات (Prompt Engineering): الدليل العملي بالعربية",
+      "excerpt": "جودة إجابة الذكاء الاصطناعي من جودة سؤالك — مبادئ وأساليب عملية لكتابة موجّهات فعّالة بأمثلة عربية.",
+      "tag": "دليل",
+      "emoji": "✍️",
+      "readTime": "١٠ دقائق",
+      "date": "2026-07-21",
+      "url": "articles/prompt-engineering-guide.html"
+    },
+    {
+      "id": "rag-explained-arabic",
+      "title": "RAG بالعربية: كيف يجيب الذكاء الاصطناعي من بياناتك أنت",
+      "excerpt": "شرح مبسّط لتقنية RAG وكيف تجعل النموذج يجيب من مستنداتك أنت وتقلّل الهلوسة.",
+      "tag": "شرح",
+      "emoji": "🔎",
+      "readTime": "٩ دقائق",
+      "date": "2026-07-21",
+      "url": "articles/rag-explained-arabic.html"
+    },
+    {
+      "id": "open-vs-closed-models",
+      "title": "النماذج المفتوحة مقابل المغلقة: أيهما تختار ولماذا",
+      "excerpt": "مقارنة بين النماذج مفتوحة المصدر والمغلقة من حيث الخصوصية والتكلفة والتحكم — ومتى تختار كلاً منهما.",
+      "tag": "مقارنة",
+      "emoji": "⚖️",
+      "readTime": "٨ دقائق",
+      "date": "2026-07-21",
+      "url": "articles/open-vs-closed-models.html"
+    },
+    {
       "id": "claude-vs-chatgpt",
       "title": "Claude مقابل ChatGPT — أيهما أفضل في 2026؟",
       "excerpt": "مقارنة شاملة بين النموذجين الأكثر استخداماً في العالم، من حيث الدقة والأمان ودعم العربية",
