@@ -223,6 +223,10 @@
           <span class="section-tag">المقارنة الشاملة</span>
           <h2 class="section-title" id="comparison-title">نماذج الذكاء الاصطناعي الكبرى</h2>
           <p class="section-subtitle">مقارنة موضوعية بين أبرز النماذج المتاحة حاليًا</p>
+          <p class="comparison-meta" style="font-size:.85rem;color:var(--text-secondary);margin-top:.4rem">
+            🔄 محدّث: يوليو 2026 · تُراجَع باستمرار ·
+            <a href="/methodology.html" style="color:var(--accent);text-decoration:none">كيف نقيّم؟</a>
+          </p>
         </div>
         <div class="table-wrapper reveal" role="region" aria-label="جدول مقارنة نماذج الذكاء الاصطناعي" tabindex="0">
           <div id="table-container"><div class="skeleton" style="height:300px;margin:1rem;border-radius:8px"></div></div>
@@ -405,6 +409,7 @@
       const bL = { excellent: 'badge-green', good: 'badge-blue', low: 'badge-gray' };
       const pL = { high: 'badge-green', medium: 'badge-blue', low: 'badge-gray' };
       const cL = { green: 'badge-green', blue: 'badge-blue', gold: 'badge-gold' };
+      const costL = { low: 'badge-green', mid: 'badge-blue', high: 'badge-gray' };
 
       const wrap = document.getElementById('table-container');
       wrap.textContent = '';
@@ -500,6 +505,11 @@
           l: '📦',
           t: 'نافذة السياق',
           cell: (m) => badgeCell(m.contextWindow, cL, m.contextLevel)
+        },
+        {
+          l: '💵',
+          t: 'التكلفة الفعلية',
+          cell: (m) => badgeCell(m.cost, costL, m.costLevel)
         },
         {
           l: '🏢',

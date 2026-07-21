@@ -97,7 +97,9 @@
       "privacy": "عالية",
       "privacyLevel": "high",
       "contextWindow": "200K",
-      "contextLevel": "green"
+      "contextLevel": "green",
+      "cost": "متوسطة–مرتفعة",
+      "costLevel": "high"
     },
     {
       "id": "chatgpt",
@@ -135,7 +137,9 @@
       "privacy": "متوسطة",
       "privacyLevel": "medium",
       "contextWindow": "128K",
-      "contextLevel": "blue"
+      "contextLevel": "blue",
+      "cost": "متوسطة",
+      "costLevel": "mid"
     },
     {
       "id": "gemini",
@@ -172,7 +176,9 @@
       "privacy": "متوسطة",
       "privacyLevel": "medium",
       "contextWindow": "1M+",
-      "contextLevel": "gold"
+      "contextLevel": "gold",
+      "cost": "متوسطة",
+      "costLevel": "mid"
     },
     {
       "id": "deepseek",
@@ -209,7 +215,9 @@
       "privacy": "محدودة",
       "privacyLevel": "low",
       "contextWindow": "128K",
-      "contextLevel": "blue"
+      "contextLevel": "blue",
+      "cost": "منخفضة",
+      "costLevel": "low"
     },
     {
       "id": "grok",
@@ -247,7 +255,9 @@
       "privacy": "محدودة",
       "privacyLevel": "low",
       "contextWindow": "131K",
-      "contextLevel": "blue"
+      "contextLevel": "blue",
+      "cost": "متوسطة",
+      "costLevel": "mid"
     }
   ],
   "articles": [
@@ -813,5 +823,6 @@
       "status": "planned",
       "url": null
     }
-  ]
+  ],
+  "comparisonUpdated": "2026-07"
 }
