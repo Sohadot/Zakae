@@ -105,11 +105,23 @@ Open `http://localhost:8000`.
 
 ---
 
+## Governance
+
+Strict standards live in **`GOVERNANCE.md`** (editorial, technical, security, SEO) and **`SECURITY.md`**.
+They are enforced automatically by the **quality gate**:
+
+```bash
+python3 scripts/quality_gate.py
+```
+
+It checks stat honesty, `data.json` vs schema, title/description/canonical/JSON-LD on every page,
+`sitemap.xml` sync, internal links, and absence of XSS sinks. Runs in CI on every push/PR
+(`.github/workflows/quality-gate.yml`) — **a red gate blocks merge**. Run it before any commit.
+
 ## Backlog
 
 - Extract CSS for **`models/*`** and **`articles/*`**.
-- Optional: **CSP** + host **security headers** after reducing inline script surface.
-- Optional: pre-deploy **`scripts/`** checks (links, canonical, schema).
+- **CSP** + host **security headers** after reducing inline script surface (see `SECURITY.md`).
 
 ---
 

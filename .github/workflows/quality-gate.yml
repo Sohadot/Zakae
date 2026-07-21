@@ -1,0 +1,27 @@
+name: بوابة الجودة | Quality Gate
+
+# حوكمة صارمة: لا يُدمج أي تغيير قبل اجتياز فحوص المصداقية و SEO والأمن الأساسي.
+on:
+  push:
+    branches: ["**"]
+  pull_request:
+    branches: ["**"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  quality-gate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: تشغيل بوابة الجودة
+        run: python3 scripts/quality_gate.py
