@@ -115,8 +115,15 @@ python3 scripts/quality_gate.py
 ```
 
 It checks stat honesty, `data.json` vs schema, title/description/canonical/JSON-LD on every page,
-`sitemap.xml` sync, internal links, and absence of XSS sinks. Runs in CI on every push/PR
-(`.github/workflows/quality-gate.yml`) — **a red gate blocks merge**. Run it before any commit.
+`sitemap.xml` sync, internal links, absence of XSS sinks, and `glossary.html` ↔ `data.json` sync.
+Runs in CI on every push/PR (`.github/workflows/quality-gate.yml`) — **a red gate blocks merge**.
+Run it before any commit.
+
+**Glossary page** (`glossary.html`) is **generated** from `data.json` — never edit it by hand:
+
+```bash
+python3 scripts/build_glossary.py   # regenerate after changing glossary terms
+```
 
 ## Backlog
 
