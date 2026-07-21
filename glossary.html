@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>قاموس مصطلحات الذكاء الاصطناعي بالعربية | ذكاء</title>
+  <meta name="description" content="قاموس عربي شامل لأهم مصطلحات الذكاء الاصطناعي — 31 مصطلحاً موضّحاً بلغة واضحة، منظّمة حسب الفئة والمستوى، من LLM وRAG إلى التكميم والوكلاء.">
+  <link rel="canonical" href="https://zakae.com/glossary.html">
+  <script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "DefinedTermSet",
+ "name": "قاموس مصطلحات الذكاء الاصطناعي بالعربية",
+ "url": "https://zakae.com/glossary.html",
+ "inLanguage": "ar",
+ "hasDefinedTerm": [
+  {
+   "@type": "DefinedTerm",
+   "name": "LLM",
+   "description": "نموذج ذكاء اصطناعي مدرَّب على كميات ضخمة من النصوص لفهم اللغة وتوليدها.",
+   "inDefinedTermSet": "https://zakae.com/glossary.html"
+  },
+  {
+   "@type": "DefinedTerm",
+   "name": "Prompt",
+   "description": "النص الذي تكتبه للتواصل مع نموذج الذكاء الاصطناعي وتوجيهه نحو مهمة معينة.",
+   "inDefinedTermSet": "https://zakae.com/glossary.html"
+  },
+  {
+   "@type": "DefinedTerm",
+   "name": "RAG",
+   "description": "تقنية تمكّن النموذج من البحث في قاعدة بيانات خارجية لتحسين دقة إجاباته.",
+   "inDefinedTermSet": "https://zakae.com/glossary.html"
+  },
+  {
+   "@type": "DefinedTerm",
+   "name": "Context Window",
+   "description": "الحد الأقصى من النص الذي يمكن للنموذج معالجته في مرة واحدة.",
+   "inDefinedTermSet": "https://zakae.com/glossary.html"
+  },
+  {
+   "@type": "DefinedTerm",
+   "name": "Fine-tuning",
+   "description": "عملية تدريب إضافي لنموذج موجود على بيانات متخصصة لتحسين أدائه في مجال معين.",
+   "inDefinedTermSet": "https://zakae.com/glossary.html"
+  },
+  {
+   "@type": "DefinedTerm",
+   "name": "Hallucination",
+   "description": "ظاهرة يختلق فيها النموذج معلومات غير صحيحة ويقدمها بثقة وكأنها حقائق.",
+   "inDefinedTermSet": "https://zakae.com/glossary.html"
+  },
+  {
+   "@type": "DefinedTerm",
+   "name": "Token",
+   "description": "الوحدة الأصغر التي يعالجها النموذج؛ قد تكون كلمة أو جزءاً منها، وتُقاس بها التكلفة وطول النص.",
+   "inDefinedTermSet": "https://zakae.com/glossary.html"
+  },
+  {
+   "@type": "DefinedTerm",
+   "name": "Parameters",
+   "description": "القيم العددية التي يتعلمها النموذج أثناء التدريب؛ كثرتها (بالمليارات) مؤشر تقريبي على حجم النموذج وقدرته.",
+   "inDefinedTermSet": "https://zakae.com/glossary.html"
+  },
+  {
+   "@type": "DefinedTerm",
+   "name": "Training Data",
+   "description": "مجموعة النصوص والبيانات التي يتعلم منها النموذج؛ جودتها وتنوّعها يحدّدان دقة المخرجات وتحيّزاتها.",
+   "inDefinedTermSet": "https://zakae.com/glossary.html"
+  },
+  {
+   "@type": "DefinedTerm",
+   "name": "Inference",
+   "description": "مرحلة تشغيل النموذج لتوليد إجابة من موجّه المستخدم، مقابل مرحلة التدريب؛ وهي ما يستهلك موارد الحوسبة عند كل طلب.",
+   "inDefinedTermSet": "https://zakae.com/glossary.html"
+  },
+  {
+   "@type": "DefinedTerm",
+   "name": "Transformer",
+   "description": "البنية العصبية التي تقوم عليها معظم النماذج اللغوية الحديثة، وتعتمد على آلية الانتباه لمعالجة النص كاملاً بالتوازي.",
+   "inDefinedTermSet": "https://zakae.com/glossary.html"
+  },
+  {
+   "@type": "DefinedTerm",
+   "name": "Attention",
+   "description": "تقنية تتيح للنموذج ترجيح أهمية كل جزء من النص عند معالجة كلمة معينة، وهي جوهر بنية المُحوِّل.",
+   "inDefinedTermSet": "https://zakae.com/glossary.html"
+  },
+  {
+   "@type": "DefinedTerm",
+   "name": "Embedding",
+   "description": "تمثيل النص أو الكلمة كمتجه أرقام يلتقط المعنى، ويُستخدم في البحث الدلالي وأنظمة RAG.",
+   "inDefinedTermSet": "https://zakae.com/glossary.html"
+  },
+  {
+   "@type": "DefinedTerm",
+   "name": "Temperature",
+   "description": "معامل يتحكم في عشوائية المخرجات؛ القيمة المنخفضة تعطي إجابات ثابتة ودقيقة، والمرتفعة تعطي إبداعاً وتنوّعاً أكبر.",
+   "inDefinedTermSet": "https://zakae.com/glossary.html"
+  },
+  {
+   "@type": "DefinedTerm",
+   "name": "Zero-shot",
+   "description": "طلب أداء مهمة من النموذج دون تزويده بأمثلة محلولة، اعتماداً على معرفته المسبقة فقط.",
+   "inDefinedTermSet": "https://zakae.com/glossary.html"
+  },
+  {
+   "@type": "DefinedTerm",
+   "name": "Few-shot",
+   "description": "تزويد النموذج بعدة أمثلة محلولة داخل الموجّه ليقلّد نمطها في إجابته، ما يحسّن الدقة غالباً.",
+   "inDefinedTermSet": "https://zakae.com/glossary.html"
+  },
+  {
+   "@type": "DefinedTerm",
+   "name": "Chain-of-Thought",
+   "description": "أسلوب يدفع النموذج لعرض خطوات استدلاله قبل الإجابة، فيتحسّن أداؤه في المسائل المنطقية والحسابية.",
+   "inDefinedTermSet": "https://zakae.com/glossary.html"
+  },
+  {
+   "@type": "DefinedTerm",
+   "name": "Multimodal",
+   "description": "نموذج قادر على فهم أو توليد أكثر من نوع من الوسائط: نص وصورة وصوت وفيديو معاً.",
+   "inDefinedTermSet": "https://zakae.com/glossary.html"
+  },
+  {
+   "@type": "DefinedTerm",
+   "name": "AI Agent",
+   "description": "نظام يستخدم نموذجاً لغوياً لاتخاذ قرارات وتنفيذ خطوات متسلسلة واستدعاء أدوات لإنجاز هدف دون تدخّل بشري مستمر.",
+   "inDefinedTermSet": "https://zakae.com/glossary.html"
+  },
+  {
+   "@type": "DefinedTerm",
+   "name": "Prompt Engineering",
+   "description": "ممارسة صياغة الموجّهات وتحسينها للحصول على أفضل النتائج من النموذج.",
+   "inDefinedTermSet": "https://zakae.com/glossary.html"
+  },
+  {
+   "@type": "DefinedTerm",
+   "name": "Overfitting",
+   "description": "حالة يحفظ فيها النموذج بيانات التدريب بدل تعلّم الأنماط العامة، فيضعف أداؤه على بيانات جديدة.",
+   "inDefinedTermSet": "https://zakae.com/glossary.html"
+  },
+  {
+   "@type": "DefinedTerm",
+   "name": "Benchmark",
+   "description": "اختبار موحّد يقارن أداء النماذج على مهام محددة مثل الرياضيات أو البرمجة أو الفهم اللغوي.",
+   "inDefinedTermSet": "https://zakae.com/glossary.html"
+  },
+  {
+   "@type": "DefinedTerm",
+   "name": "Open Source",
+   "description": "نموذج تُتاح أوزانه للعموم فيمكن تشغيله وتعديله محلياً، مقابل النماذج المغلقة المتاحة عبر واجهة فقط.",
+   "inDefinedTermSet": "https://zakae.com/glossary.html"
+  },
+  {
+   "@type": "DefinedTerm",
+   "name": "Guardrails",
+   "description": "قيود وضوابط تُضاف للنموذج لمنع المخرجات الضارة أو غير المرغوبة.",
+   "inDefinedTermSet": "https://zakae.com/glossary.html"
+  },
+  {
+   "@type": "DefinedTerm",
+   "name": "Bias",
+   "description": "ميل النموذج لإنتاج مخرجات منحازة نتيجة تحيّزات موجودة في بيانات التدريب.",
+   "inDefinedTermSet": "https://zakae.com/glossary.html"
+  },
+  {
+   "@type": "DefinedTerm",
+   "name": "RLHF",
+   "description": "تقنية تدريب تستخدم تقييمات بشرية لتوجيه سلوك النموذج نحو إجابات أكثر فائدة وأماناً.",
+   "inDefinedTermSet": "https://zakae.com/glossary.html"
+  },
+  {
+   "@type": "DefinedTerm",
+   "name": "Distillation",
+   "description": "تدريب نموذج صغير على محاكاة نموذج أكبر، للحصول على أداء قريب بتكلفة وسرعة أفضل.",
+   "inDefinedTermSet": "https://zakae.com/glossary.html"
+  },
+  {
+   "@type": "DefinedTerm",
+   "name": "Quantization",
+   "description": "خفض دقة أرقام النموذج لتقليل حجمه وتسريعه، مع تنازل بسيط عن الدقة، ما يتيح تشغيله على أجهزة أضعف.",
+   "inDefinedTermSet": "https://zakae.com/glossary.html"
+  },
+  {
+   "@type": "DefinedTerm",
+   "name": "Latency",
+   "description": "الوقت بين إرسال الطلب واستلام أول جزء من الإجابة؛ عامل مهم في تجربة الاستخدام والتطبيقات الحية.",
+   "inDefinedTermSet": "https://zakae.com/glossary.html"
+  },
+  {
+   "@type": "DefinedTerm",
+   "name": "API",
+   "description": "بوابة تتيح للمطوّرين استدعاء النموذج برمجياً ودمجه في تطبيقاتهم ومنتجاتهم.",
+   "inDefinedTermSet": "https://zakae.com/glossary.html"
+  },
+  {
+   "@type": "DefinedTerm",
+   "name": "System Prompt",
+   "description": "تعليمات خفية تُحدّد شخصية النموذج ودوره وحدوده قبل بدء المحادثة مع المستخدم.",
+   "inDefinedTermSet": "https://zakae.com/glossary.html"
+  }
+ ]
+}
+  </script>
+  <script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "BreadcrumbList",
+ "itemListElement": [
+  {
+   "@type": "ListItem",
+   "position": 1,
+   "name": "الرئيسية",
+   "item": "https://zakae.com/"
+  },
+  {
+   "@type": "ListItem",
+   "position": 2,
+   "name": "قاموس المصطلحات"
+  }
+ ]
+}
+  </script>
+  <meta property="og:title" content="قاموس مصطلحات الذكاء الاصطناعي بالعربية | ذكاء">
+  <meta property="og:description" content="قاموس عربي شامل لأهم مصطلحات الذكاء الاصطناعي، منظّمة حسب الفئة والمستوى.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://zakae.com/glossary.html">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="stylesheet" href="/assets/css/components.css">
+  <style>
+    .gl-wrap{max-width:1100px;margin:auto;padding:0 20px 60px}
+    .gl-tracks{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px;margin:32px 0 8px}
+    .gl-track{background:#fff;border:1px solid #eee;border-radius:14px;padding:22px}
+    .gl-track h3{margin:0 0 8px;font-size:19px}
+    .gl-track p{color:#555;font-size:15px;margin:0 0 12px;line-height:1.7}
+    .gl-track a{color:#0a66c2;text-decoration:none;font-size:15px}
+    .gl-track a:hover{text-decoration:underline}
+    .gl-group{margin-top:48px}
+    .gl-group-title{font-size:24px;border-right:4px solid #0a66c2;padding-right:12px;margin-bottom:20px}
+    .gl-head{display:flex;align-items:center;justify-content:space-between;gap:10px}
+    .gl-badge{color:#fff;font-size:12px;font-weight:600;border-radius:999px;padding:3px 10px;white-space:nowrap}
+  </style>
+  <script>
+  (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-PJPX3XXJ');
+  </script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PWSP38400Y"></script>
+  <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-PWSP38400Y');
+  </script>
+</head>
+<body>
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PJPX3XXJ" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+  <a href="#main-content" class="skip-link">انتقل إلى المحتوى الرئيسي</a>
+
+  <nav role="navigation" aria-label="القائمة الرئيسية">
+    <div class="nav-inner">
+      <a href="/" class="nav-logo" aria-label="ذكاء — الصفحة الرئيسية">ذكاء<span class="ac">.</span><span class="dot" aria-hidden="true"></span></a>
+      <ul class="nav-links" id="nav-links" role="list">
+        <li><a href="/#comparison">المقارنة</a></li>
+        <li><a href="/#articles">المقالات</a></li>
+        <li><a href="/glossary.html" class="active">المصطلحات</a></li>
+        <li><a href="/manifesto.html">البيان</a></li>
+        <li><a href="/about.html">عن الموقع</a></li>
+        <li><a href="/contact.html" class="nav-cta">تواصل</a></li>
+      </ul>
+      <div class="nav-right">
+        <div class="lang-switcher" role="group" aria-label="اختيار اللغة">
+          <a href="/glossary.html" class="lang-btn active" aria-current="page">AR</a>
+          <span class="lang-btn disabled" aria-label="الإنجليزية قريباً">EN</span>
+        </div>
+        <button class="hamburger" id="hamburger" type="button" aria-label="فتح القائمة" aria-expanded="false" aria-controls="nav-links">
+          <span aria-hidden="true"></span><span aria-hidden="true"></span><span aria-hidden="true"></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+<main id="main-content">
+
+  <header class="page-hero" role="banner">
+    <span class="page-tag">قاموس المصطلحات</span>
+    <h1>قاموس مصطلحات الذكاء الاصطناعي بالعربية</h1>
+    <p>31 مصطلحاً موضّحاً بلغة عربية واضحة — منظّمة حسب الفئة والمستوى، لتخدم المبتدئ والممارس وصانع القرار.</p>
+  </header>
+
+  <div class="gl-wrap">
+
+    <section class="gl-tracks" aria-label="مسارات حسب مستواك">
+      <div class="gl-track">
+        <h3>🌱 للمبتدئ</h3>
+        <p>ابدأ بالمفاهيم الجوهرية قبل الغوص في التفاصيل.</p>
+        <a href="/articles/how-to-choose-ai-model.html">كيف تختار نموذج الذكاء الاصطناعي المناسب؟ ←</a>
+      </div>
+      <div class="gl-track">
+        <h3>🛠️ للممارس والمطوّر</h3>
+        <p>مصطلحات التطبيق العملي: الموجّهات، الاسترجاع، الواجهات.</p>
+        <a href="/articles/prompt-engineering-guide.html">هندسة الموجّهات: الدليل العملي ←</a>
+      </div>
+      <div class="gl-track">
+        <h3>🧭 لصانع القرار</h3>
+        <p>ما يهمّك: الخصوصية، التكلفة، الموثوقية، والاختيار.</p>
+        <a href="/articles/open-vs-closed-models.html">النماذج المفتوحة مقابل المغلقة ←</a>
+      </div>
+    </section>
+
+    <section class="gl-group" aria-labelledby="cat-foundation">
+      <h2 class="gl-group-title" id="cat-foundation">الأساسيات</h2>
+      <div class="glossary-grid">
+      <article class="glossary-card" id="term-llm">
+        <div class="gl-head"><span class="glossary-term">LLM</span><span class="gl-badge" style="background:#1a9f5a">مبتدئ</span></div>
+        <div class="glossary-arabic">النموذج اللغوي الكبير</div>
+        <p class="glossary-def">نموذج ذكاء اصطناعي مدرَّب على كميات ضخمة من النصوص لفهم اللغة وتوليدها.</p>
+      </article>
+      <article class="glossary-card" id="term-context-window">
+        <div class="gl-head"><span class="glossary-term">Context Window</span><span class="gl-badge" style="background:#1a9f5a">مبتدئ</span></div>
+        <div class="glossary-arabic">نافذة السياق</div>
+        <p class="glossary-def">الحد الأقصى من النص الذي يمكن للنموذج معالجته في مرة واحدة.</p>
+      </article>
+      <article class="glossary-card" id="term-token">
+        <div class="gl-head"><span class="glossary-term">Token</span><span class="gl-badge" style="background:#1a9f5a">مبتدئ</span></div>
+        <div class="glossary-arabic">الرمز النصّي</div>
+        <p class="glossary-def">الوحدة الأصغر التي يعالجها النموذج؛ قد تكون كلمة أو جزءاً منها، وتُقاس بها التكلفة وطول النص.</p>
+      </article>
+      <article class="glossary-card" id="term-parameters">
+        <div class="gl-head"><span class="glossary-term">Parameters</span><span class="gl-badge" style="background:#d98a00">متوسط</span></div>
+        <div class="glossary-arabic">المعاملات</div>
+        <p class="glossary-def">القيم العددية التي يتعلمها النموذج أثناء التدريب؛ كثرتها (بالمليارات) مؤشر تقريبي على حجم النموذج وقدرته.</p>
+      </article>
+      <article class="glossary-card" id="term-inference">
+        <div class="gl-head"><span class="glossary-term">Inference</span><span class="gl-badge" style="background:#d98a00">متوسط</span></div>
+        <div class="glossary-arabic">الاستدلال</div>
+        <p class="glossary-def">مرحلة تشغيل النموذج لتوليد إجابة من موجّه المستخدم، مقابل مرحلة التدريب؛ وهي ما يستهلك موارد الحوسبة عند كل طلب.</p>
+      </article>
+      </div>
+    </section>
+
+    <section class="gl-group" aria-labelledby="cat-interaction">
+      <h2 class="gl-group-title" id="cat-interaction">التفاعل والاستخدام</h2>
+      <div class="glossary-grid">
+      <article class="glossary-card" id="term-prompt">
+        <div class="gl-head"><span class="glossary-term">Prompt</span><span class="gl-badge" style="background:#1a9f5a">مبتدئ</span></div>
+        <div class="glossary-arabic">الموجّه / الأمر</div>
+        <p class="glossary-def">النص الذي تكتبه للتواصل مع نموذج الذكاء الاصطناعي وتوجيهه نحو مهمة معينة.</p>
+      </article>
+      <article class="glossary-card" id="term-temperature">
+        <div class="gl-head"><span class="glossary-term">Temperature</span><span class="gl-badge" style="background:#d98a00">متوسط</span></div>
+        <div class="glossary-arabic">درجة الحرارة</div>
+        <p class="glossary-def">معامل يتحكم في عشوائية المخرجات؛ القيمة المنخفضة تعطي إجابات ثابتة ودقيقة، والمرتفعة تعطي إبداعاً وتنوّعاً أكبر.</p>
+      </article>
+      <article class="glossary-card" id="term-zero-shot">
+        <div class="gl-head"><span class="glossary-term">Zero-shot</span><span class="gl-badge" style="background:#d98a00">متوسط</span></div>
+        <div class="glossary-arabic">بدون أمثلة</div>
+        <p class="glossary-def">طلب أداء مهمة من النموذج دون تزويده بأمثلة محلولة، اعتماداً على معرفته المسبقة فقط.</p>
+      </article>
+      <article class="glossary-card" id="term-few-shot">
+        <div class="gl-head"><span class="glossary-term">Few-shot</span><span class="gl-badge" style="background:#d98a00">متوسط</span></div>
+        <div class="glossary-arabic">بأمثلة قليلة</div>
+        <p class="glossary-def">تزويد النموذج بعدة أمثلة محلولة داخل الموجّه ليقلّد نمطها في إجابته، ما يحسّن الدقة غالباً.</p>
+      </article>
+      <article class="glossary-card" id="term-chain-of-thought">
+        <div class="gl-head"><span class="glossary-term">Chain-of-Thought</span><span class="gl-badge" style="background:#d98a00">متوسط</span></div>
+        <div class="glossary-arabic">سلسلة التفكير</div>
+        <p class="glossary-def">أسلوب يدفع النموذج لعرض خطوات استدلاله قبل الإجابة، فيتحسّن أداؤه في المسائل المنطقية والحسابية.</p>
+      </article>
+      <article class="glossary-card" id="term-prompt-engineering">
+        <div class="gl-head"><span class="glossary-term">Prompt Engineering</span><span class="gl-badge" style="background:#1a9f5a">مبتدئ</span></div>
+        <div class="glossary-arabic">هندسة الموجّهات</div>
+        <p class="glossary-def">ممارسة صياغة الموجّهات وتحسينها للحصول على أفضل النتائج من النموذج.</p>
+      </article>
+      <article class="glossary-card" id="term-system-prompt">
+        <div class="gl-head"><span class="glossary-term">System Prompt</span><span class="gl-badge" style="background:#d98a00">متوسط</span></div>
+        <div class="glossary-arabic">الموجّه النظامي</div>
+        <p class="glossary-def">تعليمات خفية تُحدّد شخصية النموذج ودوره وحدوده قبل بدء المحادثة مع المستخدم.</p>
+      </article>
+      </div>
+    </section>
+
+    <section class="gl-group" aria-labelledby="cat-architecture">
+      <h2 class="gl-group-title" id="cat-architecture">البنية والتقنية</h2>
+      <div class="glossary-grid">
+      <article class="glossary-card" id="term-rag">
+        <div class="gl-head"><span class="glossary-term">RAG</span><span class="gl-badge" style="background:#d98a00">متوسط</span></div>
+        <div class="glossary-arabic">التوليد المعزّز بالاسترجاع</div>
+        <p class="glossary-def">تقنية تمكّن النموذج من البحث في قاعدة بيانات خارجية لتحسين دقة إجاباته.</p>
+      </article>
+      <article class="glossary-card" id="term-transformer">
+        <div class="gl-head"><span class="glossary-term">Transformer</span><span class="gl-badge" style="background:#c0392b">متقدم</span></div>
+        <div class="glossary-arabic">المُحوِّل</div>
+        <p class="glossary-def">البنية العصبية التي تقوم عليها معظم النماذج اللغوية الحديثة، وتعتمد على آلية الانتباه لمعالجة النص كاملاً بالتوازي.</p>
+      </article>
+      <article class="glossary-card" id="term-attention">
+        <div class="gl-head"><span class="glossary-term">Attention</span><span class="gl-badge" style="background:#c0392b">متقدم</span></div>
+        <div class="glossary-arabic">آلية الانتباه</div>
+        <p class="glossary-def">تقنية تتيح للنموذج ترجيح أهمية كل جزء من النص عند معالجة كلمة معينة، وهي جوهر بنية المُحوِّل.</p>
+      </article>
+      <article class="glossary-card" id="term-embedding">
+        <div class="gl-head"><span class="glossary-term">Embedding</span><span class="gl-badge" style="background:#d98a00">متوسط</span></div>
+        <div class="glossary-arabic">التضمين</div>
+        <p class="glossary-def">تمثيل النص أو الكلمة كمتجه أرقام يلتقط المعنى، ويُستخدم في البحث الدلالي وأنظمة RAG.</p>
+      </article>
+      </div>
+    </section>
+
+    <section class="gl-group" aria-labelledby="cat-training">
+      <h2 class="gl-group-title" id="cat-training">التدريب والتعلّم</h2>
+      <div class="glossary-grid">
+      <article class="glossary-card" id="term-fine-tuning">
+        <div class="gl-head"><span class="glossary-term">Fine-tuning</span><span class="gl-badge" style="background:#d98a00">متوسط</span></div>
+        <div class="glossary-arabic">الضبط الدقيق</div>
+        <p class="glossary-def">عملية تدريب إضافي لنموذج موجود على بيانات متخصصة لتحسين أدائه في مجال معين.</p>
+      </article>
+      <article class="glossary-card" id="term-training-data">
+        <div class="gl-head"><span class="glossary-term">Training Data</span><span class="gl-badge" style="background:#1a9f5a">مبتدئ</span></div>
+        <div class="glossary-arabic">بيانات التدريب</div>
+        <p class="glossary-def">مجموعة النصوص والبيانات التي يتعلم منها النموذج؛ جودتها وتنوّعها يحدّدان دقة المخرجات وتحيّزاتها.</p>
+      </article>
+      <article class="glossary-card" id="term-overfitting">
+        <div class="gl-head"><span class="glossary-term">Overfitting</span><span class="gl-badge" style="background:#c0392b">متقدم</span></div>
+        <div class="glossary-arabic">فرط الملاءمة</div>
+        <p class="glossary-def">حالة يحفظ فيها النموذج بيانات التدريب بدل تعلّم الأنماط العامة، فيضعف أداؤه على بيانات جديدة.</p>
+      </article>
+      <article class="glossary-card" id="term-rlhf">
+        <div class="gl-head"><span class="glossary-term">RLHF</span><span class="gl-badge" style="background:#c0392b">متقدم</span></div>
+        <div class="glossary-arabic">التعلّم المعزّز بالتغذية الراجعة</div>
+        <p class="glossary-def">تقنية تدريب تستخدم تقييمات بشرية لتوجيه سلوك النموذج نحو إجابات أكثر فائدة وأماناً.</p>
+      </article>
+      <article class="glossary-card" id="term-distillation">
+        <div class="gl-head"><span class="glossary-term">Distillation</span><span class="gl-badge" style="background:#c0392b">متقدم</span></div>
+        <div class="glossary-arabic">التقطير</div>
+        <p class="glossary-def">تدريب نموذج صغير على محاكاة نموذج أكبر، للحصول على أداء قريب بتكلفة وسرعة أفضل.</p>
+      </article>
+      </div>
+    </section>
+
+    <section class="gl-group" aria-labelledby="cat-capability">
+      <h2 class="gl-group-title" id="cat-capability">القدرات</h2>
+      <div class="glossary-grid">
+      <article class="glossary-card" id="term-multimodal">
+        <div class="gl-head"><span class="glossary-term">Multimodal</span><span class="gl-badge" style="background:#1a9f5a">مبتدئ</span></div>
+        <div class="glossary-arabic">متعدد الوسائط</div>
+        <p class="glossary-def">نموذج قادر على فهم أو توليد أكثر من نوع من الوسائط: نص وصورة وصوت وفيديو معاً.</p>
+      </article>
+      </div>
+    </section>
+
+    <section class="gl-group" aria-labelledby="cat-agents">
+      <h2 class="gl-group-title" id="cat-agents">الوكلاء الأذكياء</h2>
+      <div class="glossary-grid">
+      <article class="glossary-card" id="term-ai-agent">
+        <div class="gl-head"><span class="glossary-term">AI Agent</span><span class="gl-badge" style="background:#d98a00">متوسط</span></div>
+        <div class="glossary-arabic">الوكيل الذكي</div>
+        <p class="glossary-def">نظام يستخدم نموذجاً لغوياً لاتخاذ قرارات وتنفيذ خطوات متسلسلة واستدعاء أدوات لإنجاز هدف دون تدخّل بشري مستمر.</p>
+      </article>
+      </div>
+    </section>
+
+    <section class="gl-group" aria-labelledby="cat-evaluation">
+      <h2 class="gl-group-title" id="cat-evaluation">القياس والتقييم</h2>
+      <div class="glossary-grid">
+      <article class="glossary-card" id="term-benchmark">
+        <div class="gl-head"><span class="glossary-term">Benchmark</span><span class="gl-badge" style="background:#d98a00">متوسط</span></div>
+        <div class="glossary-arabic">معيار القياس</div>
+        <p class="glossary-def">اختبار موحّد يقارن أداء النماذج على مهام محددة مثل الرياضيات أو البرمجة أو الفهم اللغوي.</p>
+      </article>
+      </div>
+    </section>
+
+    <section class="gl-group" aria-labelledby="cat-deployment">
+      <h2 class="gl-group-title" id="cat-deployment">التشغيل والنشر</h2>
+      <div class="glossary-grid">
+      <article class="glossary-card" id="term-open-source">
+        <div class="gl-head"><span class="glossary-term">Open Source</span><span class="gl-badge" style="background:#1a9f5a">مبتدئ</span></div>
+        <div class="glossary-arabic">مفتوح المصدر</div>
+        <p class="glossary-def">نموذج تُتاح أوزانه للعموم فيمكن تشغيله وتعديله محلياً، مقابل النماذج المغلقة المتاحة عبر واجهة فقط.</p>
+      </article>
+      <article class="glossary-card" id="term-quantization">
+        <div class="gl-head"><span class="glossary-term">Quantization</span><span class="gl-badge" style="background:#c0392b">متقدم</span></div>
+        <div class="glossary-arabic">التكميم</div>
+        <p class="glossary-def">خفض دقة أرقام النموذج لتقليل حجمه وتسريعه، مع تنازل بسيط عن الدقة، ما يتيح تشغيله على أجهزة أضعف.</p>
+      </article>
+      <article class="glossary-card" id="term-latency">
+        <div class="gl-head"><span class="glossary-term">Latency</span><span class="gl-badge" style="background:#1a9f5a">مبتدئ</span></div>
+        <div class="glossary-arabic">زمن الاستجابة</div>
+        <p class="glossary-def">الوقت بين إرسال الطلب واستلام أول جزء من الإجابة؛ عامل مهم في تجربة الاستخدام والتطبيقات الحية.</p>
+      </article>
+      <article class="glossary-card" id="term-api">
+        <div class="gl-head"><span class="glossary-term">API</span><span class="gl-badge" style="background:#1a9f5a">مبتدئ</span></div>
+        <div class="glossary-arabic">واجهة برمجة التطبيقات</div>
+        <p class="glossary-def">بوابة تتيح للمطوّرين استدعاء النموذج برمجياً ودمجه في تطبيقاتهم ومنتجاتهم.</p>
+      </article>
+      </div>
+    </section>
+
+    <section class="gl-group" aria-labelledby="cat-risk">
+      <h2 class="gl-group-title" id="cat-risk">المخاطر والموثوقية</h2>
+      <div class="glossary-grid">
+      <article class="glossary-card" id="term-hallucination">
+        <div class="gl-head"><span class="glossary-term">Hallucination</span><span class="gl-badge" style="background:#1a9f5a">مبتدئ</span></div>
+        <div class="glossary-arabic">الهلوسة</div>
+        <p class="glossary-def">ظاهرة يختلق فيها النموذج معلومات غير صحيحة ويقدمها بثقة وكأنها حقائق.</p>
+      </article>
+      <article class="glossary-card" id="term-guardrails">
+        <div class="gl-head"><span class="glossary-term">Guardrails</span><span class="gl-badge" style="background:#d98a00">متوسط</span></div>
+        <div class="glossary-arabic">حواجز الأمان</div>
+        <p class="glossary-def">قيود وضوابط تُضاف للنموذج لمنع المخرجات الضارة أو غير المرغوبة.</p>
+      </article>
+      <article class="glossary-card" id="term-bias">
+        <div class="gl-head"><span class="glossary-term">Bias</span><span class="gl-badge" style="background:#1a9f5a">مبتدئ</span></div>
+        <div class="glossary-arabic">التحيّز</div>
+        <p class="glossary-def">ميل النموذج لإنتاج مخرجات منحازة نتيجة تحيّزات موجودة في بيانات التدريب.</p>
+      </article>
+      </div>
+    </section>
+
+  </div>
+
+</main>
+
+<footer class="simple-footer" role="contentinfo">
+  <div class="footer-bottom">
+    <p class="footer-copy" id="footer-copy"></p>
+    <div class="footer-links">
+      <a href="/">الرئيسية</a>
+      <a href="/privacy.html">سياسة الخصوصية</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('footer-copy').textContent = `© ${new Date().getFullYear()} ذكاء — zakae.com`;
+  const hamburger = document.getElementById('hamburger');
+  const navLinks = document.getElementById('nav-links');
+  function closeNav(){navLinks.classList.remove('nav-open');hamburger.classList.remove('is-open');hamburger.setAttribute('aria-expanded','false')}
+  hamburger.addEventListener('click',()=>{const isOpen=navLinks.classList.contains('nav-open');if(isOpen){closeNav()}else{navLinks.classList.add('nav-open');hamburger.classList.add('is-open');hamburger.setAttribute('aria-expanded','true')}});
+  navLinks.querySelectorAll('a').forEach(l=>l.addEventListener('click',closeNav));
+  window.addEventListener('resize',()=>{if(window.innerWidth>700)closeNav()});
+</script>
+</body>
+</html>

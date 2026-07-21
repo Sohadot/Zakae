@@ -208,11 +208,31 @@ def check_internal_links() -> None:
                 err(f"{rel}: رابط داخلي مكسور → {target}")
 
 
+def check_glossary_page() -> None:
+    """صفحة القاموس المولّدة يجب أن تعكس كل مصطلحات data.json (تزامن المصدر)."""
+    page = ROOT / "glossary.html"
+    if not page.exists():
+        return  # اختيارية: تُبنى عبر scripts/build_glossary.py
+    html = page.read_text(encoding="utf-8")
+    try:
+        terms = json.loads((ROOT / "data.json").read_text(encoding="utf-8")).get("glossary", [])
+    except json.JSONDecodeError:
+        return
+    for t in terms:
+        term = str(t.get("term", "")).strip()
+        if term and term not in html:
+            err(
+                f"glossary.html: المصطلح «{term}» غير ظاهر — أعد التوليد "
+                f"(python3 scripts/build_glossary.py)"
+            )
+
+
 def main() -> int:
     canon_map = check_pages()
     check_data()
     check_sitemap(canon_map)
     check_internal_links()
+    check_glossary_page()
 
     print(f"صفحات محتوى مفحوصة: {len(content_pages())}")
     if warnings:
