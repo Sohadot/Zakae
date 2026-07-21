@@ -6,7 +6,7 @@
     "mission": "فهم الذكاء الاصطناعي بالعربية، بمنهج تحليلي واضح، ومن منظور عربي أصيل.",
     "url": "https://zakae.com",
     "language": "ar",
-    "lastUpdated": "2026-03-10",
+    "lastUpdated": "2026-07-21",
     "newsletterUrl": "https://zakae.substack.com",
     "contactEmail": "hello@zakae.com"
   },
@@ -23,10 +23,22 @@
       "target": "#articles"
     },
     "stats": [
-      { "value": "5+", "label": "نماذج مقارنة" },
-      { "value": "100+", "label": "مصطلح موضّح" },
-      { "value": "محدّث", "label": "بشكل مستمر" },
-      { "value": "مجاني", "label": "بالكامل" }
+      {
+        "value": "5",
+        "label": "نماذج مقارنة"
+      },
+      {
+        "value": "31",
+        "label": "مصطلح موضّح"
+      },
+      {
+        "value": "محدّث",
+        "label": "بشكل مستمر"
+      },
+      {
+        "value": "مجاني",
+        "label": "بالكامل"
+      }
     ],
     "startHere": [
       {
@@ -63,8 +75,15 @@
       "featured": true,
       "launchYear": "2023",
       "shortDescription": "نموذج ذكاء اصطناعي يركز على التحليل الطويل، الكتابة الدقيقة، والتعامل الجيد مع المستندات.",
-      "bestFor": ["التحليل", "قراءة الملفات", "الكتابة الطويلة"],
-      "weaknesses": ["أقل انتشارًا من ChatGPT", "بعض الميزات تختلف حسب البلد"],
+      "bestFor": [
+        "التحليل",
+        "قراءة الملفات",
+        "الكتابة الطويلة"
+      ],
+      "weaknesses": [
+        "أقل انتشارًا من ChatGPT",
+        "بعض الميزات تختلف حسب البلد"
+      ],
       "free": true,
       "pricing": "مجاني ومدفوع",
       "arabicSupport": "جيد جداً",
@@ -93,8 +112,16 @@
       "featured": true,
       "launchYear": "2022",
       "shortDescription": "النموذج الأشهر للمحادثة العامة، البحث، الكتابة، والمهام اليومية.",
-      "bestFor": ["المحادثة العامة", "الإنتاجية", "الشرح", "التعددية"],
-      "weaknesses": ["بعض الميزات متغيرة بين الخطط", "الخصوصية ليست الأعلى مقارنة ببعض البدائل"],
+      "bestFor": [
+        "المحادثة العامة",
+        "الإنتاجية",
+        "الشرح",
+        "التعددية"
+      ],
+      "weaknesses": [
+        "بعض الميزات متغيرة بين الخطط",
+        "الخصوصية ليست الأعلى مقارنة ببعض البدائل"
+      ],
       "free": true,
       "pricing": "مجاني ومدفوع",
       "arabicSupport": "ممتاز",
@@ -123,8 +150,15 @@
       "featured": true,
       "launchYear": "2023",
       "shortDescription": "نموذج Google متعدد القدرات مع تكامل قوي مع خدماتها وسياق واسع جدًا في بعض الإصدارات.",
-      "bestFor": ["التكامل مع Google", "السياق الطويل", "المهام العامة"],
-      "weaknesses": ["تجربة الاستخدام تختلف حسب المنتج", "الوضوح في الخطط ليس دائمًا الأفضل"],
+      "bestFor": [
+        "التكامل مع Google",
+        "السياق الطويل",
+        "المهام العامة"
+      ],
+      "weaknesses": [
+        "تجربة الاستخدام تختلف حسب المنتج",
+        "الوضوح في الخطط ليس دائمًا الأفضل"
+      ],
       "free": true,
       "pricing": "مجاني ومدفوع",
       "arabicSupport": "ممتاز",
@@ -153,8 +187,15 @@
       "featured": false,
       "launchYear": "2024",
       "shortDescription": "نموذج صيني برز بقوة خاصة في البرمجة والتكلفة.",
-      "bestFor": ["البرمجة", "التجريب", "متابعة السوق الصيني"],
-      "weaknesses": ["دعم العربية ليس الأفضل", "الخصوصية محدودة"],
+      "bestFor": [
+        "البرمجة",
+        "التجريب",
+        "متابعة السوق الصيني"
+      ],
+      "weaknesses": [
+        "دعم العربية ليس الأفضل",
+        "الخصوصية محدودة"
+      ],
       "free": true,
       "pricing": "مجاني ومدفوع",
       "arabicSupport": "جيد",
@@ -183,8 +224,16 @@
       "featured": false,
       "launchYear": "2023",
       "shortDescription": "نموذج xAI المعروف بنبرته المختلفة وارتباطه بمنظومة X.",
-      "bestFor": ["التفاعل السريع", "المحتوى الخفيف", "متابعة منظومة X"],
-      "weaknesses": ["العربية محدودة", "الخصوصية محدودة", "ليس الأفضل للمحتوى التحليلي الطويل"],
+      "bestFor": [
+        "التفاعل السريع",
+        "المحتوى الخفيف",
+        "متابعة منظومة X"
+      ],
+      "weaknesses": [
+        "العربية محدودة",
+        "الخصوصية محدودة",
+        "ليس الأفضل للمحتوى التحليلي الطويل"
+      ],
       "free": "partial",
       "pricing": "جزئي / مدفوع",
       "arabicSupport": "محدود",
@@ -202,67 +251,67 @@
     }
   ],
   "articles": [
-  {
-    "id": "claude-vs-chatgpt",
-    "title": "Claude مقابل ChatGPT — أيهما أفضل في 2026؟",
-    "excerpt": "مقارنة شاملة بين النموذجين الأكثر استخداماً في العالم، من حيث الدقة والأمان ودعم العربية",
-    "tag": "مقارنة",
-    "emoji": "🤖",
-    "readTime": "٨ دقائق",
-    "date": "2026-03-10",
-    "url": "articles/claude-vs-chatgpt.html"
-  },
-  {
-    "id": "deepseek-revolution",
-    "title": "DeepSeek — النموذج الصيني الذي غيّر المعادلة",
-    "excerpt": "تحليل معمّق لصعود DeepSeek وتأثيره على مشهد الذكاء الاصطناعي العالمي",
-    "tag": "تحليل",
-    "emoji": "🌊",
-    "readTime": "12 دقيقة",
-    "date": "2026-03-10",
-    "url": "articles/deepseek-revolution.html"
-  },
-  {
-    "id": "ai-arabic",
-    "title": "الذكاء الاصطناعي واللغة العربية — أين نحن؟",
-    "excerpt": "تقييم صريح لمستوى دعم النماذج الكبرى للغة العربية وما يجب على المطورين العرب فعله",
-    "tag": "عمق",
-    "emoji": "🌍",
-    "readTime": "10 دقائق",
-    "date": "2026-03-10",
-    "url": "articles/ai-arabic.html"
-  },
-   {
-  "id": "asia-ai-race",
-  "title": "الصين واليابان وكوريا الجنوبية في سباق الذكاء الاصطناعي",
-  "excerpt": "تحليل سباق الذكاء الاصطناعي في آسيا",
-  "tag": "تحليل",
-  "emoji": "🌏",
-  "readTime": "11 دقيقة",
-  "date": "2026-03-11",
-  "url": "articles/asia-ai-race.html"
+    {
+      "id": "claude-vs-chatgpt",
+      "title": "Claude مقابل ChatGPT — أيهما أفضل في 2026؟",
+      "excerpt": "مقارنة شاملة بين النموذجين الأكثر استخداماً في العالم، من حيث الدقة والأمان ودعم العربية",
+      "tag": "مقارنة",
+      "emoji": "🤖",
+      "readTime": "٨ دقائق",
+      "date": "2026-03-10",
+      "url": "articles/claude-vs-chatgpt.html"
     },
     {
-  "id": "chatgpt-guide",
-  "title": "ما هو ChatGPT؟ شرح النموذج الذي غيّر العالم",
-  "excerpt": "شرح شامل لـ ChatGPT: ما هو، كيف يعمل، من طوّره، ما استخداماته، وهل يدعم العربية؟ دليل واضح ومتكامل للقارئ العربي.",
-  "tag": "شرح",
-  "emoji": "💬",
-  "readTime": "١٠ دقائق",
-  "date": "2026-03-11",
-  "url": "articles/chatgpt-guide.html"
+      "id": "deepseek-revolution",
+      "title": "DeepSeek — النموذج الصيني الذي غيّر المعادلة",
+      "excerpt": "تحليل معمّق لصعود DeepSeek وتأثيره على مشهد الذكاء الاصطناعي العالمي",
+      "tag": "تحليل",
+      "emoji": "🌊",
+      "readTime": "12 دقيقة",
+      "date": "2026-03-10",
+      "url": "articles/deepseek-revolution.html"
     },
     {
-  "id": "gemini-guide",
-  "title": "ما هو Gemini؟ شرح نموذج Google الذي ينافس الجميع",
-  "excerpt": "شرح شامل لـ Gemini من Google: ما هو، كيف يعمل، ما أبرز قدراته، وما الفرق بينه وبين ChatGPT وClaude؟ دليل عربي واضح ومتكامل.",
-  "tag": "شرح",
-  "emoji": "🔷",
-  "readTime": "١٠ دقائق",
-  "date": "2026-03-11",
-  "url": "articles/gemini-guide.html"
-}
-],
+      "id": "ai-arabic",
+      "title": "الذكاء الاصطناعي واللغة العربية — أين نحن؟",
+      "excerpt": "تقييم صريح لمستوى دعم النماذج الكبرى للغة العربية وما يجب على المطورين العرب فعله",
+      "tag": "عمق",
+      "emoji": "🌍",
+      "readTime": "10 دقائق",
+      "date": "2026-03-10",
+      "url": "articles/ai-arabic.html"
+    },
+    {
+      "id": "asia-ai-race",
+      "title": "الصين واليابان وكوريا الجنوبية في سباق الذكاء الاصطناعي",
+      "excerpt": "تحليل سباق الذكاء الاصطناعي في آسيا",
+      "tag": "تحليل",
+      "emoji": "🌏",
+      "readTime": "11 دقيقة",
+      "date": "2026-03-11",
+      "url": "articles/asia-ai-race.html"
+    },
+    {
+      "id": "chatgpt-guide",
+      "title": "ما هو ChatGPT؟ شرح النموذج الذي غيّر العالم",
+      "excerpt": "شرح شامل لـ ChatGPT: ما هو، كيف يعمل، من طوّره، ما استخداماته، وهل يدعم العربية؟ دليل واضح ومتكامل للقارئ العربي.",
+      "tag": "شرح",
+      "emoji": "💬",
+      "readTime": "١٠ دقائق",
+      "date": "2026-03-11",
+      "url": "articles/chatgpt-guide.html"
+    },
+    {
+      "id": "gemini-guide",
+      "title": "ما هو Gemini؟ شرح نموذج Google الذي ينافس الجميع",
+      "excerpt": "شرح شامل لـ Gemini من Google: ما هو، كيف يعمل، ما أبرز قدراته، وما الفرق بينه وبين ChatGPT وClaude؟ دليل عربي واضح ومتكامل.",
+      "tag": "شرح",
+      "emoji": "🔷",
+      "readTime": "١٠ دقائق",
+      "date": "2026-03-11",
+      "url": "articles/gemini-guide.html"
+    }
+  ],
   "glossary": [
     {
       "id": "llm",
@@ -317,6 +366,231 @@
       "category": "risk",
       "difficulty": "beginner",
       "definition": "ظاهرة يختلق فيها النموذج معلومات غير صحيحة ويقدمها بثقة وكأنها حقائق."
+    },
+    {
+      "id": "token",
+      "slug": "token",
+      "term": "Token",
+      "arabic": "الرمز النصّي",
+      "category": "foundation",
+      "difficulty": "beginner",
+      "definition": "الوحدة الأصغر التي يعالجها النموذج؛ قد تكون كلمة أو جزءاً منها، وتُقاس بها التكلفة وطول النص."
+    },
+    {
+      "id": "parameters",
+      "slug": "parameters",
+      "term": "Parameters",
+      "arabic": "المعاملات",
+      "category": "foundation",
+      "difficulty": "intermediate",
+      "definition": "القيم العددية التي يتعلمها النموذج أثناء التدريب؛ كثرتها (بالمليارات) مؤشر تقريبي على حجم النموذج وقدرته."
+    },
+    {
+      "id": "training-data",
+      "slug": "training-data",
+      "term": "Training Data",
+      "arabic": "بيانات التدريب",
+      "category": "training",
+      "difficulty": "beginner",
+      "definition": "مجموعة النصوص والبيانات التي يتعلم منها النموذج؛ جودتها وتنوّعها يحدّدان دقة المخرجات وتحيّزاتها."
+    },
+    {
+      "id": "inference",
+      "slug": "inference",
+      "term": "Inference",
+      "arabic": "الاستدلال",
+      "category": "foundation",
+      "difficulty": "intermediate",
+      "definition": "مرحلة تشغيل النموذج لتوليد إجابة من موجّه المستخدم، مقابل مرحلة التدريب؛ وهي ما يستهلك موارد الحوسبة عند كل طلب."
+    },
+    {
+      "id": "transformer",
+      "slug": "transformer",
+      "term": "Transformer",
+      "arabic": "المُحوِّل",
+      "category": "architecture",
+      "difficulty": "advanced",
+      "definition": "البنية العصبية التي تقوم عليها معظم النماذج اللغوية الحديثة، وتعتمد على آلية الانتباه لمعالجة النص كاملاً بالتوازي."
+    },
+    {
+      "id": "attention",
+      "slug": "attention",
+      "term": "Attention",
+      "arabic": "آلية الانتباه",
+      "category": "architecture",
+      "difficulty": "advanced",
+      "definition": "تقنية تتيح للنموذج ترجيح أهمية كل جزء من النص عند معالجة كلمة معينة، وهي جوهر بنية المُحوِّل."
+    },
+    {
+      "id": "embedding",
+      "slug": "embedding",
+      "term": "Embedding",
+      "arabic": "التضمين",
+      "category": "architecture",
+      "difficulty": "intermediate",
+      "definition": "تمثيل النص أو الكلمة كمتجه أرقام يلتقط المعنى، ويُستخدم في البحث الدلالي وأنظمة RAG."
+    },
+    {
+      "id": "temperature",
+      "slug": "temperature",
+      "term": "Temperature",
+      "arabic": "درجة الحرارة",
+      "category": "interaction",
+      "difficulty": "intermediate",
+      "definition": "معامل يتحكم في عشوائية المخرجات؛ القيمة المنخفضة تعطي إجابات ثابتة ودقيقة، والمرتفعة تعطي إبداعاً وتنوّعاً أكبر."
+    },
+    {
+      "id": "zero-shot",
+      "slug": "zero-shot",
+      "term": "Zero-shot",
+      "arabic": "بدون أمثلة",
+      "category": "interaction",
+      "difficulty": "intermediate",
+      "definition": "طلب أداء مهمة من النموذج دون تزويده بأمثلة محلولة، اعتماداً على معرفته المسبقة فقط."
+    },
+    {
+      "id": "few-shot",
+      "slug": "few-shot",
+      "term": "Few-shot",
+      "arabic": "بأمثلة قليلة",
+      "category": "interaction",
+      "difficulty": "intermediate",
+      "definition": "تزويد النموذج بعدة أمثلة محلولة داخل الموجّه ليقلّد نمطها في إجابته، ما يحسّن الدقة غالباً."
+    },
+    {
+      "id": "chain-of-thought",
+      "slug": "chain-of-thought",
+      "term": "Chain-of-Thought",
+      "arabic": "سلسلة التفكير",
+      "category": "interaction",
+      "difficulty": "intermediate",
+      "definition": "أسلوب يدفع النموذج لعرض خطوات استدلاله قبل الإجابة، فيتحسّن أداؤه في المسائل المنطقية والحسابية."
+    },
+    {
+      "id": "multimodal",
+      "slug": "multimodal",
+      "term": "Multimodal",
+      "arabic": "متعدد الوسائط",
+      "category": "capability",
+      "difficulty": "beginner",
+      "definition": "نموذج قادر على فهم أو توليد أكثر من نوع من الوسائط: نص وصورة وصوت وفيديو معاً."
+    },
+    {
+      "id": "ai-agent",
+      "slug": "ai-agent",
+      "term": "AI Agent",
+      "arabic": "الوكيل الذكي",
+      "category": "agents",
+      "difficulty": "intermediate",
+      "definition": "نظام يستخدم نموذجاً لغوياً لاتخاذ قرارات وتنفيذ خطوات متسلسلة واستدعاء أدوات لإنجاز هدف دون تدخّل بشري مستمر."
+    },
+    {
+      "id": "prompt-engineering",
+      "slug": "prompt-engineering",
+      "term": "Prompt Engineering",
+      "arabic": "هندسة الموجّهات",
+      "category": "interaction",
+      "difficulty": "beginner",
+      "definition": "ممارسة صياغة الموجّهات وتحسينها للحصول على أفضل النتائج من النموذج."
+    },
+    {
+      "id": "overfitting",
+      "slug": "overfitting",
+      "term": "Overfitting",
+      "arabic": "فرط الملاءمة",
+      "category": "training",
+      "difficulty": "advanced",
+      "definition": "حالة يحفظ فيها النموذج بيانات التدريب بدل تعلّم الأنماط العامة، فيضعف أداؤه على بيانات جديدة."
+    },
+    {
+      "id": "benchmark",
+      "slug": "benchmark",
+      "term": "Benchmark",
+      "arabic": "معيار القياس",
+      "category": "evaluation",
+      "difficulty": "intermediate",
+      "definition": "اختبار موحّد يقارن أداء النماذج على مهام محددة مثل الرياضيات أو البرمجة أو الفهم اللغوي."
+    },
+    {
+      "id": "open-source",
+      "slug": "open-source",
+      "term": "Open Source",
+      "arabic": "مفتوح المصدر",
+      "category": "deployment",
+      "difficulty": "beginner",
+      "definition": "نموذج تُتاح أوزانه للعموم فيمكن تشغيله وتعديله محلياً، مقابل النماذج المغلقة المتاحة عبر واجهة فقط."
+    },
+    {
+      "id": "guardrails",
+      "slug": "guardrails",
+      "term": "Guardrails",
+      "arabic": "حواجز الأمان",
+      "category": "risk",
+      "difficulty": "intermediate",
+      "definition": "قيود وضوابط تُضاف للنموذج لمنع المخرجات الضارة أو غير المرغوبة."
+    },
+    {
+      "id": "bias",
+      "slug": "bias",
+      "term": "Bias",
+      "arabic": "التحيّز",
+      "category": "risk",
+      "difficulty": "beginner",
+      "definition": "ميل النموذج لإنتاج مخرجات منحازة نتيجة تحيّزات موجودة في بيانات التدريب."
+    },
+    {
+      "id": "rlhf",
+      "slug": "rlhf",
+      "term": "RLHF",
+      "arabic": "التعلّم المعزّز بالتغذية الراجعة",
+      "category": "training",
+      "difficulty": "advanced",
+      "definition": "تقنية تدريب تستخدم تقييمات بشرية لتوجيه سلوك النموذج نحو إجابات أكثر فائدة وأماناً."
+    },
+    {
+      "id": "distillation",
+      "slug": "distillation",
+      "term": "Distillation",
+      "arabic": "التقطير",
+      "category": "training",
+      "difficulty": "advanced",
+      "definition": "تدريب نموذج صغير على محاكاة نموذج أكبر، للحصول على أداء قريب بتكلفة وسرعة أفضل."
+    },
+    {
+      "id": "quantization",
+      "slug": "quantization",
+      "term": "Quantization",
+      "arabic": "التكميم",
+      "category": "deployment",
+      "difficulty": "advanced",
+      "definition": "خفض دقة أرقام النموذج لتقليل حجمه وتسريعه، مع تنازل بسيط عن الدقة، ما يتيح تشغيله على أجهزة أضعف."
+    },
+    {
+      "id": "latency",
+      "slug": "latency",
+      "term": "Latency",
+      "arabic": "زمن الاستجابة",
+      "category": "deployment",
+      "difficulty": "beginner",
+      "definition": "الوقت بين إرسال الطلب واستلام أول جزء من الإجابة؛ عامل مهم في تجربة الاستخدام والتطبيقات الحية."
+    },
+    {
+      "id": "api",
+      "slug": "api",
+      "term": "API",
+      "arabic": "واجهة برمجة التطبيقات",
+      "category": "deployment",
+      "difficulty": "beginner",
+      "definition": "بوابة تتيح للمطوّرين استدعاء النموذج برمجياً ودمجه في تطبيقاتهم ومنتجاتهم."
+    },
+    {
+      "id": "system-prompt",
+      "slug": "system-prompt",
+      "term": "System Prompt",
+      "arabic": "الموجّه النظامي",
+      "category": "interaction",
+      "difficulty": "intermediate",
+      "definition": "تعليمات خفية تُحدّد شخصية النموذج ودوره وحدوده قبل بدء المحادثة مع المستخدم."
     }
   ],
   "topTen": [
