@@ -97,6 +97,18 @@
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>https://zakae.com/articles/ai-hallucination-explained.html</loc>
+    <lastmod>2026-07-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://zakae.com/articles/context-window-explained.html</loc>
+    <lastmod>2026-07-21</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
     <loc>https://zakae.com/articles/claude-vs-chatgpt.html</loc>
     <lastmod>2026-04-11</lastmod>
     <changefreq>monthly</changefreq>
