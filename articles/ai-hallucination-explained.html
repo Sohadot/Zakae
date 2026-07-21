@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>الهلوسة في الذكاء الاصطناعي: لماذا يخطئ النموذج بثقة وكيف تتحقق | ذكاء</title>
+
+<meta name="description" content="لماذا يخترع نموذج الذكاء الاصطناعي معلومات خاطئة بثقة تامة؟ شرح ظاهرة الهلوسة، أسبابها، وطرق عملية لتقليلها والتحقق من الإجابات.">
+<meta name="keywords" content="الهلوسة, hallucination, الذكاء الاصطناعي, معلومات خاطئة, التحقق, RAG">
+<meta name="robots" content="index, follow">
+
+<link rel="canonical" href="https://zakae.com/articles/ai-hallucination-explained.html">
+
+<meta property="og:title" content="الهلوسة في الذكاء الاصطناعي: لماذا يخطئ النموذج بثقة وكيف تتحقق">
+<meta property="og:description" content="أسباب هلوسة نماذج الذكاء الاصطناعي وطرق عملية لتقليلها والتحقق من الإجابات.">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://zakae.com/articles/ai-hallucination-explained.html">
+<meta property="og:image" content="https://zakae.com/assets/images/og-image.png">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="الهلوسة في الذكاء الاصطناعي: لماذا يخطئ النموذج بثقة؟">
+<meta name="twitter:description" content="أسباب الهلوسة وطرق التحقق من إجابات الذكاء الاصطناعي.">
+<meta name="twitter:image" content="https://zakae.com/assets/images/og-image.png">
+
+<meta property="article:published_time" content="2026-07-21">
+
+<script type="application/ld+json">
+{
+ "@context":"https://schema.org",
+ "@type":"Article",
+ "headline":"الهلوسة في الذكاء الاصطناعي: لماذا يخطئ النموذج بثقة وكيف تتحقق",
+ "description":"أسباب هلوسة نماذج الذكاء الاصطناعي وطرق عملية لتقليلها والتحقق من الإجابات.",
+ "datePublished":"2026-07-21",
+ "dateModified":"2026-07-21",
+ "author":{"@type":"Organization","name":"ذكاء"},
+ "publisher":{"@type":"Organization","name":"ذكاء","url":"https://zakae.com"},
+ "mainEntityOfPage":{"@type":"WebPage","@id":"https://zakae.com/articles/ai-hallucination-explained.html"},
+ "inLanguage":"ar"
+}
+</script>
+<script type="application/ld+json">
+{
+ "@context":"https://schema.org",
+ "@type":"BreadcrumbList",
+ "itemListElement":[
+   {"@type":"ListItem","position":1,"name":"الرئيسية","item":"https://zakae.com/"},
+   {"@type":"ListItem","position":2,"name":"المقالات","item":"https://zakae.com/articles/"},
+   {"@type":"ListItem","position":3,"name":"الهلوسة في الذكاء الاصطناعي"}
+ ]
+}
+</script>
+
+<!-- Google Tag Manager -->
+<script>
+(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id=GTM-PJPX3XXJ'+dl;
+f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PJPX3XXJ');
+</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-PWSP38400Y"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-PWSP38400Y');
+</script>
+
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+
+<style>
+body{font-family:'Tajawal',sans-serif;background:#fafafa;color:#111;line-height:1.9;margin:0;padding:0;direction:rtl;}
+.container{max-width:900px;margin:auto;padding:40px 20px;}
+h1{font-size:34px;line-height:1.35;margin-bottom:16px;}
+h2{margin-top:44px;font-size:26px;border-right:4px solid #0a66c2;padding-right:12px;}
+h3{margin-top:28px;font-size:20px;}
+p{font-size:18px;margin-bottom:18px;}
+a{color:#0a66c2;text-decoration:none;}
+a:hover{text-decoration:underline;}
+.article-meta{color:#666;font-size:14px;margin-bottom:28px;}
+.breadcrumb{font-size:14px;margin-bottom:20px;}
+.breadcrumb a{color:#666;}
+.lede{font-size:20px;color:#333;background:#f0f5fb;border-radius:12px;padding:20px 24px;}
+.steps{background:#fff;border:1px solid #e2e2e2;border-radius:10px;padding:18px 28px;}
+.steps li{margin-bottom:10px;}
+hr{border:none;border-top:1px solid #e2e2e2;margin:40px 0;}
+.tip{border-right:4px solid #d98a00;background:#fff8ec;padding:14px 18px;border-radius:8px;margin:18px 0;}
+</style>
+
+</head>
+
+<body>
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PJPX3XXJ" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+<div class="container">
+
+<div class="breadcrumb">
+<a href="/">الرئيسية</a> ›
+<a href="/articles/">المقالات</a> ›
+<span>الهلوسة في الذكاء الاصطناعي</span>
+</div>
+
+<h1>الهلوسة في الذكاء الاصطناعي: لماذا يخطئ النموذج بثقة وكيف تتحقق</h1>
+
+<div class="article-meta">📅 21 يوليو 2026 · ✍️ فريق ذكاء · ⏱ ٨ دقائق</div>
+
+<p class="lede">
+من أخطر ما يواجهك عند استخدام الذكاء الاصطناعي: إجابة خاطئة مصاغة بثقة تامة ولغة مقنعة.
+هذه هي <a href="/#glossary">الهلوسة (Hallucination)</a>. فهم سببها هو خطوتك الأولى لعدم الوقوع ضحيّتها.
+</p>
+
+<h2>ما هي الهلوسة؟</h2>
+<p>
+الهلوسة هي أن ينتج النموذج معلومة تبدو صحيحة لكنها غير دقيقة أو مختلَقة تماماً — اسم مرجع
+غير موجود، تاريخ خاطئ، أو اقتباس لم يُقَل. المشكلة ليست الخطأ بحد ذاته، بل <strong>الثقة</strong>
+التي يُقدَّم بها.
+</p>
+
+<h2>لماذا تحدث؟</h2>
+<p>
+النموذج اللغوي في جوهره يتنبّأ بالكلمة الأكثر احتمالاً تالياً، لا يستعلم عن حقيقة في قاعدة بيانات.
+حين تنقص <a href="/#glossary">بيانات التدريب</a> أو يكون السؤال خارج معرفته، يملأ الفراغ بما يبدو
+منسجماً لغوياً — لا بما هو صحيح واقعاً. لا يملك النموذج آلية داخلية تقول «لا أعرف» ما لم يُدرَّب على ذلك.
+</p>
+
+<div class="tip">
+تذكّر: طلاقة الإجابة ليست دليلاً على صحّتها. النموذج بارع في الصياغة بقدر براعته في المحتوى — وأحياناً أكثر.
+</div>
+
+<h2>كيف تقلّل الهلوسة؟</h2>
+<ol class="steps">
+<li><strong>استخدم RAG:</strong> اربط النموذج بمصادرك الموثوقة عبر <a href="/articles/rag-explained-arabic.html">التوليد المعزّز بالاسترجاع</a> ليجيب من وثائق حقيقية.</li>
+<li><strong>اطلب المصادر:</strong> اطلب أن يذكر النموذج مرجعه، ثم تحقّق منه بنفسك.</li>
+<li><strong>أذن بعدم اليقين:</strong> اطلب صراحةً أن يقول «لا أعرف» بدل التخمين.</li>
+<li><strong>اخفض درجة الحرارة:</strong> قيمة <a href="/#glossary">Temperature</a> المنخفضة تقلّل العشوائية في المهام الواقعية.</li>
+<li><strong>حسّن الموجّه:</strong> الوضوح والسياق يقلّلان فرص الانحراف — راجع <a href="/articles/prompt-engineering-guide.html">هندسة الموجّهات</a>.</li>
+</ol>
+
+<h2>كيف تتحقق عملياً؟</h2>
+<p>
+لا تعتمد على النموذج وحيداً في القرارات المهمة. تحقّق من الحقائق القابلة للتحقق (أسماء، أرقام،
+تواريخ، اقتباسات) من مصدر مستقل. عامل النموذج كمساعد بحث سريع لا كمرجع نهائي.
+</p>
+
+<hr>
+<h3>اقرأ أيضًا</h3>
+<ul>
+<li><a href="/articles/rag-explained-arabic.html">RAG بالعربية: كيف يجيب الذكاء الاصطناعي من بياناتك</a></li>
+<li><a href="/articles/prompt-engineering-guide.html">هندسة الموجّهات: الدليل العملي بالعربية</a></li>
+<li><a href="/articles/context-window-explained.html">نافذة السياق: متى تحتاج نموذجاً بذاكرة أوسع</a></li>
+</ul>
+
+</div>
+</body>
+</html>

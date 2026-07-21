@@ -292,6 +292,26 @@
       "url": "articles/open-vs-closed-models.html"
     },
     {
+      "id": "ai-hallucination-explained",
+      "title": "الهلوسة في الذكاء الاصطناعي: لماذا يخطئ النموذج بثقة وكيف تتحقق",
+      "excerpt": "لماذا يخترع النموذج معلومات خاطئة بثقة تامة؟ الأسباب وطرق عملية لتقليل الهلوسة والتحقق من الإجابات.",
+      "tag": "شرح",
+      "emoji": "🌀",
+      "readTime": "٨ دقائق",
+      "date": "2026-07-21",
+      "url": "articles/ai-hallucination-explained.html"
+    },
+    {
+      "id": "context-window-explained",
+      "title": "نافذة السياق (Context Window): متى تحتاج نموذجاً بذاكرة أوسع",
+      "excerpt": "ما هي نافذة السياق ولماذا تهم؟ علاقتها بطول المستندات والتكلفة، ومتى تحتاج نافذة أوسع فعلاً.",
+      "tag": "شرح",
+      "emoji": "🪟",
+      "readTime": "٧ دقائق",
+      "date": "2026-07-21",
+      "url": "articles/context-window-explained.html"
+    },
+    {
       "id": "claude-vs-chatgpt",
       "title": "Claude مقابل ChatGPT — أيهما أفضل في 2026؟",
       "excerpt": "مقارنة شاملة بين النموذجين الأكثر استخداماً في العالم، من حيث الدقة والأمان ودعم العربية",
