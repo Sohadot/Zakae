@@ -28,7 +28,7 @@
         "label": "نماذج مقارنة"
       },
       {
-        "value": "48",
+        "value": "70",
         "label": "مصطلح موضّح"
       },
       {
@@ -814,6 +814,204 @@
       "category": "deployment",
       "difficulty": "beginner",
       "definition": "معالج متخصص في العمليات المتوازية الضخمة، وهو العتاد الأساسي لتدريب نماذج الذكاء الاصطناعي وتشغيلها."
+    },
+    {
+      "id": "nlp",
+      "slug": "nlp",
+      "term": "NLP",
+      "arabic": "معالجة اللغة الطبيعية",
+      "category": "foundation",
+      "difficulty": "beginner",
+      "definition": "مجال يهتمّ بتمكين الحواسيب من فهم اللغة البشرية وتحليلها وتوليدها، وهو الأساس الذي تقوم عليه النماذج اللغوية."
+    },
+    {
+      "id": "foundation-model",
+      "slug": "foundation-model",
+      "term": "Foundation Model",
+      "arabic": "النموذج الأساسي",
+      "category": "foundation",
+      "difficulty": "beginner",
+      "definition": "نموذج ضخم مُدرَّب على بيانات واسعة يصلح أساساً لمهام متعددة بعد تكييفه، بدل بنائه من الصفر لكل مهمة."
+    },
+    {
+      "id": "turing-test",
+      "slug": "turing-test",
+      "term": "Turing Test",
+      "arabic": "اختبار تورنغ",
+      "category": "foundation",
+      "difficulty": "beginner",
+      "definition": "اختبار قديم يقيس قدرة الآلة على محاكاة المحادثة البشرية لدرجة يصعب فيها تمييزها عن إنسان."
+    },
+    {
+      "id": "reasoning-model",
+      "slug": "reasoning-model",
+      "term": "Reasoning Model",
+      "arabic": "نموذج الاستدلال",
+      "category": "capability",
+      "difficulty": "intermediate",
+      "definition": "نموذج مصمّم ليخصّص خطوات تفكير أطول قبل الإجابة، فيتفوّق في المسائل المنطقية والرياضية والمعقّدة."
+    },
+    {
+      "id": "computer-vision",
+      "slug": "computer-vision",
+      "term": "Computer Vision",
+      "arabic": "الرؤية الحاسوبية",
+      "category": "capability",
+      "difficulty": "intermediate",
+      "definition": "فرع من الذكاء الاصطناعي يمكّن الأنظمة من فهم الصور والفيديو وتحليل محتواها البصري."
+    },
+    {
+      "id": "speech-recognition",
+      "slug": "speech-recognition",
+      "term": "Speech Recognition",
+      "arabic": "التعرّف على الكلام",
+      "category": "capability",
+      "difficulty": "beginner",
+      "definition": "تقنية تحوّل الكلام المنطوق إلى نص مكتوب، وتُستخدم في المساعدات الصوتية والتفريغ."
+    },
+    {
+      "id": "text-to-image",
+      "slug": "text-to-image",
+      "term": "Text-to-Image",
+      "arabic": "توليد الصور من النص",
+      "category": "capability",
+      "difficulty": "beginner",
+      "definition": "توليد صور جديدة انطلاقاً من وصف نصّي، تقوم عليه أدوات إنشاء الصور بالذكاء الاصطناعي."
+    },
+    {
+      "id": "tokenization",
+      "slug": "tokenization",
+      "term": "Tokenization",
+      "arabic": "التقطيع الرمزي",
+      "category": "architecture",
+      "difficulty": "intermediate",
+      "definition": "عملية تقسيم النص إلى رموز (tokens) يفهمها النموذج، وهي أول خطوة في معالجة أي مدخل نصّي."
+    },
+    {
+      "id": "model-weights",
+      "slug": "model-weights",
+      "term": "Model Weights",
+      "arabic": "أوزان النموذج",
+      "category": "architecture",
+      "difficulty": "intermediate",
+      "definition": "القيم العددية المتعلَّمة التي تخزّن «معرفة» النموذج؛ إتاحتها للعموم هي ما يجعل النموذج مفتوح المصدر."
+    },
+    {
+      "id": "encoder-decoder",
+      "slug": "encoder-decoder",
+      "term": "Encoder-Decoder",
+      "arabic": "المُرمِّز والمُفكِّك",
+      "category": "architecture",
+      "difficulty": "advanced",
+      "definition": "بنية تحوّل المدخل إلى تمثيل داخلي (ترميز) ثم تولّد المخرج منه (فكّ ترميز)، شائعة في الترجمة والتلخيص."
+    },
+    {
+      "id": "mixture-of-experts",
+      "slug": "mixture-of-experts",
+      "term": "Mixture of Experts",
+      "arabic": "خليط الخبراء",
+      "category": "architecture",
+      "difficulty": "advanced",
+      "definition": "بنية تُفعّل جزءاً من النموذج («خبراء» متخصّصين) لكل مدخل، ما يرفع الكفاءة مع الحفاظ على القدرة."
+    },
+    {
+      "id": "transfer-learning",
+      "slug": "transfer-learning",
+      "term": "Transfer Learning",
+      "arabic": "التعلّم بالنقل",
+      "category": "training",
+      "difficulty": "intermediate",
+      "definition": "إعادة استخدام نموذج مُدرَّب على مهمة كأساس لمهمة أخرى، ما يوفّر بيانات ووقت التدريب."
+    },
+    {
+      "id": "backpropagation",
+      "slug": "backpropagation",
+      "term": "Backpropagation",
+      "arabic": "الانتشار العكسي",
+      "category": "training",
+      "difficulty": "advanced",
+      "definition": "الخوارزمية التي يتعلّم بها النموذج عبر حساب الخطأ وتعديل الأوزان رجوعاً عبر الطبقات."
+    },
+    {
+      "id": "loss-function",
+      "slug": "loss-function",
+      "term": "Loss Function",
+      "arabic": "دالة الخسارة",
+      "category": "training",
+      "difficulty": "advanced",
+      "definition": "مقياس رياضي يحدّد مقدار خطأ النموذج؛ التدريب يسعى لتقليل قيمته باستمرار."
+    },
+    {
+      "id": "synthetic-data",
+      "slug": "synthetic-data",
+      "term": "Synthetic Data",
+      "arabic": "البيانات التركيبية",
+      "category": "training",
+      "difficulty": "intermediate",
+      "definition": "بيانات مولّدة اصطناعياً تُستخدم في التدريب حين تندر البيانات الحقيقية أو تكون حسّاسة."
+    },
+    {
+      "id": "jailbreak",
+      "slug": "jailbreak",
+      "term": "Jailbreak",
+      "arabic": "كسر القيود",
+      "category": "risk",
+      "difficulty": "intermediate",
+      "definition": "محاولة خداع النموذج لتجاوز ضوابط الأمان وإنتاج مخرجات ممنوعة عبر صياغات ملتوية."
+    },
+    {
+      "id": "red-teaming",
+      "slug": "red-teaming",
+      "term": "Red Teaming",
+      "arabic": "الفريق الأحمر",
+      "category": "risk",
+      "difficulty": "advanced",
+      "definition": "اختبار النموذج بهجمات مقصودة لاكتشاف ثغراته ومخاطره قبل أن يستغلّها آخرون."
+    },
+    {
+      "id": "interpretability",
+      "slug": "interpretability",
+      "term": "Interpretability",
+      "arabic": "قابلية التفسير",
+      "category": "risk",
+      "difficulty": "advanced",
+      "definition": "القدرة على فهم كيف ولماذا يصل النموذج إلى مخرجاته، وهي مفتاح الثقة والمساءلة."
+    },
+    {
+      "id": "grounding",
+      "slug": "grounding",
+      "term": "Grounding",
+      "arabic": "الإسناد",
+      "category": "risk",
+      "difficulty": "intermediate",
+      "definition": "ربط مخرجات النموذج بمصادر أو حقائق موثوقة يمكن التحقق منها، لتقليل الهلوسة."
+    },
+    {
+      "id": "agent-memory",
+      "slug": "agent-memory",
+      "term": "Agent Memory",
+      "arabic": "ذاكرة الوكيل",
+      "category": "agents",
+      "difficulty": "intermediate",
+      "definition": "آلية تتيح للوكيل الذكي الاحتفاظ بمعلومات عبر الخطوات والجلسات لاتخاذ قرارات متّسقة."
+    },
+    {
+      "id": "orchestration",
+      "slug": "orchestration",
+      "term": "Orchestration",
+      "arabic": "التنسيق",
+      "category": "agents",
+      "difficulty": "advanced",
+      "definition": "تنظيم تعاون عدة نماذج أو أدوات أو وكلاء لإنجاز مهمة مركّبة بترتيب منطقي."
+    },
+    {
+      "id": "throughput",
+      "slug": "throughput",
+      "term": "Throughput",
+      "arabic": "الإنتاجية",
+      "category": "deployment",
+      "difficulty": "intermediate",
+      "definition": "كمية الطلبات أو الرموز التي يعالجها النظام في وحدة زمنية؛ مؤشر مهم لقابلية التوسّع."
     }
   ],
   "topTen": [
