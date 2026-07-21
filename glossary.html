@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>قاموس مصطلحات الذكاء الاصطناعي بالعربية | ذكاء</title>
-  <meta name="description" content="قاموس عربي شامل لأهم مصطلحات الذكاء الاصطناعي — 70 مصطلحاً موضّحاً بلغة واضحة، منظّمة حسب الفئة والمستوى، من LLM وRAG إلى التكميم والوكلاء.">
+  <meta name="description" content="قاموس عربي شامل لأهم مصطلحات الذكاء الاصطناعي — 100 مصطلحاً موضّحاً بلغة واضحة، منظّمة حسب الفئة والمستوى، من LLM وRAG إلى التكميم والوكلاء.">
   <link rel="canonical" href="https://zakae.com/glossary.html">
   <script type="application/ld+json">
 {
@@ -433,6 +433,186 @@
    "name": "Throughput",
    "description": "كمية الطلبات أو الرموز التي يعالجها النظام في وحدة زمنية؛ مؤشر مهم لقابلية التوسّع.",
    "inDefinedTermSet": "https://zakae.com/glossary.html"
+  },
+  {
+   "@type": "DefinedTerm",
+   "name": "Top-p (Nucleus)",
+   "description": "أسلوب لاختيار الكلمة التالية من أصغر مجموعة يتجاوز مجموع احتمالاتها العتبة p، ما يوازن التنوّع والتماسك.",
+   "inDefinedTermSet": "https://zakae.com/glossary.html"
+  },
+  {
+   "@type": "DefinedTerm",
+   "name": "Beam Search",
+   "description": "خوارزمية توليد تستكشف عدة مسارات نصّية وتحتفظ بأفضلها، بحثاً عن ناتج أعلى احتمالاً إجمالاً.",
+   "inDefinedTermSet": "https://zakae.com/glossary.html"
+  },
+  {
+   "@type": "DefinedTerm",
+   "name": "In-Context Learning",
+   "description": "قدرة النموذج على تعلّم نمط مهمة من أمثلة داخل الموجّه نفسه دون تعديل أوزانه.",
+   "inDefinedTermSet": "https://zakae.com/glossary.html"
+  },
+  {
+   "@type": "DefinedTerm",
+   "name": "Prompt Chaining",
+   "description": "ربط عدة موجّهات متتابعة يغذّي ناتج كل خطوة الخطوةَ التالية، لتفكيك المهام المعقّدة.",
+   "inDefinedTermSet": "https://zakae.com/glossary.html"
+  },
+  {
+   "@type": "DefinedTerm",
+   "name": "Perplexity",
+   "description": "مقياس لجودة نموذج لغوي يعكس مدى «حيرته» في التنبؤ بالنص؛ كلما قلّ كان النموذج أدقّ.",
+   "inDefinedTermSet": "https://zakae.com/glossary.html"
+  },
+  {
+   "@type": "DefinedTerm",
+   "name": "Precision & Recall",
+   "description": "مقياسان للتصنيف: الدقة نسبة الصحيح من المتنبَّأ به، والاستدعاء نسبة ما التُقط من الصحيح فعلاً.",
+   "inDefinedTermSet": "https://zakae.com/glossary.html"
+  },
+  {
+   "@type": "DefinedTerm",
+   "name": "F1 Score",
+   "description": "مقياس يوازن بين الدقة والاستدعاء في رقم واحد، مفيد حين يهمّ الاثنان معاً.",
+   "inDefinedTermSet": "https://zakae.com/glossary.html"
+  },
+  {
+   "@type": "DefinedTerm",
+   "name": "Hyperparameter",
+   "description": "إعداد يحدّده المطوّر قبل التدريب (كمعدّل التعلّم وحجم الدفعة) ويؤثّر في كيفية تعلّم النموذج.",
+   "inDefinedTermSet": "https://zakae.com/glossary.html"
+  },
+  {
+   "@type": "DefinedTerm",
+   "name": "Learning Rate",
+   "description": "معامل يحدّد حجم خطوة تعديل الأوزان في كل تحديث؛ توازنه حرج لاستقرار التدريب وسرعته.",
+   "inDefinedTermSet": "https://zakae.com/glossary.html"
+  },
+  {
+   "@type": "DefinedTerm",
+   "name": "Epoch",
+   "description": "دورة تدريب كاملة يمرّ فيها النموذج على كامل بيانات التدريب مرة واحدة.",
+   "inDefinedTermSet": "https://zakae.com/glossary.html"
+  },
+  {
+   "@type": "DefinedTerm",
+   "name": "Batch Size",
+   "description": "عدد الأمثلة التي يعالجها النموذج معاً قبل تحديث أوزانه في خطوة تدريب.",
+   "inDefinedTermSet": "https://zakae.com/glossary.html"
+  },
+  {
+   "@type": "DefinedTerm",
+   "name": "Gradient Descent",
+   "description": "خوارزمية تحسين تعدّل أوزان النموذج تدريجياً في اتجاه يقلّل الخطأ.",
+   "inDefinedTermSet": "https://zakae.com/glossary.html"
+  },
+  {
+   "@type": "DefinedTerm",
+   "name": "Regularization",
+   "description": "تقنيات تمنع فرط الملاءمة بجعل النموذج أبسط وأكثر قدرة على التعميم.",
+   "inDefinedTermSet": "https://zakae.com/glossary.html"
+  },
+  {
+   "@type": "DefinedTerm",
+   "name": "Data Labeling",
+   "description": "وسم البيانات بإجاباتها الصحيحة لتدريب النماذج المُوجَّهة؛ خطوة مكلفة ومؤثّرة في الجودة.",
+   "inDefinedTermSet": "https://zakae.com/glossary.html"
+  },
+  {
+   "@type": "DefinedTerm",
+   "name": "Data Augmentation",
+   "description": "توسيع بيانات التدريب بإنشاء نسخ معدّلة منها لزيادة التنوّع وتحسين التعميم.",
+   "inDefinedTermSet": "https://zakae.com/glossary.html"
+  },
+  {
+   "@type": "DefinedTerm",
+   "name": "Federated Learning",
+   "description": "تدريب نموذج عبر أجهزة متعددة دون نقل بياناتها إلى خادم مركزي، حفاظاً على الخصوصية.",
+   "inDefinedTermSet": "https://zakae.com/glossary.html"
+  },
+  {
+   "@type": "DefinedTerm",
+   "name": "Catastrophic Forgetting",
+   "description": "فقدان النموذج لمهارات سابقة عند تدريبه على مهمة جديدة.",
+   "inDefinedTermSet": "https://zakae.com/glossary.html"
+  },
+  {
+   "@type": "DefinedTerm",
+   "name": "Classification",
+   "description": "مهمة تصنيف المدخلات إلى فئات محدّدة، مثل تمييز البريد المزعج من السليم.",
+   "inDefinedTermSet": "https://zakae.com/glossary.html"
+  },
+  {
+   "@type": "DefinedTerm",
+   "name": "Regression",
+   "description": "مهمة التنبؤ بقيمة عددية مستمرة، مثل توقّع سعر أو درجة حرارة.",
+   "inDefinedTermSet": "https://zakae.com/glossary.html"
+  },
+  {
+   "@type": "DefinedTerm",
+   "name": "Clustering",
+   "description": "تجميع البيانات المتشابهة معاً دون فئات مسبقة، ضمن التعلّم غير المُوجَّه.",
+   "inDefinedTermSet": "https://zakae.com/glossary.html"
+  },
+  {
+   "@type": "DefinedTerm",
+   "name": "Sentiment Analysis",
+   "description": "تحديد الموقف العاطفي في نص (إيجابي/سلبي/محايد)، شائع في تحليل الآراء.",
+   "inDefinedTermSet": "https://zakae.com/glossary.html"
+  },
+  {
+   "@type": "DefinedTerm",
+   "name": "Named Entity Recognition",
+   "description": "استخراج الكيانات المسمّاة من النص كالأسماء والأماكن والتواريخ والمنظمات.",
+   "inDefinedTermSet": "https://zakae.com/glossary.html"
+  },
+  {
+   "@type": "DefinedTerm",
+   "name": "Text-to-Speech",
+   "description": "تحويل النص المكتوب إلى كلام منطوق طبيعي.",
+   "inDefinedTermSet": "https://zakae.com/glossary.html"
+  },
+  {
+   "@type": "DefinedTerm",
+   "name": "Anomaly Detection",
+   "description": "اكتشاف الأنماط الشاذّة الخارجة عن المألوف، كرصد الاحتيال أو الأعطال.",
+   "inDefinedTermSet": "https://zakae.com/glossary.html"
+  },
+  {
+   "@type": "DefinedTerm",
+   "name": "Knowledge Graph",
+   "description": "تمثيل للمعرفة كشبكة من الكيانات والعلاقات بينها، يعزّز الفهم والاسترجاع.",
+   "inDefinedTermSet": "https://zakae.com/glossary.html"
+  },
+  {
+   "@type": "DefinedTerm",
+   "name": "Chatbot",
+   "description": "برنامج يحاور المستخدم بلغة طبيعية؛ الأحدث منها مبنيّ على نماذج لغوية كبيرة.",
+   "inDefinedTermSet": "https://zakae.com/glossary.html"
+  },
+  {
+   "@type": "DefinedTerm",
+   "name": "Emergent Abilities",
+   "description": "قدرات تظهر في النماذج الكبيرة عند تجاوز حجم معيّن ولم تكن حاضرة في الأصغر.",
+   "inDefinedTermSet": "https://zakae.com/glossary.html"
+  },
+  {
+   "@type": "DefinedTerm",
+   "name": "Scaling Laws",
+   "description": "علاقات تربط تحسّن الأداء بزيادة حجم النموذج وبياناته وحوسبته بشكل متوقّع.",
+   "inDefinedTermSet": "https://zakae.com/glossary.html"
+  },
+  {
+   "@type": "DefinedTerm",
+   "name": "Content Moderation",
+   "description": "فلترة المدخلات أو المخرجات لمنع المحتوى الضار أو المخالف، غالباً عبر نماذج إشراف مخصّصة.",
+   "inDefinedTermSet": "https://zakae.com/glossary.html"
+  },
+  {
+   "@type": "DefinedTerm",
+   "name": "Differential Privacy",
+   "description": "إطار رياضي يحمي خصوصية الأفراد في البيانات بإضافة ضوضاء محسوبة تمنع تمييز فرد بعينه.",
+   "inDefinedTermSet": "https://zakae.com/glossary.html"
   }
  ]
 }
@@ -527,7 +707,7 @@
   <header class="page-hero" role="banner">
     <span class="page-tag">قاموس المصطلحات</span>
     <h1>قاموس مصطلحات الذكاء الاصطناعي بالعربية</h1>
-    <p>70 مصطلحاً موضّحاً بلغة عربية واضحة — منظّمة حسب الفئة والمستوى، لتخدم المبتدئ والممارس وصانع القرار.</p>
+    <p>100 مصطلحاً موضّحاً بلغة عربية واضحة — منظّمة حسب الفئة والمستوى، لتخدم المبتدئ والممارس وصانع القرار.</p>
   </header>
 
   <div class="gl-wrap">
@@ -618,6 +798,21 @@
         <div class="glossary-arabic">اختبار تورنغ</div>
         <p class="glossary-def">اختبار قديم يقيس قدرة الآلة على محاكاة المحادثة البشرية لدرجة يصعب فيها تمييزها عن إنسان.</p>
       </article>
+      <article class="glossary-card" id="term-chatbot">
+        <div class="gl-head"><span class="glossary-term">Chatbot</span><span class="gl-badge" style="background:#1a9f5a">مبتدئ</span></div>
+        <div class="glossary-arabic">روبوت المحادثة</div>
+        <p class="glossary-def">برنامج يحاور المستخدم بلغة طبيعية؛ الأحدث منها مبنيّ على نماذج لغوية كبيرة.</p>
+      </article>
+      <article class="glossary-card" id="term-emergent-abilities">
+        <div class="gl-head"><span class="glossary-term">Emergent Abilities</span><span class="gl-badge" style="background:#c0392b">متقدم</span></div>
+        <div class="glossary-arabic">القدرات الناشئة</div>
+        <p class="glossary-def">قدرات تظهر في النماذج الكبيرة عند تجاوز حجم معيّن ولم تكن حاضرة في الأصغر.</p>
+      </article>
+      <article class="glossary-card" id="term-scaling-laws">
+        <div class="gl-head"><span class="glossary-term">Scaling Laws</span><span class="gl-badge" style="background:#c0392b">متقدم</span></div>
+        <div class="glossary-arabic">قوانين التوسّع</div>
+        <p class="glossary-def">علاقات تربط تحسّن الأداء بزيادة حجم النموذج وبياناته وحوسبته بشكل متوقّع.</p>
+      </article>
       </div>
     </section>
 
@@ -658,6 +853,26 @@
         <div class="gl-head"><span class="glossary-term">System Prompt</span><span class="gl-badge" style="background:#d98a00">متوسط</span></div>
         <div class="glossary-arabic">الموجّه النظامي</div>
         <p class="glossary-def">تعليمات خفية تُحدّد شخصية النموذج ودوره وحدوده قبل بدء المحادثة مع المستخدم.</p>
+      </article>
+      <article class="glossary-card" id="term-top-p">
+        <div class="gl-head"><span class="glossary-term">Top-p (Nucleus)</span><span class="gl-badge" style="background:#c0392b">متقدم</span></div>
+        <div class="glossary-arabic">أخذ العيّنات النووي</div>
+        <p class="glossary-def">أسلوب لاختيار الكلمة التالية من أصغر مجموعة يتجاوز مجموع احتمالاتها العتبة p، ما يوازن التنوّع والتماسك.</p>
+      </article>
+      <article class="glossary-card" id="term-beam-search">
+        <div class="gl-head"><span class="glossary-term">Beam Search</span><span class="gl-badge" style="background:#c0392b">متقدم</span></div>
+        <div class="glossary-arabic">البحث الشعاعي</div>
+        <p class="glossary-def">خوارزمية توليد تستكشف عدة مسارات نصّية وتحتفظ بأفضلها، بحثاً عن ناتج أعلى احتمالاً إجمالاً.</p>
+      </article>
+      <article class="glossary-card" id="term-in-context-learning">
+        <div class="gl-head"><span class="glossary-term">In-Context Learning</span><span class="gl-badge" style="background:#c0392b">متقدم</span></div>
+        <div class="glossary-arabic">التعلّم ضمن السياق</div>
+        <p class="glossary-def">قدرة النموذج على تعلّم نمط مهمة من أمثلة داخل الموجّه نفسه دون تعديل أوزانه.</p>
+      </article>
+      <article class="glossary-card" id="term-prompt-chaining">
+        <div class="gl-head"><span class="glossary-term">Prompt Chaining</span><span class="gl-badge" style="background:#d98a00">متوسط</span></div>
+        <div class="glossary-arabic">تسلسل الموجّهات</div>
+        <p class="glossary-def">ربط عدة موجّهات متتابعة يغذّي ناتج كل خطوة الخطوةَ التالية، لتفكيك المهام المعقّدة.</p>
       </article>
       </div>
     </section>
@@ -724,6 +939,11 @@
         <div class="gl-head"><span class="glossary-term">Mixture of Experts</span><span class="gl-badge" style="background:#c0392b">متقدم</span></div>
         <div class="glossary-arabic">خليط الخبراء</div>
         <p class="glossary-def">بنية تُفعّل جزءاً من النموذج («خبراء» متخصّصين) لكل مدخل، ما يرفع الكفاءة مع الحفاظ على القدرة.</p>
+      </article>
+      <article class="glossary-card" id="term-knowledge-graph">
+        <div class="gl-head"><span class="glossary-term">Knowledge Graph</span><span class="gl-badge" style="background:#d98a00">متوسط</span></div>
+        <div class="glossary-arabic">الرسم المعرفي</div>
+        <p class="glossary-def">تمثيل للمعرفة كشبكة من الكيانات والعلاقات بينها، يعزّز الفهم والاسترجاع.</p>
       </article>
       </div>
     </section>
@@ -796,6 +1016,56 @@
         <div class="glossary-arabic">البيانات التركيبية</div>
         <p class="glossary-def">بيانات مولّدة اصطناعياً تُستخدم في التدريب حين تندر البيانات الحقيقية أو تكون حسّاسة.</p>
       </article>
+      <article class="glossary-card" id="term-hyperparameter">
+        <div class="gl-head"><span class="glossary-term">Hyperparameter</span><span class="gl-badge" style="background:#d98a00">متوسط</span></div>
+        <div class="glossary-arabic">المعامل الفائق</div>
+        <p class="glossary-def">إعداد يحدّده المطوّر قبل التدريب (كمعدّل التعلّم وحجم الدفعة) ويؤثّر في كيفية تعلّم النموذج.</p>
+      </article>
+      <article class="glossary-card" id="term-learning-rate">
+        <div class="gl-head"><span class="glossary-term">Learning Rate</span><span class="gl-badge" style="background:#c0392b">متقدم</span></div>
+        <div class="glossary-arabic">معدّل التعلّم</div>
+        <p class="glossary-def">معامل يحدّد حجم خطوة تعديل الأوزان في كل تحديث؛ توازنه حرج لاستقرار التدريب وسرعته.</p>
+      </article>
+      <article class="glossary-card" id="term-epoch">
+        <div class="gl-head"><span class="glossary-term">Epoch</span><span class="gl-badge" style="background:#c0392b">متقدم</span></div>
+        <div class="glossary-arabic">الحقبة</div>
+        <p class="glossary-def">دورة تدريب كاملة يمرّ فيها النموذج على كامل بيانات التدريب مرة واحدة.</p>
+      </article>
+      <article class="glossary-card" id="term-batch-size">
+        <div class="gl-head"><span class="glossary-term">Batch Size</span><span class="gl-badge" style="background:#c0392b">متقدم</span></div>
+        <div class="glossary-arabic">حجم الدفعة</div>
+        <p class="glossary-def">عدد الأمثلة التي يعالجها النموذج معاً قبل تحديث أوزانه في خطوة تدريب.</p>
+      </article>
+      <article class="glossary-card" id="term-gradient-descent">
+        <div class="gl-head"><span class="glossary-term">Gradient Descent</span><span class="gl-badge" style="background:#c0392b">متقدم</span></div>
+        <div class="glossary-arabic">الانحدار الاشتقاقي</div>
+        <p class="glossary-def">خوارزمية تحسين تعدّل أوزان النموذج تدريجياً في اتجاه يقلّل الخطأ.</p>
+      </article>
+      <article class="glossary-card" id="term-regularization">
+        <div class="gl-head"><span class="glossary-term">Regularization</span><span class="gl-badge" style="background:#c0392b">متقدم</span></div>
+        <div class="glossary-arabic">التنظيم</div>
+        <p class="glossary-def">تقنيات تمنع فرط الملاءمة بجعل النموذج أبسط وأكثر قدرة على التعميم.</p>
+      </article>
+      <article class="glossary-card" id="term-data-labeling">
+        <div class="gl-head"><span class="glossary-term">Data Labeling</span><span class="gl-badge" style="background:#1a9f5a">مبتدئ</span></div>
+        <div class="glossary-arabic">وسم البيانات</div>
+        <p class="glossary-def">وسم البيانات بإجاباتها الصحيحة لتدريب النماذج المُوجَّهة؛ خطوة مكلفة ومؤثّرة في الجودة.</p>
+      </article>
+      <article class="glossary-card" id="term-data-augmentation">
+        <div class="gl-head"><span class="glossary-term">Data Augmentation</span><span class="gl-badge" style="background:#d98a00">متوسط</span></div>
+        <div class="glossary-arabic">تعزيز البيانات</div>
+        <p class="glossary-def">توسيع بيانات التدريب بإنشاء نسخ معدّلة منها لزيادة التنوّع وتحسين التعميم.</p>
+      </article>
+      <article class="glossary-card" id="term-federated-learning">
+        <div class="gl-head"><span class="glossary-term">Federated Learning</span><span class="gl-badge" style="background:#c0392b">متقدم</span></div>
+        <div class="glossary-arabic">التعلّم الفدرالي</div>
+        <p class="glossary-def">تدريب نموذج عبر أجهزة متعددة دون نقل بياناتها إلى خادم مركزي، حفاظاً على الخصوصية.</p>
+      </article>
+      <article class="glossary-card" id="term-catastrophic-forgetting">
+        <div class="gl-head"><span class="glossary-term">Catastrophic Forgetting</span><span class="gl-badge" style="background:#c0392b">متقدم</span></div>
+        <div class="glossary-arabic">النسيان الكارثي</div>
+        <p class="glossary-def">فقدان النموذج لمهارات سابقة عند تدريبه على مهمة جديدة.</p>
+      </article>
       </div>
     </section>
 
@@ -826,6 +1096,41 @@
         <div class="gl-head"><span class="glossary-term">Text-to-Image</span><span class="gl-badge" style="background:#1a9f5a">مبتدئ</span></div>
         <div class="glossary-arabic">توليد الصور من النص</div>
         <p class="glossary-def">توليد صور جديدة انطلاقاً من وصف نصّي، تقوم عليه أدوات إنشاء الصور بالذكاء الاصطناعي.</p>
+      </article>
+      <article class="glossary-card" id="term-classification">
+        <div class="gl-head"><span class="glossary-term">Classification</span><span class="gl-badge" style="background:#1a9f5a">مبتدئ</span></div>
+        <div class="glossary-arabic">التصنيف</div>
+        <p class="glossary-def">مهمة تصنيف المدخلات إلى فئات محدّدة، مثل تمييز البريد المزعج من السليم.</p>
+      </article>
+      <article class="glossary-card" id="term-regression">
+        <div class="gl-head"><span class="glossary-term">Regression</span><span class="gl-badge" style="background:#d98a00">متوسط</span></div>
+        <div class="glossary-arabic">الانحدار</div>
+        <p class="glossary-def">مهمة التنبؤ بقيمة عددية مستمرة، مثل توقّع سعر أو درجة حرارة.</p>
+      </article>
+      <article class="glossary-card" id="term-clustering">
+        <div class="gl-head"><span class="glossary-term">Clustering</span><span class="gl-badge" style="background:#d98a00">متوسط</span></div>
+        <div class="glossary-arabic">التجميع</div>
+        <p class="glossary-def">تجميع البيانات المتشابهة معاً دون فئات مسبقة، ضمن التعلّم غير المُوجَّه.</p>
+      </article>
+      <article class="glossary-card" id="term-sentiment-analysis">
+        <div class="gl-head"><span class="glossary-term">Sentiment Analysis</span><span class="gl-badge" style="background:#1a9f5a">مبتدئ</span></div>
+        <div class="glossary-arabic">تحليل المشاعر</div>
+        <p class="glossary-def">تحديد الموقف العاطفي في نص (إيجابي/سلبي/محايد)، شائع في تحليل الآراء.</p>
+      </article>
+      <article class="glossary-card" id="term-named-entity-recognition">
+        <div class="gl-head"><span class="glossary-term">Named Entity Recognition</span><span class="gl-badge" style="background:#d98a00">متوسط</span></div>
+        <div class="glossary-arabic">التعرّف على الكيانات</div>
+        <p class="glossary-def">استخراج الكيانات المسمّاة من النص كالأسماء والأماكن والتواريخ والمنظمات.</p>
+      </article>
+      <article class="glossary-card" id="term-text-to-speech">
+        <div class="gl-head"><span class="glossary-term">Text-to-Speech</span><span class="gl-badge" style="background:#1a9f5a">مبتدئ</span></div>
+        <div class="glossary-arabic">تحويل النص إلى كلام</div>
+        <p class="glossary-def">تحويل النص المكتوب إلى كلام منطوق طبيعي.</p>
+      </article>
+      <article class="glossary-card" id="term-anomaly-detection">
+        <div class="gl-head"><span class="glossary-term">Anomaly Detection</span><span class="gl-badge" style="background:#d98a00">متوسط</span></div>
+        <div class="glossary-arabic">كشف الشذوذ</div>
+        <p class="glossary-def">اكتشاف الأنماط الشاذّة الخارجة عن المألوف، كرصد الاحتيال أو الأعطال.</p>
       </article>
       </div>
     </section>
@@ -863,6 +1168,21 @@
         <div class="gl-head"><span class="glossary-term">Benchmark</span><span class="gl-badge" style="background:#d98a00">متوسط</span></div>
         <div class="glossary-arabic">معيار القياس</div>
         <p class="glossary-def">اختبار موحّد يقارن أداء النماذج على مهام محددة مثل الرياضيات أو البرمجة أو الفهم اللغوي.</p>
+      </article>
+      <article class="glossary-card" id="term-perplexity">
+        <div class="gl-head"><span class="glossary-term">Perplexity</span><span class="gl-badge" style="background:#c0392b">متقدم</span></div>
+        <div class="glossary-arabic">الحيرة</div>
+        <p class="glossary-def">مقياس لجودة نموذج لغوي يعكس مدى «حيرته» في التنبؤ بالنص؛ كلما قلّ كان النموذج أدقّ.</p>
+      </article>
+      <article class="glossary-card" id="term-precision-recall">
+        <div class="gl-head"><span class="glossary-term">Precision &amp; Recall</span><span class="gl-badge" style="background:#d98a00">متوسط</span></div>
+        <div class="glossary-arabic">الدقة والاستدعاء</div>
+        <p class="glossary-def">مقياسان للتصنيف: الدقة نسبة الصحيح من المتنبَّأ به، والاستدعاء نسبة ما التُقط من الصحيح فعلاً.</p>
+      </article>
+      <article class="glossary-card" id="term-f1-score">
+        <div class="gl-head"><span class="glossary-term">F1 Score</span><span class="gl-badge" style="background:#c0392b">متقدم</span></div>
+        <div class="glossary-arabic">درجة F1</div>
+        <p class="glossary-def">مقياس يوازن بين الدقة والاستدعاء في رقم واحد، مفيد حين يهمّ الاثنان معاً.</p>
       </article>
       </div>
     </section>
@@ -950,6 +1270,16 @@
         <div class="gl-head"><span class="glossary-term">Grounding</span><span class="gl-badge" style="background:#d98a00">متوسط</span></div>
         <div class="glossary-arabic">الإسناد</div>
         <p class="glossary-def">ربط مخرجات النموذج بمصادر أو حقائق موثوقة يمكن التحقق منها، لتقليل الهلوسة.</p>
+      </article>
+      <article class="glossary-card" id="term-content-moderation">
+        <div class="gl-head"><span class="glossary-term">Content Moderation</span><span class="gl-badge" style="background:#d98a00">متوسط</span></div>
+        <div class="glossary-arabic">الإشراف على المحتوى</div>
+        <p class="glossary-def">فلترة المدخلات أو المخرجات لمنع المحتوى الضار أو المخالف، غالباً عبر نماذج إشراف مخصّصة.</p>
+      </article>
+      <article class="glossary-card" id="term-differential-privacy">
+        <div class="gl-head"><span class="glossary-term">Differential Privacy</span><span class="gl-badge" style="background:#c0392b">متقدم</span></div>
+        <div class="glossary-arabic">الخصوصية التفاضلية</div>
+        <p class="glossary-def">إطار رياضي يحمي خصوصية الأفراد في البيانات بإضافة ضوضاء محسوبة تمنع تمييز فرد بعينه.</p>
       </article>
       </div>
     </section>

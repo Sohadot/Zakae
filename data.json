@@ -28,7 +28,7 @@
         "label": "نماذج مقارنة"
       },
       {
-        "value": "70",
+        "value": "100",
         "label": "مصطلح موضّح"
       },
       {
@@ -1022,6 +1022,276 @@
       "category": "deployment",
       "difficulty": "intermediate",
       "definition": "كمية الطلبات أو الرموز التي يعالجها النظام في وحدة زمنية؛ مؤشر مهم لقابلية التوسّع."
+    },
+    {
+      "id": "top-p",
+      "slug": "top-p",
+      "term": "Top-p (Nucleus)",
+      "arabic": "أخذ العيّنات النووي",
+      "category": "interaction",
+      "difficulty": "advanced",
+      "definition": "أسلوب لاختيار الكلمة التالية من أصغر مجموعة يتجاوز مجموع احتمالاتها العتبة p، ما يوازن التنوّع والتماسك."
+    },
+    {
+      "id": "beam-search",
+      "slug": "beam-search",
+      "term": "Beam Search",
+      "arabic": "البحث الشعاعي",
+      "category": "interaction",
+      "difficulty": "advanced",
+      "definition": "خوارزمية توليد تستكشف عدة مسارات نصّية وتحتفظ بأفضلها، بحثاً عن ناتج أعلى احتمالاً إجمالاً."
+    },
+    {
+      "id": "in-context-learning",
+      "slug": "in-context-learning",
+      "term": "In-Context Learning",
+      "arabic": "التعلّم ضمن السياق",
+      "category": "interaction",
+      "difficulty": "advanced",
+      "definition": "قدرة النموذج على تعلّم نمط مهمة من أمثلة داخل الموجّه نفسه دون تعديل أوزانه."
+    },
+    {
+      "id": "prompt-chaining",
+      "slug": "prompt-chaining",
+      "term": "Prompt Chaining",
+      "arabic": "تسلسل الموجّهات",
+      "category": "interaction",
+      "difficulty": "intermediate",
+      "definition": "ربط عدة موجّهات متتابعة يغذّي ناتج كل خطوة الخطوةَ التالية، لتفكيك المهام المعقّدة."
+    },
+    {
+      "id": "perplexity",
+      "slug": "perplexity",
+      "term": "Perplexity",
+      "arabic": "الحيرة",
+      "category": "evaluation",
+      "difficulty": "advanced",
+      "definition": "مقياس لجودة نموذج لغوي يعكس مدى «حيرته» في التنبؤ بالنص؛ كلما قلّ كان النموذج أدقّ."
+    },
+    {
+      "id": "precision-recall",
+      "slug": "precision-recall",
+      "term": "Precision & Recall",
+      "arabic": "الدقة والاستدعاء",
+      "category": "evaluation",
+      "difficulty": "intermediate",
+      "definition": "مقياسان للتصنيف: الدقة نسبة الصحيح من المتنبَّأ به، والاستدعاء نسبة ما التُقط من الصحيح فعلاً."
+    },
+    {
+      "id": "f1-score",
+      "slug": "f1-score",
+      "term": "F1 Score",
+      "arabic": "درجة F1",
+      "category": "evaluation",
+      "difficulty": "advanced",
+      "definition": "مقياس يوازن بين الدقة والاستدعاء في رقم واحد، مفيد حين يهمّ الاثنان معاً."
+    },
+    {
+      "id": "hyperparameter",
+      "slug": "hyperparameter",
+      "term": "Hyperparameter",
+      "arabic": "المعامل الفائق",
+      "category": "training",
+      "difficulty": "intermediate",
+      "definition": "إعداد يحدّده المطوّر قبل التدريب (كمعدّل التعلّم وحجم الدفعة) ويؤثّر في كيفية تعلّم النموذج."
+    },
+    {
+      "id": "learning-rate",
+      "slug": "learning-rate",
+      "term": "Learning Rate",
+      "arabic": "معدّل التعلّم",
+      "category": "training",
+      "difficulty": "advanced",
+      "definition": "معامل يحدّد حجم خطوة تعديل الأوزان في كل تحديث؛ توازنه حرج لاستقرار التدريب وسرعته."
+    },
+    {
+      "id": "epoch",
+      "slug": "epoch",
+      "term": "Epoch",
+      "arabic": "الحقبة",
+      "category": "training",
+      "difficulty": "advanced",
+      "definition": "دورة تدريب كاملة يمرّ فيها النموذج على كامل بيانات التدريب مرة واحدة."
+    },
+    {
+      "id": "batch-size",
+      "slug": "batch-size",
+      "term": "Batch Size",
+      "arabic": "حجم الدفعة",
+      "category": "training",
+      "difficulty": "advanced",
+      "definition": "عدد الأمثلة التي يعالجها النموذج معاً قبل تحديث أوزانه في خطوة تدريب."
+    },
+    {
+      "id": "gradient-descent",
+      "slug": "gradient-descent",
+      "term": "Gradient Descent",
+      "arabic": "الانحدار الاشتقاقي",
+      "category": "training",
+      "difficulty": "advanced",
+      "definition": "خوارزمية تحسين تعدّل أوزان النموذج تدريجياً في اتجاه يقلّل الخطأ."
+    },
+    {
+      "id": "regularization",
+      "slug": "regularization",
+      "term": "Regularization",
+      "arabic": "التنظيم",
+      "category": "training",
+      "difficulty": "advanced",
+      "definition": "تقنيات تمنع فرط الملاءمة بجعل النموذج أبسط وأكثر قدرة على التعميم."
+    },
+    {
+      "id": "data-labeling",
+      "slug": "data-labeling",
+      "term": "Data Labeling",
+      "arabic": "وسم البيانات",
+      "category": "training",
+      "difficulty": "beginner",
+      "definition": "وسم البيانات بإجاباتها الصحيحة لتدريب النماذج المُوجَّهة؛ خطوة مكلفة ومؤثّرة في الجودة."
+    },
+    {
+      "id": "data-augmentation",
+      "slug": "data-augmentation",
+      "term": "Data Augmentation",
+      "arabic": "تعزيز البيانات",
+      "category": "training",
+      "difficulty": "intermediate",
+      "definition": "توسيع بيانات التدريب بإنشاء نسخ معدّلة منها لزيادة التنوّع وتحسين التعميم."
+    },
+    {
+      "id": "federated-learning",
+      "slug": "federated-learning",
+      "term": "Federated Learning",
+      "arabic": "التعلّم الفدرالي",
+      "category": "training",
+      "difficulty": "advanced",
+      "definition": "تدريب نموذج عبر أجهزة متعددة دون نقل بياناتها إلى خادم مركزي، حفاظاً على الخصوصية."
+    },
+    {
+      "id": "catastrophic-forgetting",
+      "slug": "catastrophic-forgetting",
+      "term": "Catastrophic Forgetting",
+      "arabic": "النسيان الكارثي",
+      "category": "training",
+      "difficulty": "advanced",
+      "definition": "فقدان النموذج لمهارات سابقة عند تدريبه على مهمة جديدة."
+    },
+    {
+      "id": "classification",
+      "slug": "classification",
+      "term": "Classification",
+      "arabic": "التصنيف",
+      "category": "capability",
+      "difficulty": "beginner",
+      "definition": "مهمة تصنيف المدخلات إلى فئات محدّدة، مثل تمييز البريد المزعج من السليم."
+    },
+    {
+      "id": "regression",
+      "slug": "regression",
+      "term": "Regression",
+      "arabic": "الانحدار",
+      "category": "capability",
+      "difficulty": "intermediate",
+      "definition": "مهمة التنبؤ بقيمة عددية مستمرة، مثل توقّع سعر أو درجة حرارة."
+    },
+    {
+      "id": "clustering",
+      "slug": "clustering",
+      "term": "Clustering",
+      "arabic": "التجميع",
+      "category": "capability",
+      "difficulty": "intermediate",
+      "definition": "تجميع البيانات المتشابهة معاً دون فئات مسبقة، ضمن التعلّم غير المُوجَّه."
+    },
+    {
+      "id": "sentiment-analysis",
+      "slug": "sentiment-analysis",
+      "term": "Sentiment Analysis",
+      "arabic": "تحليل المشاعر",
+      "category": "capability",
+      "difficulty": "beginner",
+      "definition": "تحديد الموقف العاطفي في نص (إيجابي/سلبي/محايد)، شائع في تحليل الآراء."
+    },
+    {
+      "id": "named-entity-recognition",
+      "slug": "named-entity-recognition",
+      "term": "Named Entity Recognition",
+      "arabic": "التعرّف على الكيانات",
+      "category": "capability",
+      "difficulty": "intermediate",
+      "definition": "استخراج الكيانات المسمّاة من النص كالأسماء والأماكن والتواريخ والمنظمات."
+    },
+    {
+      "id": "text-to-speech",
+      "slug": "text-to-speech",
+      "term": "Text-to-Speech",
+      "arabic": "تحويل النص إلى كلام",
+      "category": "capability",
+      "difficulty": "beginner",
+      "definition": "تحويل النص المكتوب إلى كلام منطوق طبيعي."
+    },
+    {
+      "id": "anomaly-detection",
+      "slug": "anomaly-detection",
+      "term": "Anomaly Detection",
+      "arabic": "كشف الشذوذ",
+      "category": "capability",
+      "difficulty": "intermediate",
+      "definition": "اكتشاف الأنماط الشاذّة الخارجة عن المألوف، كرصد الاحتيال أو الأعطال."
+    },
+    {
+      "id": "knowledge-graph",
+      "slug": "knowledge-graph",
+      "term": "Knowledge Graph",
+      "arabic": "الرسم المعرفي",
+      "category": "architecture",
+      "difficulty": "intermediate",
+      "definition": "تمثيل للمعرفة كشبكة من الكيانات والعلاقات بينها، يعزّز الفهم والاسترجاع."
+    },
+    {
+      "id": "chatbot",
+      "slug": "chatbot",
+      "term": "Chatbot",
+      "arabic": "روبوت المحادثة",
+      "category": "foundation",
+      "difficulty": "beginner",
+      "definition": "برنامج يحاور المستخدم بلغة طبيعية؛ الأحدث منها مبنيّ على نماذج لغوية كبيرة."
+    },
+    {
+      "id": "emergent-abilities",
+      "slug": "emergent-abilities",
+      "term": "Emergent Abilities",
+      "arabic": "القدرات الناشئة",
+      "category": "foundation",
+      "difficulty": "advanced",
+      "definition": "قدرات تظهر في النماذج الكبيرة عند تجاوز حجم معيّن ولم تكن حاضرة في الأصغر."
+    },
+    {
+      "id": "scaling-laws",
+      "slug": "scaling-laws",
+      "term": "Scaling Laws",
+      "arabic": "قوانين التوسّع",
+      "category": "foundation",
+      "difficulty": "advanced",
+      "definition": "علاقات تربط تحسّن الأداء بزيادة حجم النموذج وبياناته وحوسبته بشكل متوقّع."
+    },
+    {
+      "id": "content-moderation",
+      "slug": "content-moderation",
+      "term": "Content Moderation",
+      "arabic": "الإشراف على المحتوى",
+      "category": "risk",
+      "difficulty": "intermediate",
+      "definition": "فلترة المدخلات أو المخرجات لمنع المحتوى الضار أو المخالف، غالباً عبر نماذج إشراف مخصّصة."
+    },
+    {
+      "id": "differential-privacy",
+      "slug": "differential-privacy",
+      "term": "Differential Privacy",
+      "arabic": "الخصوصية التفاضلية",
+      "category": "risk",
+      "difficulty": "advanced",
+      "definition": "إطار رياضي يحمي خصوصية الأفراد في البيانات بإضافة ضوضاء محسوبة تمنع تمييز فرد بعينه."
     }
   ],
   "topTen": [
